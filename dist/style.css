@@ -251,18 +251,46 @@ body {
   left: 115px;
 }
 
-.section-3--title {
+.section-3--wrapper-title {
   z-index: 5;
   position: relative;
   margin: 0;
   top: -218px;
   left: 41px;
   width: 550px;
+}
+
+.section-3--title {
   font-family: Raleway-Bold, sans-serif;
   font-size: 90px;
   color: #fff;
 }
 
+@media screen and (max-width: 1240px) {
+  .list-of-cards {
+    right: 5%;
+  }
+
+  .section-3--image {
+    top: 200px;
+    width: 61%;
+  }
+
+  .section-3--wrapper-title {
+    left: 70px;
+    width: 450px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .section-3--image {
+    left: 17%;
+  }
+
+  .section-3--wrapper-title {
+    width: 380px;
+  }
+}
 .section-4 {
   height: 1536px;
   display: -webkit-box;
@@ -533,6 +561,34 @@ body {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 40%);
 }
 
+@media screen and (max-width: 1250px) {
+  .section-6--wrapper-for-cards {
+    width: 92%;
+  }
+
+  .card {
+    width: 31.4%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .section-6 {
+    height: 1200px;
+  }
+
+  .section-6--wrapper-for-cards {
+    width: 600px;
+    height: 660px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .card {
+    width: 45%;
+  }
+}
 #card-1 {
   background: url(img/section-6-img1.jpg);
 }
@@ -587,6 +643,11 @@ body {
   cursor: default;
 }
 
+@media screen and (max-width: 1250px) {
+  .card-title {
+    width: 89%;
+  }
+}
 .card-author {
   position: relative;
   top: 122px;
@@ -752,9 +813,9 @@ body {
 .section-7--submit:hover {
   font-size: 21px;
   font-weight: 900;
-  color: #000;
-  background-color: #929292;
-  border: solid 1px #929292;
+  color: #b4b4b4;
+  background-color: #505050;
+  border: solid 1px #505050;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
 }
