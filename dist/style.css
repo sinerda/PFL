@@ -133,9 +133,33 @@ body {
   top: 890px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
+  .icon-mouse {
+    visibility: hidden;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section-1 {
+    height: 800px;
+  }
+
   .header-nav {
     visibility: hidden;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-1--content {
+    width: 270px;
+  }
+
+  .section-1--title {
+    width: 270px;
+    margin-right: 0;
+    font-size: 50px;
+  }
+
+  .section-1--text {
+    width: 270px;
   }
 }
 .section-2 {
@@ -261,6 +285,31 @@ body {
 
   .section-2--text {
     min-width: 360px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-2--title {
+    font-size: 60px;
+  }
+
+  .section-2--text {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-2 {
+    height: 950px;
+  }
+
+  .section-2-Left-Side {
+    top: 465px;
+  }
+
+  .section-2--text {
+    width: 270px;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
   }
 }
 .section-3 {
@@ -497,6 +546,78 @@ body {
     font-size: 70px;
   }
 }
+@media screen and (max-width: 500px) {
+  .list-of-cards {
+    top: 20px;
+    width: 350px;
+    height: 620px;
+  }
+
+  .item-card {
+    width: 350px;
+  }
+
+  .section-3--wrapper-title {
+    width: 100%;
+    left: 0;
+  }
+
+  .section-3--title {
+    font-size: 55px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .section-3 {
+    height: 940px;
+  }
+
+  .section-3-Left-Side {
+    height: 440px;
+  }
+
+  .list-of-cards {
+    top: 0;
+    height: 430px;
+    width: 290px;
+  }
+
+  .item-card {
+    height: 70px;
+    width: 100%;
+  }
+
+  .card-text {
+    font-size: 16px;
+  }
+
+  .card-icon {
+    padding: 14px 12px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon {
+    width: 45px;
+  }
+
+  .section-3-Right-Side {
+    height: 410px;
+    bottom: 420px;
+  }
+
+  .section-3--image {
+    width: 290px;
+  }
+
+  .section-3--wrapper-title {
+    top: -173px;
+  }
+
+  .section-3--title {
+    font-size: 48px;
+  }
+}
 .section-4 {
   height: 1536px;
   display: -webkit-box;
@@ -618,6 +739,16 @@ body {
 
   .section-4--text {
     width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-4 {
+    height: 1550px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-4--title {
+    font-size: 70px;
   }
 }
 .section-5 {
@@ -754,6 +885,10 @@ body {
     background-position-y: 350px;
   }
 
+  .section-5--title {
+    font-size: 35px;
+  }
+
   .section-5--text {
     width: 100%;
   }
@@ -772,6 +907,10 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+
+  .section-5--input {
+    width: 170px;
   }
 
   .section-5--submit {
@@ -910,8 +1049,25 @@ body {
   }
 }
 @media screen and (max-width: 550px) {
+  .section-6--title {
+    font-size: 80px;
+  }
+
   .section-6--text {
     width: 380px;
+  }
+
+  .section-6--wrapper-for-cards {
+    width: 100%;
+  }
+
+  .card {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-6--text {
+    width: 85%;
   }
 }
 #card-1 {
@@ -1015,6 +1171,11 @@ body {
   transition: all 0.7s;
 }
 
+@media screen and (max-width: 550px) {
+  .card-author {
+    width: 250px;
+  }
+}
 .section-7 {
   padding-top: 90px;
   height: 865px;
@@ -1176,6 +1337,73 @@ a.section-7--contacts:hover {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 800px) {
+  .section-7--Contact-Side {
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  .section-7 {
+    height: 1135px;
+  }
+
+  .section-7--Form-Side {
+    float: none;
+    width: 100%;
+    position: relative;
+    top: 250px;
+  }
+
+  .section-7--form {
+    width: 60%;
+  }
+
+  .section-7--input-text {
+    width: 100%;
+  }
+
+  .section-7--submit {
+    right: 0;
+  }
+
+  .section-7--Contact-Side {
+    float: none;
+    width: 100%;
+    position: relative;
+    bottom: 530px;
+    padding-left: 11%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .section-7--form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-7--wrapper-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+
+  .section-7--title {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .section-7--text {
+    width: 300px;
+  }
+}
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1214,5 +1442,50 @@ footer {
 .love {
   font-family: "Raleway-Bold", sans-serif;
   color: #ff2b58;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    height: 120px;
+  }
+
+  .company {
+    width: 150px;
+    line-height: 23px;
+  }
+
+  .logo-cahee {
+    position: relative;
+    top: 10px;
+  }
+
+  .made-with-love {
+    width: 130px;
+    line-height: 23px;
+    text-align: right;
+  }
+}
+@media screen and (max-width: 650px) {
+  footer {
+    height: 180px;
+  }
+
+  .company {
+    position: relative;
+    top: 50px;
+    width: auto;
+  }
+
+  .logo-cahee {
+    margin: 0;
+    top: -25px;
+  }
+
+  .made-with-love {
+    float: none;
+    top: 20px;
+    width: auto;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=style.css.map */
