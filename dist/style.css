@@ -39,6 +39,8 @@ body {
   width: auto;
   height: 145px;
   padding: 50px 11%;
+  -webkit-overflow-scrolling: auto;
+  overflow-y: scroll;
 }
 
 .header-logo {
@@ -87,6 +89,44 @@ body {
 
 .adaptive-menu {
   visibility: hidden;
+  z-index: 10;
+  position: fixed;
+  top: -24px;
+  left: 0;
+  right: 0;
+  height: 105vh;
+  width: 40%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  background-color: #fff;
+  -webkit-box-shadow: 6px -1px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 6px -1px 10px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+  opacity: 20%;
+  -webkit-transition: all 0.65s linear;
+  transition: all 0.65s linear;
+}
+
+.adaptive-menu.active {
+  opacity: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .adaptive-menu a {
@@ -95,13 +135,11 @@ body {
   text-transform: capitalize;
 }
 
-.adaptive-menu a:hover {
-  background-color: #ff6033;
-}
-
 .button-burger-menu {
   display: none;
   position: fixed;
+  -webkit-transform: translateZ(1px);
+  transform: translateZ(1px);
   width: 42px;
   height: 42px;
   right: 11%;
@@ -119,7 +157,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: #222222;
+  background-color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -226,44 +264,6 @@ body {
 
   .adaptive-menu {
     visibility: visible;
-    z-index: 10;
-    position: fixed;
-    top: -24px;
-    left: 0;
-    right: 0;
-    height: 101vh;
-    width: 40%;
-    padding: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    list-style: none;
-    background-color: #fff;
-    -webkit-box-shadow: 6px -1px 10px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 6px -1px 10px 0px rgba(0, 0, 0, 0.4);
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
-    opacity: 20%;
-    -webkit-transition: all 0.65s linear;
-    transition: all 0.65s linear;
-  }
-
-  .adaptive-menu.active {
-    opacity: 100%;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
 
   .button-burger-menu {
