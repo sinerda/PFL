@@ -8,10 +8,26 @@ ButtonMenu.addEventListener('click', function () {
 })
 
 
-// Создаем медиа условие, проверяющее viewports на ширину не менее 768 пикселей.
-const mediaQuery = window.matchMedia('(max-width: 850px)')
+// "включаем" меню для декстопа
+const DesktopMediaQuery = window.matchMedia('(min-width: 849px)');
 
-let link = document.querySelectorAll('.menu a');
+// 
+function handleTabletChange(e) {
+  if (e.matches) {
+    menu.style.visibility = 'visible';
+    console.log('Media Query Matched!')
+  }
+}
+
+DesktopMediaQuery.addListener(handleTabletChange)
+handleTabletChange(DesktopMediaQuery)
+
+
+
+// Создаем медиа условие, проверяющее viewports на ширину не менее 768 пикселей.
+const mediaQuery = window.matchMedia('(max-width: 850px)');
+
+let link = document.querySelectorAll('.menu li a');
 if (mediaQuery.matches) {
   for (let elem of link) {
     elem.addEventListener('click', function () {
@@ -20,7 +36,6 @@ if (mediaQuery.matches) {
     })
   }
 }
-
 
 
 
