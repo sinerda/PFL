@@ -1,41 +1,15 @@
 let ButtonMenu = document.querySelector('.button-burger-menu');
-let menu = document.querySelector('.menu');
-
-
+let menu = document.querySelector('.adaptive-menu');
 ButtonMenu.addEventListener('click', function () {
   menu.style.visibility = 'visible';
   menu.classList.toggle('active');
 })
 
 
-// "включаем" меню для декстопа
-const DesktopMediaQuery = window.matchMedia('(min-width: 849px)');
-
-// 
-function handleTabletChange(e) {
-  if (e.matches) {
-    menu.style.visibility = 'visible';
-    console.log('Media Query Matched!')
-  }
+let link = document.querySelectorAll('.adaptive-menu li a');
+for (let elem of link) {
+  elem.addEventListener('click', function () {
+    menu.classList.toggle('active');
+    menu.style.visibility = 'hidden';
+  })
 }
-
-DesktopMediaQuery.addListener(handleTabletChange)
-handleTabletChange(DesktopMediaQuery)
-
-
-
-// Создаем медиа условие, проверяющее viewports на ширину не менее 768 пикселей.
-const mediaQuery = window.matchMedia('(max-width: 850px)');
-
-let link = document.querySelectorAll('.menu li a');
-if (mediaQuery.matches) {
-  for (let elem of link) {
-    elem.addEventListener('click', function () {
-      menu.classList.toggle('active');
-      menu.style.visibility = 'hidden';
-    })
-  }
-}
-
-
-

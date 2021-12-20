@@ -43,7 +43,8 @@ body {
     bottom: 12px;
     padding-top: 9px;
 }
-.menu a {
+.menu a,
+.adaptive-menu a {
     font-family: Raleway-Bold, sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -51,12 +52,15 @@ body {
     color: #262626;
 }
 .button-burger-menu {
-    // display: none;
+    display: none;
     width: 42px;
     height: 42px;
     position: absolute;
     /* right: 120px; */
     top: 50px;
+}
+.adaptive-menu {
+    display: none;
 }
 //
 //  section-1
@@ -121,44 +125,49 @@ body {
         height: 800px;
     }
     .menu {
-        background-color: #fff;
-        height: 101vh;
-        width: 40%;
+        display: none;
+    }
+    .adaptive-menu {
+        z-index: 10;
         position: fixed;
         top: -24px;
         left: 0;
         right: 0;
+        height: 101vh;
+        width: 40%;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        z-index: 10;
-        padding: 50px;
+        list-style: none;
+        background-color: #fff;
         box-shadow: 6px -1px 10px 0px rgb(0 0 0 / 40%);
-        transform: translateX(-100%);
+        transform: translateX(-110%);
         transition: transform 0.5s;
     }
-    .menu.active {
+    .adaptive-menu.active {
         transform: translateX(0);
     }
-    .menu a {
+    .adaptive-menu a {
         font-size: 26px;
         line-height: 60px;
         text-transform: capitalize;
     }
     .button-burger-menu {
+        display: block;
         position: fixed;
         z-index: 10;
         left: 60px;
     }
 }
 @media screen and (max-width: 700px) {
-    .menu {
+    .adaptive-menu {
         width: 50%;
     }
 }
 @media screen and (max-width: 550px) {
-    .menu {
+    .adaptive-menu {
         width: 80%;
     }
 }
