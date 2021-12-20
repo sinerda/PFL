@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Raleway-Bold";
-  src: url("/fonts/Raleway-Bold.woff") format("woff");
+  src: url("fonts/Raleway-Bold.woff");
   font-display: auto;
 }
 @font-face {
   font-family: "Raleway-Heavy";
-  src: url("/fonts/raleway-heavy-webfont.woff") format("woff");
+  src: url("fonts/raleway-heavy-webfont.woff");
   font-display: auto;
 }
 @font-face {
   font-family: "Raleway-Light";
-  src: url("/fonts/raleway-light-webfont.woff") format("woff");
+  src: url("fonts/raleway-light-webfont.woff");
   font-display: auto;
 }
 html {
