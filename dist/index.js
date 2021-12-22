@@ -43,6 +43,12 @@ $(window).scroll(function () {
       $(".button-burger-menu span").css("background-color", "#000");
       $(".adaptive-menu").css("background-color", "#5585a2");
       $(".adaptive-menu a").css("color", "#000");
+    } else if (wScroll > $('.section-3').offset().top - ($(window).height() / 10)) {
+      // Services
+      $(".button-burger-menu").css("background-color", "#ADB5BD");
+      $(".button-burger-menu span").css("background-color", "#000");
+      $(".adaptive-menu").css("background-color", "#ADB5BD");
+      $(".adaptive-menu a").css("color", "#000");
     } else if (wScroll > $('.section-2').offset().top - ($(window).height() / 10)) {
       // About Us
       $(".button-burger-menu").css("background-color", "#fff");

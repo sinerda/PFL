@@ -19,8 +19,8 @@ body {
     width: auto;
     height: 145px;
     padding: 50px 11%;
-    -webkit-overflow-scrolling: auto;
-    overflow-y: scroll;
+    // -webkit-overflow-scrolling: auto;
+    // overflow-y: scroll;
 }
 .header-logo {
     float: left;
@@ -45,15 +45,6 @@ body {
     bottom: 12px;
     padding-top: 9px;
 }
-.menu a,
-.adaptive-menu a {
-    font-family: Raleway-Bold, sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #262626;
-    -webkit-tap-highlight-color: transparent;
-}
 .adaptive-menu {
     visibility: hidden;
     z-index: 10;
@@ -63,42 +54,61 @@ body {
     right: 0;
     height: 105vh;
     width: 40%;
-    padding: 50px;
+    padding: 5.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     list-style: none;
-    background-color: #fff;
-    box-shadow: 6px -1px 10px 0px rgb(0 0 0 / 40%);
-    transform: translateX(-110%);
+    background-color: #ff6033;
+    box-shadow: -6px -1px 10px 0px rgb(0 0 0 / 40%);
+    transform: translateX(260%);
     opacity: 20%;
     transition: all 0.65s linear;
 }
 .adaptive-menu.active {
-    opacity: 100%;
-    transform: translateX(0);
-    transition: all 0.5s;
+    opacity: 96%;
+    transform: translateX(150%);
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.menu a,
+.adaptive-menu a {
+    font-family: Raleway-Bold, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    -webkit-tap-highlight-color: transparent;
 }
 .adaptive-menu a {
+    color: #fff;
     font-size: 26px;
     line-height: 60px;
     text-transform: capitalize;
 }
+#menu-2:focus {
+    background-color: greenyellow;
+}
 .button-burger-menu {
+    z-index: 10;
     display: none;
     position: fixed;
-    -webkit-transform: translateZ(1px);
-    -moz-transform: translateZ(1px);
-    -o-transform: translateZ(1px);
-    transform: translateZ(1px);
     width: 42px;
     height: 42px;
     right: 11%;
     top: 50px;
+    -webkit-transform: translateZ(1px);
+    -moz-transform: translateZ(1px);
+    -o-transform: translateZ(1px);
+    transform: translateZ(1px);
     overflow: hidden;
-    z-index: 10;
     background-color: #ff6033;
+    opacity: 70%;
+    transition: all 0.5s;
+}
+.button-burger-menu.active {
+    opacity: 100%;
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 .button-burger-menu span {
     width: 30px;
@@ -200,18 +210,38 @@ body {
     .button-burger-menu {
         display: block;
     }
+    .button-burger-menu.active {
+        right: 5.5%;
+    }
+}
+@media screen and (max-height: 570px) {
+    .button-burger-menu.active {
+        right: 26%;
+    }
 }
 @media screen and (max-width: 700px) {
     .adaptive-menu {
         width: 50%;
     }
+    .adaptive-menu.active {
+        transform: translateX(100%);
+    }
 }
 @media screen and (max-width: 550px) {
     .adaptive-menu {
-        width: 80%;
+        width: 59%;
+    }
+    .adaptive-menu.active {
+        transform: translateX(70%);
     }
 }
 @media screen and (max-width: 450px) {
+    .adaptive-menu {
+        width: 68%;
+    }
+    .adaptive-menu.active {
+        transform: translateX(47%);
+    }
     .section-1--content {
         width: 270px;
     }
@@ -222,6 +252,32 @@ body {
     }
     .section-1--text {
         width: 270px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .adaptive-menu a {
+        line-height: 55px;
+    }
+    .button-burger-menu.active {
+        top: 6%;
+    }
+}
+@media screen and (max-height: 400px) {
+    .adaptive-menu a {
+        line-height: 50px;
+    }
+}
+@media screen and (max-height: 350px) {
+    .adaptive-menu a {
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 330px) and (max-height: 550px) {
+    .adaptive-menu a {
+        line-height: 30px;
+    }
+    .button-burger-menu.active {
+        right: 38%;
     }
 }
 //
