@@ -1,0 +1,19 @@
+$base-font-size: 16;
+
+// strips away any unit from a value: e.g. "16px" => 16
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+  @return $number;
+}
+
+@function px-rem($size, $base: $base-font-size) {
+  $pxUnitless: strip-unit($size); 
+  @return #{$pxUnitless / $base}rem;
+}
+
+// .some-selector {
+//   font-size: F_px-rem(20);
+//   padding: F_px-rem(14) F_px-rem(32);
+// }

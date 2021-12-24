@@ -27,8 +27,12 @@ body {
   padding: 0;
 }
 
+main {
+  height: 6346px;
+}
+
 .section-1 {
-  height: 1000px;
+  height: 62.5rem;
   background: url(img/full-img-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -38,7 +42,7 @@ body {
 .header {
   width: auto;
   height: 145px;
-  padding: 50px 11%;
+  padding: 3.125rem 11%;
 }
 
 .header-logo {
@@ -46,6 +50,10 @@ body {
 }
 
 .menu {
+  float: right;
+  padding: 0;
+  width: 50%;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,23 +64,18 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  float: right;
-  width: 50%;
-  height: 30px;
-  padding-top: 19px;
   list-style: none;
-  padding: 0;
 }
 
 .menu li {
-  margin-left: 5.9%;
+  margin-left: 2.1875rem;
 }
 
 .menu li:hover {
-  border-top: #ff6033 solid 3px;
+  border-top: #ff6033 solid 0.1875rem;
   position: relative;
-  bottom: 12px;
-  padding-top: 9px;
+  bottom: 0.75rem;
+  padding-top: 0.5625rem;
 }
 
 .adaptive-menu {
@@ -120,7 +123,7 @@ body {
 .menu a,
 .adaptive-menu a {
   font-family: Raleway-Bold, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #262626;
@@ -129,13 +132,9 @@ body {
 
 .adaptive-menu a {
   color: #fff;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 60px;
   text-transform: capitalize;
-}
-
-#menu-2:focus {
-  background-color: greenyellow;
 }
 
 .button-burger-menu {
@@ -149,8 +148,7 @@ body {
   -webkit-transform: translateZ(1px);
   transform: translateZ(1px);
   overflow: hidden;
-  background-color: #ff6033;
-  opacity: 70%;
+  background: rgba(255, 96, 51, 0.7);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -209,26 +207,26 @@ body {
 }
 
 .section-1--title {
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   font-family: "Raleway-Heavy", sans-serif;
-  font-size: 60px;
+  font-size: 3.75rem;
   font-weight: 900;
   color: #262626;
 }
 
 .section-1--text {
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1.0625rem;
+  line-height: 1.5882;
   color: #262626;
 }
 
 .section-1--button {
-  margin-top: 20px;
-  width: 200px;
-  height: 55px;
+  margin-top: 1.25rem;
+  width: 12.5rem;
+  height: 3.4375rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #ff6033;
   border: solid 1px #ff6033;
@@ -245,7 +243,7 @@ body {
 }
 
 .section-1--button:hover {
-  font-size: 21px;
+  font-size: 1.3125rem;
   font-weight: 900;
   color: #000;
   background-color: #fd8766;
@@ -260,12 +258,11 @@ body {
   top: 890px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .icon-mouse {
     visibility: hidden;
   }
-}
-@media screen and (max-width: 850px) {
+
   .section-1 {
     height: 800px;
   }
@@ -291,7 +288,7 @@ body {
     right: 26%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .adaptive-menu {
     width: 50%;
   }
@@ -301,7 +298,7 @@ body {
             transform: translateX(100%);
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .adaptive-menu {
     width: 59%;
   }
@@ -311,7 +308,7 @@ body {
             transform: translateX(70%);
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .adaptive-menu {
     width: 68%;
   }
@@ -364,7 +361,7 @@ body {
   }
 }
 .section-2 {
-  height: 700px;
+  height: 43.75rem;
   background-color: #00bdbd;
 }
 
@@ -390,28 +387,27 @@ body {
 
 .section-2-Right-Side {
   float: right;
-  padding-left: 85px;
-  padding-right: 165px;
+  padding: 0 10.3125rem 0 5.3125rem;
   width: 50%;
   height: 100%;
 }
 
 .section-2--title {
-  margin: 180px 0 20px;
-  min-width: 395px;
+  margin: 11.25rem 0 1.25rem;
+  min-width: 24.6875rem;
   font-family: Raleway-Bold, sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   font-weight: 900;
-  line-height: 70px;
+  line-height: 0.7778;
   color: #fff;
 }
 
 .section-2--text {
-  min-width: 395px;
-  max-width: 500px;
+  min-width: 24.6875rem;
+  max-width: 31.25rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1.0625rem;
+  line-height: 1.5882;
   color: #fff;
 }
 

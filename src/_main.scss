@@ -8,8 +8,11 @@ body {
     margin: 0;
     padding: 0;
 }
+main {
+    height: 6346px;
+}
 .section-1 {
-    height: 1000px;
+    height: px-rem(1000px);
     background: url(img/full-img-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -18,32 +21,29 @@ body {
 .header {
     width: auto;
     height: 145px;
-    padding: 50px 11%;
-    // -webkit-overflow-scrolling: auto;
-    // overflow-y: scroll;
+    padding: 3.125rem 11%;
 }
 .header-logo {
     float: left;
 }
 .menu {
+    float: right;
+    padding: 0;
+    width: 50%;
+    height: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    float: right;
-    width: 50%;
-    height: 30px;
-    padding-top: 19px;
     list-style: none;
-    padding: 0;
 }
 .menu li {
-    margin-left: 5.9%;
+    margin-left: px-rem(35px);
 }
 .menu li:hover {
-    border-top: #ff6033 solid 3px;
+    border-top: #ff6033 solid px-rem(3px);
     position: relative;
-    bottom: 12px;
-    padding-top: 9px;
+    bottom: px-rem(12px);
+    padding-top: px-rem(9px);
 }
 .adaptive-menu {
     visibility: hidden;
@@ -74,7 +74,7 @@ body {
 .menu a,
 .adaptive-menu a {
     font-family: Raleway-Bold, sans-serif;
-    font-size: 16px;
+    font-size: px-rem(16px);
     text-decoration: none;
     text-transform: uppercase;
     color: #262626;
@@ -82,13 +82,14 @@ body {
 }
 .adaptive-menu a {
     color: #fff;
-    font-size: 26px;
+    font-size: 1.625rem; // 26px
     line-height: 60px;
     text-transform: capitalize;
 }
-#menu-2:focus {
-    background-color: greenyellow;
-}
+// Здесь были попытки включить отображение нажатия пункта меню на мобильных устройствах, т.е. аналог ховера. Попытки на данный момент успехом не увенчались, т.к. заставить данный селектор работать адекватно не получилось. Селектор работает только на ОДИН пункт меню, остальные пункты для него не существуют.
+// #menu-2:focus {
+//     background-color: greenyellow;
+// }
 .button-burger-menu {
     z-index: 10;
     display: none;
@@ -102,8 +103,7 @@ body {
     -o-transform: translateZ(1px);
     transform: translateZ(1px);
     overflow: hidden;
-    background-color: #ff6033;
-    opacity: 70%;
+    background: rgb(255, 96, 51, 0.7);
     transition: all 0.5s;
 }
 .button-burger-menu.active {
@@ -150,24 +150,24 @@ body {
     height: 257px;
 }
 .section-1--title {
-    margin: 0 0 20px;
+    margin: 0 0 px-rem(20px);
     font-family: "Raleway-Heavy", sans-serif;
-    font-size: 60px;
+    font-size: px-rem(60px);
     font-weight: 900;
     color: #262626;
 }
 .section-1--text {
     font-family: "Raleway-Light", sans-serif;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: px-rem(17px);
+    line-height: 1.5882; //27px
     color: #262626;
 }
 .section-1--button {
-    margin-top: 20px;
-    width: 200px;
-    height: 55px;
+    margin-top: px-rem(20px);
+    width: px-rem(200px);
+    height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 20px;
+    font-size: px-rem(20px);
     color: #fff;
     background-color: #ff6033;
     border: solid 1px #ff6033;
@@ -180,7 +180,7 @@ body {
     outline: none;
 }
 .section-1--button:hover {
-    font-size: 21px;
+    font-size: px-rem(21px);
     font-weight: 900;
     color: #000;
     background-color: #fd8766;
@@ -192,12 +192,10 @@ body {
     left: 49%;
     top: 890px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: px-rem(1000px)) {
     .icon-mouse {
         visibility: hidden;
     }
-}
-@media screen and (max-width: 850px) {
     .section-1 {
         height: 800px;
     }
@@ -219,7 +217,7 @@ body {
         right: 26%;
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: px-rem(700px)) {
     .adaptive-menu {
         width: 50%;
     }
@@ -227,7 +225,7 @@ body {
         transform: translateX(100%);
     }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: px-rem(550px)) {
     .adaptive-menu {
         width: 59%;
     }
@@ -235,7 +233,7 @@ body {
         transform: translateX(70%);
     }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: px-rem(450px)) {
     .adaptive-menu {
         width: 68%;
     }
@@ -284,7 +282,7 @@ body {
 //  section 2
 //
 .section-2 {
-    height: 700px;
+    height: px-rem(700px); // 700px / 6346px
     background-color: #00bdbd;
 }
 .section-2-Left-Side {
@@ -301,26 +299,26 @@ body {
 }
 .section-2-Right-Side {
     float: right;
-    padding-left: 85px;
-    padding-right: 165px;
+    padding: 0 px-rem(165px) 0 px-rem(85px);
     width: 50%;
     height: 100%;
 }
 .section-2--title {
-    margin: 180px 0 20px;
-    min-width: 395px;
+    margin: px-rem(180px) 0 px-rem(20px);
+    min-width: px-rem(395px);
+    // max-width: 20.7rem;
     font-family: Raleway-Bold, sans-serif;
-    font-size: 90px;
+    font-size: px-rem(90px);
     font-weight: 900;
-    line-height: 70px;
+    line-height: 0.7778;
     color: #fff;
 }
 .section-2--text {
-    min-width: 395px;
-    max-width: 500px;
+    min-width: px-rem(395px);
+    max-width: px-rem(500px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: px-rem(17px);
+    line-height: 1.5882;
     color: #fff;
 }
 @media screen and (max-width: 1150px) {
