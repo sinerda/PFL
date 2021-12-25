@@ -133,7 +133,7 @@ main {
 .adaptive-menu a {
   color: #fff;
   font-size: 1.625rem;
-  line-height: 60px;
+  line-height: 2.3077;
   text-transform: capitalize;
 }
 
@@ -160,9 +160,9 @@ main {
 }
 
 .button-burger-menu span {
+  position: absolute;
   width: 30px;
   height: 2px;
-  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

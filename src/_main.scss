@@ -82,8 +82,8 @@ main {
 }
 .adaptive-menu a {
     color: #fff;
-    font-size: 1.625rem; // 26px
-    line-height: 60px;
+    font-size: px-rem(26px);
+    line-height: 2.3077; // 60px
     text-transform: capitalize;
 }
 // Здесь были попытки включить отображение нажатия пункта меню на мобильных устройствах, т.е. аналог ховера. Попытки на данный момент успехом не увенчались, т.к. заставить данный селектор работать адекватно не получилось. Селектор работает только на ОДИН пункт меню, остальные пункты для него не существуют.
@@ -111,9 +111,9 @@ main {
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 .button-burger-menu span {
+    position: absolute;
     width: 30px;
     height: 2px;
-    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
