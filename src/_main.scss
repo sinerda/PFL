@@ -107,7 +107,7 @@ main {
     transition: all 0.5s;
 }
 .button-burger-menu.active {
-    opacity: 100%;
+    // opacity: 100%;
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
 .button-burger-menu span {
