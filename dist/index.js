@@ -14,7 +14,7 @@ for (let elem of link) {
   })
 }
 
-// Здесь мы меняем цвета при скролле кнопки бургер-меню и адаптивного меню
+// при скролле меняем цвета кнопки меню и адаптивного меню
 $(window).scroll(function () {
   if ($(window).width() < 850) {
     // верхняя точка экрана в данный момент
@@ -28,10 +28,9 @@ $(window).scroll(function () {
         TopSubscribe = $(".section-5").offset().top,
         TopGallery = $(".section-4").offset().top,
         TopServices = $('.section-3').offset().top,
-        TopAboutUs = $('.section-2').offset().top,
-        TopHome = $('.section-1').offset().top;
+        TopAboutUs = $('.section-2').offset().top;
     //
-    // CSS celectors
+    // Name of CSS celectors
     const Button = $(".button-burger-menu"),
           ButtonActive = $(".button-burger-menu.active"),
           Button_span = $(".button-burger-menu span"),
