@@ -1,0 +1,210 @@
+.section-6 {
+    height: 860px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #b07cf7;
+}
+.section-6--title {
+    margin-top: -90px;
+    margin-bottom: 20px;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 90px;
+    color: #fff;
+}
+
+.section-6--text {
+    width: 570px;
+    margin-bottom: 40px;
+    font-family: "Raleway-Light", sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.section-6--wrapper-for-cards {
+    width: 1170px;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    width: 370px;
+    height: 310px;
+    transform: scale(1);
+    box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 3px 12px 3px rgba(83, 83, 83, 0.6);
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+.card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: " ";
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 90%) 0%,
+        rgb(0 0 0 / 0%) 40%
+    );
+}
+#card-1 {
+    background: url(img/section-6-img1.jpg);
+}
+#card-2 {
+    background: url(img/section-6-img2.jpg);
+    background-position-x: -10px;
+    background-position-y: -170px;
+}
+#card-3 {
+    background: url(img/section-6-img3.jpg);
+    background-position-x: -62px;
+    background-position-y: -9px;
+}
+
+.card-wrap-date {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #90908e;
+    border-radius: 8px;
+    cursor: default;
+}
+
+.card-date {
+    margin: 0;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 32px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card-date-month {
+    font-family: "Raleway-Heavy", sans-serif;
+    font-size: 21px;
+}
+
+.card-title {
+    position: relative;
+    top: 127px;
+    left: 20px;
+    width: 330px;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    cursor: default;
+}
+.card-author {
+    position: relative;
+    top: 122px;
+    left: 20px;
+    font-family: "Raleway-Light", sans-serif;
+    font-size: 13px;
+    color: #fff;
+    cursor: default;
+}
+
+.section-6--button {
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 55px;
+    font-family: "Raleway-Light", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f72b3b;
+    border: solid 1px #f72b3b;
+    cursor: pointer;
+    transition: 0.7s ease;
+    box-shadow: 0px 3px 8px -1px rgba(83, 83, 83, 1);
+}
+.section-6--button:active,
+.section-6--button:focus {
+    outline: none;
+}
+.section-6--button:hover {
+    // font-size: 21px;
+    font-weight: 900;
+    color: #000;
+    background-color: #fc818c;
+    border: solid 1px #fc818c;
+    transition: all 0.7s;
+}
+@media screen and (max-width: 1250px) {
+    .section-6--wrapper-for-cards {
+        width: 92%;
+    }
+    .card {
+        width: 31.4%;
+    }
+    .card-title {
+        width: 89%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-6 {
+        height: 1200px;
+    }
+    .section-6--wrapper-for-cards {
+        width: 780px;
+        height: 680px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .section-6 {
+        height: 1649px;
+    }
+    .section-6--text {
+        width: 530px;
+        margin-bottom: 60px;
+    }
+    .section-6--wrapper-for-cards {
+        width: 542px;
+        height: 1042px;
+    }
+    .card {
+        width: 370px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .section-6--title {
+        font-size: 80px;
+    }
+    .section-6--text {
+        width: 380px;
+    }
+    .section-6--wrapper-for-cards {
+        width: 100%;
+    }
+    .card-author {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section-6--text {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .card {
+        width: 320px;
+    }
+}

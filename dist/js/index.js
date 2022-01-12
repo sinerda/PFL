@@ -140,6 +140,7 @@ $(window).scroll(function () {
 })
 
 
+// Стилизация ошибки валидации форм ПОСЛЕ нажатия Submit
 $('[type="submit"]').on('click', function () {
     // this adds 'required' class to all the required inputs under the same <form> as the submit button
     $(this)

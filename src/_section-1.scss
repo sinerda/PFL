@@ -1,0 +1,267 @@
+.section-1 {
+    height: px-rem(1000px);
+    background: url(img/full-img-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    width: auto;
+    height: 145px;
+    padding: 3.125rem 11%;
+}
+.header-logo {
+    float: left;
+}
+.menu {
+    float: right;
+    padding: 0;
+    width: 50%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+}
+.menu li {
+    margin-left: px-rem(35px);
+}
+.menu li:hover {
+    border-top: #ff6033 solid px-rem(3px);
+    position: relative;
+    bottom: px-rem(12px);
+    padding-top: px-rem(9px);
+}
+.adaptive-menu {
+    visibility: hidden;
+    z-index: 10;
+    position: fixed;
+    top: -24px;
+    left: 0;
+    right: 0;
+    height: 105vh;
+    width: 40%;
+    padding: 5.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+    background-color: #ff6033;
+    box-shadow: -6px -1px 10px 0px rgb(0 0 0 / 40%);
+    transform: translateX(260%);
+    opacity: 20%;
+    transition: all 0.65s linear;
+}
+.adaptive-menu.active {
+    opacity: 96%;
+    transform: translateX(150%);
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.menu a,
+.adaptive-menu a {
+    font-family: Raleway-Bold, sans-serif;
+    font-size: px-rem(16px);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    -webkit-tap-highlight-color: transparent;
+}
+.adaptive-menu a {
+    color: #fff;
+    font-size: px-rem(26px);
+    line-height: 2.3077; // 60px
+    text-transform: capitalize;
+}
+// Здесь были попытки включить отображение нажатия пункта меню на мобильных устройствах, т.е. аналог ховера. Попытки на данный момент успехом не увенчались, т.к. заставить данный селектор работать адекватно не получилось. Селектор работает только на ОДИН пункт меню, остальные пункты для него не существуют.
+// #menu-2:focus {
+//     background-color: greenyellow;
+// }
+.button-burger-menu {
+    z-index: 10;
+    display: none;
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    right: 11%;
+    top: 50px;
+    -webkit-transform: translateZ(1px);
+    -moz-transform: translateZ(1px);
+    -o-transform: translateZ(1px);
+    transform: translateZ(1px);
+    overflow: hidden;
+    background: rgb(255, 96, 51, 0.7);
+    transition: all 0.5s;
+}
+.button-burger-menu.active {
+    // opacity: 100%;
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+.button-burger-menu span {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    transition: all 0.5s;
+}
+.button-burger-menu span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+.button-burger-menu span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+//  menu open
+.button-burger-menu.active span:nth-of-type(1) {
+    opacity: 10%;
+    transform: translate(-200%);
+}
+.button-burger-menu.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+.button-burger-menu.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+//
+//  section-1
+//
+.section-1--content {
+    position: relative;
+    left: 11%;
+    top: 200px;
+    width: 370px;
+    height: 257px;
+}
+.section-1--title {
+    margin: 0 0 px-rem(20px);
+    font-family: "Raleway-Heavy", sans-serif;
+    font-size: px-rem(60px);
+    font-weight: 900;
+    color: #262626;
+}
+.section-1--text {
+    font-family: "Raleway-Light", sans-serif;
+    font-size: px-rem(17px);
+    line-height: 1.5882; //27px
+    color: #262626;
+}
+.section-1--button {
+    margin-top: px-rem(20px);
+    width: px-rem(200px);
+    height: px-rem(55px);
+    font-family: "Raleway-Light", sans-serif;
+    font-size: px-rem(20px);
+    color: #fff;
+    background-color: #ff6033;
+    border: solid 1px #ff6033;
+    cursor: pointer;
+    transition: 0.7s ease;
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.section-1--button:active,
+.section-1--button:focus {
+    outline: none;
+}
+.section-1--button:hover {
+    // font-size: px-rem(21px);
+    font-weight: 900;
+    color: #000;
+    background-color: #fd8766;
+    border: solid 1px #fd8766;
+    transition: all 0.7s;
+}
+.icon-mouse {
+    position: absolute;
+    left: 49%;
+    top: 890px;
+}
+@media screen and (max-width: px-rem(1000px)) {
+    .icon-mouse {
+        visibility: hidden;
+    }
+    .section-1 {
+        height: 800px;
+    }
+    .menu {
+        display: none;
+    }
+    .adaptive-menu {
+        visibility: visible;
+    }
+    .button-burger-menu {
+        display: block;
+    }
+    .button-burger-menu.active {
+        right: 5.5%;
+    }
+}
+@media screen and (max-height: 570px) {
+    .button-burger-menu.active {
+        right: 26%;
+    }
+}
+@media screen and (max-width: px-rem(700px)) {
+    .adaptive-menu {
+        width: 50%;
+    }
+    .adaptive-menu.active {
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width: px-rem(550px)) {
+    .adaptive-menu {
+        width: 59%;
+    }
+    .adaptive-menu.active {
+        transform: translateX(70%);
+    }
+}
+@media screen and (max-width: px-rem(450px)) {
+    .adaptive-menu {
+        width: 68%;
+    }
+    .adaptive-menu.active {
+        transform: translateX(47%);
+    }
+    .section-1--content {
+        width: 270px;
+    }
+    .section-1--title {
+        width: 270px;
+        margin-right: 0;
+        font-size: 50px;
+    }
+    .section-1--text {
+        width: 270px;
+    }
+}
+@media screen and (max-height: 450px) {
+    .adaptive-menu a {
+        line-height: 55px;
+    }
+    .button-burger-menu.active {
+        top: 6%;
+    }
+}
+@media screen and (max-height: 400px) {
+    .adaptive-menu a {
+        line-height: 50px;
+    }
+}
+@media screen and (max-height: 350px) {
+    .adaptive-menu a {
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 330px) and (max-height: 550px) {
+    .adaptive-menu a {
+        line-height: 30px;
+    }
+    .button-burger-menu.active {
+        right: 38%;
+    }
+}

@@ -1,0 +1,102 @@
+.section-4 {
+    height: 1536px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe92f;
+}
+.section-4--content {
+    position: relative;
+    top: 100px;
+    width: 600px;
+    margin: 0 auto;
+}
+.section-4--title {
+    margin: 0;
+    font-family: Raleway-Bold, sans-serif;
+    font-size: 90px;
+    color: #262626;
+    text-align: center;
+}
+.section-4--text {
+    width: 590px;
+    font-family: "Raleway-Light", sans-serif;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+    color: #262626;
+}
+.gallery {
+    position: relative;
+    top: 145px;
+    width: 78%;
+    height: 990px;
+    background-color: #dbffff;
+}
+.gallery-img {
+    position: relative;
+    display: inline-block;
+}
+#gal-img-1 {
+    width: 65.8%;
+}
+#gal-img-2 {
+    width: 31.6%;
+}
+#gal-img-3 {
+    width: 31.6%;
+}
+#gal-img-4 {
+    width: 48.7%;
+}
+#gal-img-5 {
+    width: 48.7%;
+}
+.section-4--button {
+    position: relative;
+    top: 196px;
+    width: 200px;
+    height: 55px;
+    font-family: "Raleway-Light", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    background-color: #5585a2;
+    border: solid 1px #5585a2;
+    cursor: pointer;
+    transition: 0.7s ease;
+    -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.section-4--button:active,
+.section-4--button:focus {
+    outline: none;
+}
+.section-4--button:hover {
+    // font-size: 21px;
+    font-weight: 900;
+    color: #000;
+    background-color: #7abde7;
+    border: solid 1px #7abde7;
+    transition: all 0.7s;
+}
+@media screen and (max-width: 700px) {
+    .section-4--content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-4--text {
+        width: 85%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .section-4 {
+        height: 1550px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section-4--title {
+        font-size: 70px;
+    }
+}
