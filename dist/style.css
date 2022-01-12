@@ -242,7 +242,6 @@ main {
 }
 
 .section-1--button:hover {
-  font-size: 1.3125rem;
   font-weight: 900;
   color: #000;
   background-color: #fd8766;
@@ -956,7 +955,6 @@ main {
 }
 
 .section-4--button:hover {
-  font-size: 21px;
   font-weight: 900;
   color: #000;
   background-color: #7abde7;
@@ -1044,6 +1042,17 @@ main {
   outline: 0;
 }
 
+.section-5--input:valid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.section-5--input.required:invalid {
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
 .section-5--submit {
   position: relative;
   margin-left: 3.3%;
@@ -1067,7 +1076,6 @@ main {
 }
 
 .section-5--submit:hover {
-  font-size: 21px;
   font-weight: 900;
   color: #000;
   background-color: #c3e267;
@@ -1331,7 +1339,6 @@ main {
 }
 
 .section-6--button:hover {
-  font-size: 21px;
   font-weight: 900;
   color: #000;
   background-color: #fc818c;
@@ -1488,6 +1495,12 @@ main {
   opacity: 100%;
 }
 
+.section-7--input-text.required:invalid {
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
 .section-7--input-text::-webkit-input-placeholder {
   color: #fff;
 }
@@ -1515,6 +1528,12 @@ main {
   resize: none;
 }
 
+.text-area.required:invalid {
+  border: none;
+  -webkit-box-shadow: 0 0 5px 1px red;
+          box-shadow: 0 0 5px 1px red;
+}
+
 .section-7--submit {
   float: right;
   position: relative;
@@ -1539,7 +1558,6 @@ main {
 }
 
 .section-7--submit:hover {
-  font-size: 21px;
   font-weight: 900;
   color: #b4b4b4;
   background-color: #505050;

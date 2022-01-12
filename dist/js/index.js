@@ -117,7 +117,7 @@ $(window).scroll(function () {
       Menu_a.css("color", "#fff");
     }
 
-    // Попытки развернуть алгоритм задом наперёд, чтобы визуально он выглядел более логично. Попытки на данный момент не увенчались успехом
+    // Попытки развернуть алгоритм задом наперёд, чтобы визуально (в коде) он выглядел более логично. Попытки на данный момент не увенчались успехом
     // if (wScroll < wHeight) {
     //   Button.css("background-color", cButtonHome);
     //   Button_span.css("background-color", "#fff");
@@ -140,6 +140,13 @@ $(window).scroll(function () {
 })
 
 
+$('[type="submit"]').on('click', function () {
+    // this adds 'required' class to all the required inputs under the same <form> as the submit button
+    $(this)
+        .closest('form')
+        .find('[required]')
+        .addClass('required');
+});
 
 // jQuery(function($){
 //   $(document).mouseup(function (e){ // событие клика по веб-документу
