@@ -4,6 +4,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        height: 800px;
+    }
 }
 .header {
     width: auto;
@@ -22,6 +26,10 @@
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        display: none;
+    }
 }
 .menu li {
     margin-left: px-rem(35px);
@@ -52,11 +60,34 @@
     transform: translateX(260%);
     opacity: 20%;
     transition: all 0.65s linear;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        visibility: visible;
+    }
+    @media screen and (max-width: px-rem(700px)) {
+        width: 50%;
+    }
+    @media screen and (max-width: px-rem(550px)) {
+        width: 59%;
+    }
+    @media screen and (max-width: px-rem(450px)) {
+        width: 68%;
+    }
 }
 .adaptive-menu.active {
     opacity: 96%;
     transform: translateX(150%);
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+
+    @media screen and (max-width: px-rem(700px)) {
+        transform: translateX(100%);
+    }
+    @media screen and (max-width: px-rem(550px)) {
+        transform: translateX(70%);
+    }
+    @media screen and (max-width: px-rem(450px)) {
+        transform: translateX(47%);
+    }
 }
 .menu a,
 .adaptive-menu a {
@@ -72,6 +103,19 @@
     font-size: px-rem(26px);
     line-height: 2.3077; // 60px
     text-transform: capitalize;
+
+    @media screen and (max-height: 450px) {
+        line-height: 55px;
+    }
+    @media screen and (max-height: 400px) {
+        line-height: 50px;
+    }
+    @media screen and (max-height: 350px) {
+        line-height: 40px;
+    }
+    @media screen and (max-width: 330px) and (max-height: 550px) {
+        line-height: 30px;
+    }
 }
 // Здесь были попытки включить отображение нажатия пункта меню на мобильных устройствах, т.е. аналог ховера. Попытки на данный момент успехом не увенчались, т.к. заставить данный селектор работать адекватно не получилось. Селектор работает только на ОДИН пункт меню, остальные пункты для него не существуют.
 // #menu-2:focus {
@@ -92,10 +136,27 @@
     overflow: hidden;
     background: rgb(255, 96, 51, 0.7);
     transition: all 0.5s;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        display: block;
+    }
 }
 .button-burger-menu.active {
     // opacity: 100%;
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+
+    @media screen and (max-width: px-rem(1000px)) {
+        right: 5.5%;
+    }
+    @media screen and (max-height: 570px) {
+        right: 26%;
+    }
+    @media screen and (max-height: 450px) {
+        top: 6%;
+    }
+    @media screen and (max-width: 330px) and (max-height: 550px) {
+        right: 38%;
+    }
 }
 .button-burger-menu span {
     position: absolute;
@@ -135,6 +196,10 @@
     top: 200px;
     width: 370px;
     height: 257px;
+
+    @media screen and (max-width: px-rem(450px)) {
+        width: 270px;
+    }
 }
 .section-1--title {
     margin: 0 0 px-rem(20px);
@@ -142,12 +207,22 @@
     font-size: px-rem(60px);
     font-weight: 900;
     color: #262626;
+
+    @media screen and (max-width: px-rem(450px)) {
+        width: 270px;
+        margin-right: 0;
+        font-size: 50px;
+    }
 }
 .section-1--text {
     font-family: "Raleway-Light", sans-serif;
     font-size: px-rem(17px);
     line-height: 1.5882; //27px
     color: #262626;
+
+    @media screen and (max-width: px-rem(450px)) {
+        width: 270px;
+    }
 }
 .section-1--button {
     margin-top: px-rem(20px);
@@ -178,90 +253,8 @@
     position: absolute;
     left: 49%;
     top: 890px;
-}
-@media screen and (max-width: px-rem(1000px)) {
-    .icon-mouse {
+
+    @media screen and (max-width: px-rem(1000px)) {
         visibility: hidden;
-    }
-    .section-1 {
-        height: 800px;
-    }
-    .menu {
-        display: none;
-    }
-    .adaptive-menu {
-        visibility: visible;
-    }
-    .button-burger-menu {
-        display: block;
-    }
-    .button-burger-menu.active {
-        right: 5.5%;
-    }
-}
-@media screen and (max-height: 570px) {
-    .button-burger-menu.active {
-        right: 26%;
-    }
-}
-@media screen and (max-width: px-rem(700px)) {
-    .adaptive-menu {
-        width: 50%;
-    }
-    .adaptive-menu.active {
-        transform: translateX(100%);
-    }
-}
-@media screen and (max-width: px-rem(550px)) {
-    .adaptive-menu {
-        width: 59%;
-    }
-    .adaptive-menu.active {
-        transform: translateX(70%);
-    }
-}
-@media screen and (max-width: px-rem(450px)) {
-    .adaptive-menu {
-        width: 68%;
-    }
-    .adaptive-menu.active {
-        transform: translateX(47%);
-    }
-    .section-1--content {
-        width: 270px;
-    }
-    .section-1--title {
-        width: 270px;
-        margin-right: 0;
-        font-size: 50px;
-    }
-    .section-1--text {
-        width: 270px;
-    }
-}
-@media screen and (max-height: 450px) {
-    .adaptive-menu a {
-        line-height: 55px;
-    }
-    .button-burger-menu.active {
-        top: 6%;
-    }
-}
-@media screen and (max-height: 400px) {
-    .adaptive-menu a {
-        line-height: 50px;
-    }
-}
-@media screen and (max-height: 350px) {
-    .adaptive-menu a {
-        line-height: 40px;
-    }
-}
-@media screen and (max-width: 330px) and (max-height: 550px) {
-    .adaptive-menu a {
-        line-height: 30px;
-    }
-    .button-burger-menu.active {
-        right: 38%;
     }
 }

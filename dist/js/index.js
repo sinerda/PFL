@@ -16,7 +16,7 @@ for (let elem of link) {
 
 // при скролле меняем цвета кнопки меню и адаптивного меню
 $(window).scroll(function () {
-  if ($(window).width() < 850) {
+  if ($(window).width() < 1001) {
     // верхняя точка экрана в данный момент
     let wScroll = $(this).scrollTop();
     // высота вьюпорта

@@ -5,13 +5,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: 800px) {
+        height: 770px;
+        background-position: right;
+        background-position-y: 250px;
+        background-size: auto;
+    }
+    @media screen and (max-width: 600px) {
+        height: 900px;
+        background-position-y: 350px;
+    }
 }
 .section-5--content {
     position: relative;
     top: 140px;
     width: 68%;
     height: 210px;
-    // background-color: hotpink;
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+    @media screen and (max-width: 800px) {
+        top: 100px;
+        width: 95%;
+    }
 }
 .section-5--title {
     margin: 0;
@@ -20,6 +38,10 @@
     font-size: 40px;
     color: #262626;
     text-align: left;
+
+    @media screen and (max-width: 600px) {
+        font-size: 35px;
+    }
 }
 .section-5--text {
     margin: 30px 0;
@@ -29,6 +51,30 @@
     line-height: 27px;
     font-weight: 600;
     color: #262626;
+
+    @media screen and (max-width: 950px) {
+        margin: 30px 0;
+        width: 500px;
+    }
+    @media screen and (max-width: 800px) {
+        width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+.section-5--form {
+    @media screen and (max-width: 700px) {
+        position: relative;
+        top: 10px;
+    }
+    @media screen and (max-width: 600px) {
+        height: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 .section-5--input {
     width: 63%;
@@ -38,6 +84,16 @@
     line-height: 27px;
     color: #262626;
     border: 1px solid #262626;
+
+    @media screen and (max-width: 800px) {
+        width: 60%;
+    }
+    @media screen and (max-width: 700px) {
+        width: 60%;
+    }
+    @media screen and (max-width: 600px) {
+        width: 170px;
+    }
 }
 .section-5--input:focus,
 .section-5--input:active {
@@ -64,6 +120,13 @@
     transition: 0.7s ease;
     -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+
+    @media screen and (max-width: 700px) {
+        margin-left: 3.3%;
+    }
+    @media screen and (max-width: 600px) {
+        margin-left: 0;
+    }
 }
 .section-5--submit:active,
 .section-5--submit:focus {
@@ -76,70 +139,4 @@
     background-color: #c3e267;
     border: solid 1px #c3e267;
     transition: all 0.7s;
-}
-@media screen and (max-width: 1000px) {
-    .section-5--content {
-        width: 90%;
-    }
-}
-@media screen and (max-width: 950px) {
-    .section-5--text {
-        margin: 30px 0;
-        width: 500px;
-    }
-}
-@media screen and (max-width: 800px) {
-    .section-5 {
-        height: 770px;
-        background-position: right;
-        background-position-y: 250px;
-        background-size: auto;
-    }
-    .section-5--content {
-        top: 100px;
-        width: 95%;
-    }
-    .section-5--text {
-        width: 80%;
-    }
-    .section-5--input {
-        width: 60%;
-    }
-}
-@media screen and (max-width: 700px) {
-    .section-5--form {
-        position: relative;
-        top: 10px;
-    }
-    .section-5--input {
-        width: 60%;
-    }
-    .section-5--submit {
-        margin-left: 3.3%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .section-5 {
-        height: 900px;
-        background-position-y: 350px;
-    }
-    .section-5--title {
-        font-size: 35px;
-    }
-    .section-5--text {
-        width: 100%;
-    }
-    .section-5--form {
-        height: 130px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .section-5--input {
-        width: 170px;
-    }
-    .section-5--submit {
-        margin-left: 0;
-    }
 }

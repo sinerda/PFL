@@ -6,6 +6,13 @@
     align-content: center;
     align-items: center;
     background-color: #b07cf7;
+
+    @media screen and (max-width: 1000px) {
+        height: 1200px;
+    }
+    @media screen and (max-width: 800px) {
+        height: 1649px;
+    }
 }
 .section-6--title {
     margin-top: -90px;
@@ -13,6 +20,10 @@
     font-family: "Raleway-Bold", sans-serif;
     font-size: 90px;
     color: #fff;
+
+    @media screen and (max-width: 550px) {
+        font-size: 80px;
+    }
 }
 
 .section-6--text {
@@ -23,6 +34,17 @@
     line-height: 25px;
     text-align: center;
     color: #fff;
+
+    @media screen and (max-width: 800px) {
+        width: 530px;
+        margin-bottom: 60px;
+    }
+    @media screen and (max-width: 550px) {
+        width: 380px;
+    }
+    @media screen and (max-width: 450px) {
+        width: 85%;
+    }
 }
 
 .section-6--wrapper-for-cards {
@@ -30,6 +52,23 @@
     height: 310px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 1250px) {
+        width: 92%;
+    }
+    @media screen and (max-width: 1000px) {
+        width: 780px;
+        height: 680px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: 800px) {
+        width: 542px;
+        height: 1042px;
+    }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
 }
 .card {
     width: 370px;
@@ -37,6 +76,19 @@
     transform: scale(1);
     box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
     transition: box-shadow 0.5s, transform 0.5s;
+
+    @media screen and (max-width: 1250px) {
+        width: 31.4%;
+    }
+    @media screen and (max-width: 1000px) {
+        width: 45%;
+    }
+    @media screen and (max-width: 800px) {
+        width: 370px;
+    }
+    @media screen and (max-width: 400px) {
+        width: 320px;
+    }
 }
 .card:hover {
     transform: scale(1.04);
@@ -106,6 +158,10 @@
     line-height: 25px;
     color: #fff;
     cursor: default;
+
+    @media screen and (max-width: 1250px) {
+        width: 89%;
+    }
 }
 .card-author {
     position: relative;
@@ -115,6 +171,10 @@
     font-size: 13px;
     color: #fff;
     cursor: default;
+
+    @media screen and (max-width: 550px) {
+        width: 250px;
+    }
 }
 
 .section-6--button {
@@ -142,69 +202,4 @@
     background-color: #fc818c;
     border: solid 1px #fc818c;
     transition: all 0.7s;
-}
-@media screen and (max-width: 1250px) {
-    .section-6--wrapper-for-cards {
-        width: 92%;
-    }
-    .card {
-        width: 31.4%;
-    }
-    .card-title {
-        width: 89%;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .section-6 {
-        height: 1200px;
-    }
-    .section-6--wrapper-for-cards {
-        width: 780px;
-        height: 680px;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .card {
-        width: 45%;
-    }
-}
-@media screen and (max-width: 800px) {
-    .section-6 {
-        height: 1649px;
-    }
-    .section-6--text {
-        width: 530px;
-        margin-bottom: 60px;
-    }
-    .section-6--wrapper-for-cards {
-        width: 542px;
-        height: 1042px;
-    }
-    .card {
-        width: 370px;
-    }
-}
-@media screen and (max-width: 550px) {
-    .section-6--title {
-        font-size: 80px;
-    }
-    .section-6--text {
-        width: 380px;
-    }
-    .section-6--wrapper-for-cards {
-        width: 100%;
-    }
-    .card-author {
-        width: 250px;
-    }
-}
-@media screen and (max-width: 450px) {
-    .section-6--text {
-        width: 85%;
-    }
-}
-@media screen and (max-width: 400px) {
-    .card {
-        width: 320px;
-    }
 }
