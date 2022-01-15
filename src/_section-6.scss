@@ -1,5 +1,5 @@
 .section-6 {
-    height: 860px;
+    height: px-rem(860px);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -7,87 +7,91 @@
     align-items: center;
     background-color: #b07cf7;
 
-    @media screen and (max-width: 1000px) {
-        height: 1200px;
+    @media screen and (max-width: px-rem(1000px)) {
+        height: px-rem(1200px);
     }
-    @media screen and (max-width: 800px) {
-        height: 1649px;
+    @media screen and (max-width: px-rem(800px)) {
+        height: px-rem(1649px);
     }
 }
 .section-6--title {
-    margin-top: -90px;
-    margin-bottom: 20px;
+    margin-top: px-rem(-90px);
+    margin-bottom: px-rem(20px);
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 90px;
+    font-size: px-rem(90px);
     color: #fff;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 550px) {
-        font-size: 80px;
+    @media screen and (max-width: px-rem(550px)) {
+        font-size: px-rem(80px);
     }
 }
 
 .section-6--text {
-    width: 570px;
-    margin-bottom: 40px;
+    width: px-rem(570px);
+    margin-bottom: px-rem(40px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: px-rem(17px);
+    line-height: 1.4706;
     text-align: center;
     color: #fff;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 800px) {
-        width: 530px;
-        margin-bottom: 60px;
+    @media screen and (max-width: px-rem(800px)) {
+        width: px-rem(530px);
+        margin-bottom: px-rem(60px);
     }
-    @media screen and (max-width: 550px) {
-        width: 380px;
+    @media screen and (max-width: px-rem(550px)) {
+        width: px-rem(380px);
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: px-rem(450px)) {
         width: 85%;
     }
 }
 
 .section-6--wrapper-for-cards {
-    width: 1170px;
-    height: 310px;
+    width: px-rem(1170px);
+    height: px-rem(310px);
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: px-rem(1250px)) {
         width: 92%;
     }
-    @media screen and (max-width: 1000px) {
-        width: 780px;
-        height: 680px;
+    @media screen and (max-width: px-rem(1000px)) {
+        width: px-rem(780px);
+        height: px-rem(680px);
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-    @media screen and (max-width: 800px) {
-        width: 542px;
-        height: 1042px;
+    @media screen and (max-width: px-rem(800px)) {
+        width: px-rem(542px);
+        height: px-rem(1042px);
     }
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: px-rem(550px)) {
         width: 100%;
     }
 }
 .card {
-    width: 370px;
-    height: 310px;
+    width: px-rem(370px);
+    height: px-rem(310px);
     transform: scale(1);
     box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
     transition: box-shadow 0.5s, transform 0.5s;
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: px-rem(1250px)) {
         width: 31.4%;
     }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: px-rem(1000px)) {
         width: 45%;
     }
-    @media screen and (max-width: 800px) {
-        width: 370px;
+    @media screen and (max-width: px-rem(800px)) {
+        width: px-rem(370px);
     }
-    @media screen and (max-width: 400px) {
-        width: 320px;
+    @media screen and (max-width: px-rem(400px)) {
+        width: px-rem(320px);
     }
 }
 .card:hover {
@@ -113,81 +117,85 @@
 }
 #card-2 {
     background: url(img/section-6-img2.jpg);
-    background-position-x: -10px;
-    background-position-y: -170px;
+    background-position-x: px-rem(-10px);
+    background-position-y: px-rem(-170px);
 }
 #card-3 {
     background: url(img/section-6-img3.jpg);
-    background-position-x: -62px;
-    background-position-y: -9px;
+    background-position-x: px-rem(-62px);
+    background-position-y: px-rem(-9px);
 }
 
 .card-wrap-date {
     position: relative;
-    top: 30px;
-    left: 30px;
-    width: 60px;
-    height: 60px;
+    top: px-rem(30px);
+    left: px-rem(30px);
+    width: px-rem(60px);
+    height: px-rem(60px);
     text-align: center;
     background-color: #90908e;
-    border-radius: 8px;
+    border-radius: px-rem(8px);
     cursor: default;
+    user-select: none;
 }
 
 .card-date {
     margin: 0;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 32px;
-    line-height: 28px;
+    font-size: px-rem(32px);
+    line-height: 0.875;
     text-transform: uppercase;
     color: #fff;
 }
 
 .card-date-month {
     font-family: "Raleway-Heavy", sans-serif;
-    font-size: 21px;
+    font-size: px-rem(21px);
 }
 
 .card-title {
     position: relative;
-    top: 127px;
-    left: 20px;
-    width: 330px;
+    top: px-rem(127px);
+    left: px-rem(20px);
+    width: px-rem(330px);
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: px-rem(20px);
+    line-height: 1.25;
     color: #fff;
     cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 1250px) {
+    @media screen and (max-width: px-rem(1250px)) {
         width: 89%;
     }
 }
 .card-author {
     position: relative;
-    top: 122px;
-    left: 20px;
+    top: px-rem(122px);
+    left: px-rem(20px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 13px;
+    font-size: px-rem(13px);
     color: #fff;
     cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 550px) {
-        width: 250px;
+    @media screen and (max-width: px-rem(550px)) {
+        width: px-rem(250px);
     }
 }
 
 .section-6--button {
     position: relative;
-    top: 50px;
-    width: 200px;
-    height: 55px;
+    top: px-rem(50px);
+    width: px-rem(200px);
+    height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 20px;
+    font-size: px-rem(20px);
     color: #fff;
     background-color: #f72b3b;
     border: solid 1px #f72b3b;
     cursor: pointer;
+    user-select: none;
     transition: 0.7s ease;
     box-shadow: 0px 3px 8px -1px rgba(83, 83, 83, 1);
 }

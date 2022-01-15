@@ -32,6 +32,7 @@ main {
 }
 
 .section-1 {
+  position: relative;
   height: 62.5rem;
   background: url(img/full-img-1.jpg);
   background-repeat: no-repeat;
@@ -40,7 +41,7 @@ main {
 }
 @media screen and (max-width: 62.5rem) {
   .section-1 {
-    height: 800px;
+    height: 50rem;
   }
 }
 
@@ -52,6 +53,10 @@ main {
 
 .header-logo {
   float: left;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .menu {
@@ -70,6 +75,10 @@ main {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 62.5rem) {
   .menu {
@@ -309,6 +318,11 @@ main {
   font-size: 3.75rem;
   font-weight: 900;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 28.125rem) {
   .section-1--title {
@@ -323,6 +337,11 @@ main {
   font-size: 1.0625rem;
   line-height: 1.5882;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 28.125rem) {
   .section-1--text {
@@ -340,6 +359,10 @@ main {
   background-color: #ff6033;
   border: solid 1px #ff6033;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
@@ -363,7 +386,11 @@ main {
 .icon-mouse {
   position: absolute;
   left: 49%;
-  top: 890px;
+  top: 55.625rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 62.5rem) {
   .icon-mouse {
@@ -375,29 +402,29 @@ main {
   height: 43.75rem;
   background-color: #00bdbd;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .section-2 {
-    height: 1020px;
+    height: 63.75rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-2 {
-    height: 970px;
+    height: 60.625rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-2 {
-    height: 890px;
+    height: 55.625rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-2 {
-    height: 950px;
+    height: 59.375rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-2 {
-    height: 1000px;
+    height: 62.5rem;
   }
 }
 
@@ -415,58 +442,60 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .section-2-Left-Side {
     float: none;
     position: relative;
-    top: 450px;
+    top: 28.125rem;
     width: 100%;
-    height: 400px;
+    height: 25rem;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-2-Left-Side {
-    top: 395px;
+    top: 24.6875rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-2-Left-Side {
-    top: 465px;
+    top: 29.0625rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-2-Left-Side {
-    top: 545px;
+    top: 34.0625rem;
   }
 }
 
 .section-2--image {
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .section-2--image {
-    width: 600px;
-    height: 600px;
     z-index: 5;
     position: relative;
-    right: 50px;
-    top: 50px;
+    right: 3.125rem;
+    top: 3.125rem;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-2--image {
-    width: 500px;
-    height: 500px;
+    width: 31.25rem;
+    height: 31.25rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-2--image {
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
   }
 }
 
@@ -476,14 +505,14 @@ main {
   width: 50%;
   height: 100%;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .section-2-Right-Side {
     float: none;
     padding-left: 11%;
     width: 100%;
-    height: 310px;
+    height: 19.375rem;
     position: relative;
-    bottom: 400px;
+    bottom: 25rem;
   }
 }
 
@@ -495,33 +524,38 @@ main {
   font-weight: 900;
   line-height: 0.7778;
   color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 71.875rem) {
   .section-2--title {
-    margin: 100px 0 20px;
+    margin: 6.25rem 0 1.25rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-2--title {
-    margin: 60px 0 20px;
-    min-width: 310px;
-    font-size: 70px;
+    margin: 3.75rem 0 1.25rem;
+    min-width: 19.375rem;
+    font-size: 4.375rem;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-2--title {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-2--title {
-    min-width: 265px;
+    min-width: 16.5625rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-2--title {
-    min-width: 230px;
-    font-size: 40px;
+    min-width: 14.375rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -532,58 +566,63 @@ main {
   font-size: 1.0625rem;
   line-height: 1.5882;
   color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-2--text {
-    min-width: 360px;
+    min-width: 22.5rem;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-2--text {
-    min-width: 300px;
+    min-width: 18.75rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-2--text {
-    width: 270px;
+    width: 16.875rem;
     min-width: -webkit-min-content;
     min-width: -moz-min-content;
     min-width: min-content;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-2--text {
-    width: 230px;
+    width: 14.375rem;
   }
 }
 
 .section-3 {
-  height: 790px;
+  height: 49.375rem;
   background-color: #70bfff;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .section-3 {
-    height: 690px;
+    height: 43.125rem;
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .section-3 {
-    height: 973px;
+    height: 60.8125rem;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-3 {
-    height: 1131px;
+    height: 70.6875rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-3 {
-    height: 940px;
+    height: 58.75rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-3 {
-    height: 850px;
+    height: 53.125rem;
   }
 }
 
@@ -592,13 +631,13 @@ main {
   width: 50%;
   height: 100%;
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .section-3-Left-Side {
     float: none;
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     position: relative;
-    top: 513px;
+    top: 32.0625rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -607,45 +646,45 @@ main {
             justify-content: center;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-3-Left-Side {
-    height: 671px;
-    top: 460px;
+    height: 41.9375rem;
+    top: 28.75rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-3-Left-Side {
-    height: 440px;
+    height: 27.5rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-3-Left-Side {
-    top: 370px;
+    top: 23.125rem;
   }
 }
 
 .list-of-cards {
   float: right;
   position: relative;
-  right: 85px;
-  top: 180px;
-  width: 400px;
-  height: 460px;
+  right: 5.3125rem;
+  top: 11.25rem;
+  width: 25rem;
+  height: 28.75rem;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .list-of-cards {
-    top: 110px;
+    top: 6.875rem;
     right: 15%;
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .list-of-cards {
     float: none;
     position: relative;
-    right: 0px;
-    top: 0px;
-    width: 920px;
-    height: 460px;
+    right: 0;
+    top: 0;
+    width: 57.5rem;
+    height: 28.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -662,31 +701,31 @@ main {
         align-content: center;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .list-of-cards {
-    width: 420px;
-    height: 670px;
+    width: 26.25rem;
+    height: 41.875rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .list-of-cards {
-    top: 20px;
-    width: 350px;
-    height: 620px;
+    top: 1.25rem;
+    width: 21.875rem;
+    height: 38.75rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .list-of-cards {
     top: 0;
-    height: 430px;
-    width: 290px;
+    height: 26.875rem;
+    width: 18.125rem;
   }
 }
 
 .item-card {
-  margin-bottom: 20px;
-  width: 400px;
-  height: 100px;
+  margin-bottom: 1.25rem;
+  width: 25rem;
+  height: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -700,53 +739,65 @@ main {
   -webkit-box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .item-card {
-    margin: 0 0 30px;
+    margin: 0 0 1.875rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .item-card {
-    width: 350px;
+    width: 21.875rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .item-card {
-    height: 70px;
+    height: 4.375rem;
     width: 100%;
   }
 }
 
 .card-text {
-  width: 300px;
+  width: 18.75rem;
   font-family: Raleway-Bold, sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .card-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
 .card-icon {
-  padding: 20px 15px;
-  width: 100px;
-  height: 100px;
+  padding: 1.25rem 0.9375rem;
+  width: 6.25rem;
+  height: 6.25rem;
   border-left: 1px solid #9d9d9d;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .card-icon {
-    padding: 14px 12px;
-    width: 70px;
-    height: 70px;
+    padding: 0.875rem 0.75rem;
+    width: 4.375rem;
+    height: 4.375rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+.icon {
+  width: 4rem;
+}
+@media screen and (max-width: 25rem) {
   .icon {
-    width: 45px;
+    width: 2.8125rem;
   }
 }
 
@@ -755,12 +806,12 @@ main {
   width: 50%;
   height: 100%;
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .section-3-Right-Side {
     width: 100%;
-    height: 460px;
+    height: 28.75rem;
     position: relative;
-    bottom: 460px;
+    bottom: 28.75rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -773,66 +824,71 @@ main {
             align-items: center;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-3-Right-Side {
-    height: 460px;
-    bottom: 671px;
+    height: 28.75rem;
+    bottom: 41.9375rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-3-Right-Side {
-    height: 410px;
-    bottom: 420px;
+    height: 25.625rem;
+    bottom: 26.25rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-3-Right-Side {
-    bottom: 450px;
+    bottom: 28.125rem;
   }
 }
 
 .section-3--image {
   z-index: 1;
   position: relative;
-  top: 100px;
-  left: 115px;
+  top: 6.25rem;
+  left: 7.1875rem;
+  width: 28.875rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .section-3--image {
-    left: 80px;
-    width: 385px;
+    left: 5rem;
+    width: 24.0625rem;
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .section-3--image {
     z-index: 1;
     position: relative;
-    left: 0px;
-    top: 75px;
-    width: 380px;
+    left: 0;
+    top: 4.6875rem;
+    width: 23.75rem;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-3--image {
-    left: 0px;
-    top: 39px;
-    width: 380px;
+    left: 0;
+    top: 2.4375rem;
+    width: 23.75rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-3--image {
-    top: 50px;
-    width: 350px;
+    top: 3.125rem;
+    width: 21.875rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-3--image {
-    width: 290px;
+    width: 18.125rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-3--image {
-    width: 270px;
+    width: 16.875rem;
   }
 }
 
@@ -840,91 +896,96 @@ main {
   z-index: 5;
   position: relative;
   margin: 0;
-  top: -300px;
-  left: 41px;
-  width: 550px;
+  top: -18.75rem;
+  left: 2.5625rem;
+  width: 34.375rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .section-3--wrapper-title {
-    top: -260px;
-    left: -10px;
+    top: -16.25rem;
+    left: -0.625rem;
   }
 }
-@media screen and (max-width: 1130px) {
+@media screen and (max-width: 70.625rem) {
   .section-3--wrapper-title {
     z-index: 5;
     position: relative;
     margin: 0;
-    top: -273px;
-    width: 550px;
-    left: -15px;
+    top: -17.0625rem;
+    left: -0.9375rem;
+    width: 34.375rem;
     text-align: left;
   }
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-3--wrapper-title {
     z-index: 5;
     position: relative;
     margin: 0;
-    top: -317px;
-    width: 550px;
-    left: 0px;
-    text-align: left;
-  }
-}
-@media screen and (max-width: 600px) {
-  .section-3--wrapper-title {
-    top: -245px;
-    width: 427px;
-    left: 5px;
-  }
-}
-@media screen and (max-width: 500px) {
-  .section-3--wrapper-title {
-    width: 100%;
+    top: -19.8125rem;
     left: 0;
+    width: 34.375rem;
+    text-align: left;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 37.5rem) {
   .section-3--wrapper-title {
-    top: -173px;
+    top: -15.3125rem;
+    left: 0.3125rem;
+    width: 26.6875rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 31.25rem) {
   .section-3--wrapper-title {
-    top: -158px;
+    left: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-3--wrapper-title {
+    top: -10.8125rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-3--wrapper-title {
+    top: -9.875rem;
   }
 }
 
 .section-3--title {
   font-family: Raleway-Bold, sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   color: #fff;
+  cursor: default;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-3--title {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-3--title {
-    font-size: 55px;
+    font-size: 3.4375rem;
     text-align: center;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .section-3--title {
-    font-size: 48px;
+    font-size: 3rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-3--title {
-    font-size: 43px;
+    font-size: 2.6875rem;
   }
 }
 
 .section-4 {
-  height: 1536px;
+  height: 96rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -937,19 +998,19 @@ main {
           align-items: center;
   background-color: #ffe92f;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 31.25rem) {
   .section-4 {
-    height: 1550px;
+    height: 96.875rem;
   }
 }
 
 .section-4--content {
   position: relative;
-  top: 100px;
-  width: 600px;
+  top: 6.25rem;
+  width: 37.5rem;
   margin: 0 auto;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .section-4--content {
     width: 100%;
     display: -webkit-box;
@@ -968,25 +1029,35 @@ main {
 .section-4--title {
   margin: 0;
   font-family: Raleway-Bold, sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   color: #262626;
   text-align: center;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-4--title {
-    font-size: 70px;
+    font-size: 4.375rem;
   }
 }
 
 .section-4--text {
-  width: 590px;
+  width: 36.875rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1.0625rem;
+  line-height: 1.5882;
   text-align: center;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .section-4--text {
     width: 85%;
   }
@@ -994,9 +1065,9 @@ main {
 
 .gallery {
   position: relative;
-  top: 145px;
+  top: 9.0625rem;
   width: 78%;
-  height: 990px;
+  height: 61.875rem;
   background-color: #dbffff;
 }
 
@@ -1027,15 +1098,19 @@ main {
 
 .section-4--button {
   position: relative;
-  top: 196px;
-  width: 200px;
-  height: 55px;
+  top: 12.25rem;
+  width: 12.5rem;
+  height: 3.4375rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #5585a2;
   border: solid 1px #5585a2;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
@@ -1057,42 +1132,42 @@ main {
 }
 
 .section-5 {
-  height: 500px;
+  height: 31.25rem;
   padding-left: 11%;
   background: url(img/full-img-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-5 {
-    height: 770px;
+    height: 48.125rem;
     background-position: right;
-    background-position-y: 250px;
+    background-position-y: 15.625rem;
     background-size: auto;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5 {
-    height: 900px;
-    background-position-y: 350px;
+    height: 56.25rem;
+    background-position-y: 21.875rem;
   }
 }
 
 .section-5--content {
   position: relative;
-  top: 140px;
+  top: 8.75rem;
   width: 68%;
-  height: 210px;
+  height: 13.125rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .section-5--content {
     width: 90%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-5--content {
-    top: 100px;
+    top: 6.25rem;
     width: 95%;
   }
 }
@@ -1100,52 +1175,62 @@ main {
 .section-5--title {
   margin: 0;
   position: relative;
-  font-family: Raleway-Bold, sans-serif;
-  font-size: 40px;
-  color: #262626;
   text-align: left;
+  font-family: Raleway-Bold, sans-serif;
+  font-size: 2.5rem;
+  color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5--title {
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
 }
 
 .section-5--text {
-  margin: 30px 0;
-  width: 590px;
+  margin: 1.875rem 0;
+  width: 36.875rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
-  line-height: 27px;
+  font-size: 1.0625rem;
+  line-height: 1.5882;
   font-weight: 600;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 59.375rem) {
   .section-5--text {
-    margin: 30px 0;
-    width: 500px;
+    margin: 1.875rem 0;
+    width: 31.25rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-5--text {
     width: 80%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5--text {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .section-5--form {
     position: relative;
-    top: 10px;
+    top: 0.625rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5--form {
-    height: 130px;
+    height: 8.125rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1163,26 +1248,26 @@ main {
 
 .section-5--input {
   width: 63%;
-  height: 55px;
+  height: 3.4375rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 15px;
-  line-height: 27px;
+  font-size: 0.9375rem;
+  line-height: 1.8;
   color: #262626;
   border: 1px solid #262626;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-5--input {
     width: 60%;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .section-5--input {
     width: 60%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5--input {
-    width: 170px;
+    width: 10.625rem;
   }
 }
 
@@ -1205,10 +1290,10 @@ main {
 .section-5--submit {
   position: relative;
   margin-left: 3.3%;
-  width: 170px;
-  height: 55px;
+  width: 10.625rem;
+  height: 3.4375rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background: #96b92c;
   border: solid 1px #96b92c;
@@ -1218,12 +1303,12 @@ main {
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 43.75rem) {
   .section-5--submit {
     margin-left: 3.3%;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5rem) {
   .section-5--submit {
     margin-left: 0;
   }
@@ -1244,7 +1329,7 @@ main {
 }
 
 .section-6 {
-  height: 860px;
+  height: 53.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1262,59 +1347,69 @@ main {
           align-items: center;
   background-color: #b07cf7;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .section-6 {
-    height: 1200px;
+    height: 75rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-6 {
-    height: 1649px;
+    height: 103.0625rem;
   }
 }
 
 .section-6--title {
-  margin-top: -90px;
-  margin-bottom: 20px;
+  margin-top: -5.625rem;
+  margin-bottom: 1.25rem;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .section-6--title {
-    font-size: 80px;
+    font-size: 5rem;
   }
 }
 
 .section-6--text {
-  width: 570px;
-  margin-bottom: 40px;
+  width: 35.625rem;
+  margin-bottom: 2.5rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 1.0625rem;
+  line-height: 1.4706;
   text-align: center;
   color: #fff;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-6--text {
-    width: 530px;
-    margin-bottom: 60px;
+    width: 33.125rem;
+    margin-bottom: 3.75rem;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .section-6--text {
-    width: 380px;
+    width: 23.75rem;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-6--text {
     width: 85%;
   }
 }
 
 .section-6--wrapper-for-cards {
-  width: 1170px;
-  height: 310px;
+  width: 73.125rem;
+  height: 19.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1322,15 +1417,15 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   .section-6--wrapper-for-cards {
     width: 92%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .section-6--wrapper-for-cards {
-    width: 780px;
-    height: 680px;
+    width: 48.75rem;
+    height: 42.5rem;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1338,21 +1433,21 @@ main {
         flex-wrap: wrap;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-6--wrapper-for-cards {
-    width: 542px;
-    height: 1042px;
+    width: 33.875rem;
+    height: 65.125rem;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .section-6--wrapper-for-cards {
     width: 100%;
   }
 }
 
 .card {
-  width: 370px;
-  height: 310px;
+  width: 23.125rem;
+  height: 19.375rem;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
@@ -1362,24 +1457,24 @@ main {
   transition: box-shadow 0.5s, transform 0.5s;
   transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   .card {
     width: 31.4%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .card {
     width: 45%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .card {
-    width: 370px;
+    width: 23.125rem;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 25rem) {
   .card {
-    width: 320px;
+    width: 20rem;
   }
 }
 
@@ -1411,54 +1506,62 @@ main {
 
 #card-2 {
   background: url(img/section-6-img2.jpg);
-  background-position-x: -10px;
-  background-position-y: -170px;
+  background-position-x: -0.625rem;
+  background-position-y: -10.625rem;
 }
 
 #card-3 {
   background: url(img/section-6-img3.jpg);
-  background-position-x: -62px;
-  background-position-y: -9px;
+  background-position-x: -3.875rem;
+  background-position-y: -0.5625rem;
 }
 
 .card-wrap-date {
   position: relative;
-  top: 30px;
-  left: 30px;
-  width: 60px;
-  height: 60px;
+  top: 1.875rem;
+  left: 1.875rem;
+  width: 3.75rem;
+  height: 3.75rem;
   text-align: center;
   background-color: #90908e;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .card-date {
   margin: 0;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 32px;
-  line-height: 28px;
+  font-size: 2rem;
+  line-height: 0.875;
   text-transform: uppercase;
   color: #fff;
 }
 
 .card-date-month {
   font-family: "Raleway-Heavy", sans-serif;
-  font-size: 21px;
+  font-size: 1.3125rem;
 }
 
 .card-title {
   position: relative;
-  top: 127px;
-  left: 20px;
-  width: 330px;
+  top: 7.9375rem;
+  left: 1.25rem;
+  width: 20.625rem;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.25rem;
+  line-height: 1.25;
   color: #fff;
   cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 78.125rem) {
   .card-title {
     width: 89%;
   }
@@ -1466,30 +1569,38 @@ main {
 
 .card-author {
   position: relative;
-  top: 122px;
-  left: 20px;
+  top: 7.625rem;
+  left: 1.25rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #fff;
   cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 34.375rem) {
   .card-author {
-    width: 250px;
+    width: 15.625rem;
   }
 }
 
 .section-6--button {
   position: relative;
-  top: 50px;
-  width: 200px;
-  height: 55px;
+  top: 3.125rem;
+  width: 12.5rem;
+  height: 3.4375rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #f72b3b;
   border: solid 1px #f72b3b;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0px 3px 8px -1px #535353;
@@ -1511,24 +1622,24 @@ main {
 }
 
 .section-7 {
-  padding-top: 90px;
-  height: 865px;
+  padding-top: 5.625rem;
+  height: 54.0625rem;
   background: url(img/full-img-7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7 {
-    height: 1135px;
+    height: 70.9375rem;
   }
 }
 
 .section-7--wrapper-title {
   position: relative;
-  width: 370px;
+  width: 23.125rem;
   margin: 0 auto;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-7--wrapper-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1547,38 +1658,48 @@ main {
 .section-7--title {
   margin: 0;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 90px;
+  font-size: 5.625rem;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-7--title {
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-7--title {
-    font-size: 60px;
+    font-size: 3.75rem;
   }
 }
 
 .section-7--text {
-  margin: 20px 0 40px;
+  margin: 1.25rem 0 2.5rem;
   text-align: center;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 1.4706;
   color: #262626;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 28.125rem) {
   .section-7--text {
-    width: 300px;
+    width: 18.75rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .section-7--text {
-    width: 220px;
+    width: 13.75rem;
   }
 }
 
@@ -1586,14 +1707,14 @@ main {
   float: left;
   padding-left: 11%;
   width: 50%;
-  height: 535px;
+  height: 33.4375rem;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7--Form-Side {
     float: none;
     width: 100%;
     position: relative;
-    top: 250px;
+    top: 15.625rem;
   }
 }
 
@@ -1602,32 +1723,36 @@ main {
   width: 100%;
   height: 100%;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7--form {
     width: 60%;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
   .section-7--form {
     width: 80%;
   }
 }
 
 .section-7--input-text {
-  margin-bottom: 15px;
-  padding-left: 20px;
+  margin-bottom: 0.9375rem;
+  padding-left: 1.25rem;
   width: 84%;
-  height: 50px;
+  height: 3.125rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #fff;
   background-color: #00c4c4;
   border: 0;
   -webkit-transition: opacity 1s ease;
   transition: opacity 1s ease;
   opacity: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7--input-text {
     width: 100%;
   }
@@ -1636,7 +1761,7 @@ main {
 .section-7--input-text:focus,
 .section-7--input-text:active {
   outline: 0;
-  padding-left: 15px;
+  padding-left: 0.9375rem;
   border-left: 5px solid #355b82;
   font-weight: bolder;
   -webkit-transition: opacity 0.7s ease;
@@ -1671,9 +1796,9 @@ main {
 }
 
 .text-area {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   width: 84%;
-  height: 250px;
+  height: 15.625rem;
   resize: none;
 }
 
@@ -1687,10 +1812,10 @@ main {
   float: right;
   position: relative;
   right: 16%;
-  width: 200px;
-  height: 50px;
+  width: 12.5rem;
+  height: 3.125rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   background-color: #262626;
   border: solid 1px #262626;
@@ -1700,7 +1825,7 @@ main {
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7--submit {
     right: 0;
   }
@@ -1712,7 +1837,6 @@ main {
 }
 
 .section-7--submit:hover {
-  font-weight: 900;
   color: #b4b4b4;
   background-color: #505050;
   border: solid 1px #505050;
@@ -1724,42 +1848,44 @@ main {
   float: right;
   padding-left: 5.5%;
   width: 50%;
-  height: 535px;
+  height: 33.4375rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 50rem) {
   .section-7--Contact-Side {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 46.875rem) {
   .section-7--Contact-Side {
     float: none;
     width: 100%;
     position: relative;
-    bottom: 530px;
+    bottom: 33.125rem;
     padding-left: 11%;
-    height: 200px;
+    height: 12.5rem;
   }
 }
 
 .section-7--Header-for-contacts {
   margin: 0 0 4px;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 17px;
+  font-size: 1.0625rem;
   color: #262626;
+  cursor: default;
 }
 
 .section-7--contacts {
   display: block;
-  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: "Raleway-Light", sans-serif;
-  font-size: 20px;
-  color: #262626;
   text-decoration: none;
   font-style: normal;
+  font-family: "Raleway-Light", sans-serif;
+  font-size: 1.25rem;
+  color: #262626;
+  cursor: default;
 }
 
 a.section-7--contacts:hover {
@@ -1769,23 +1895,23 @@ a.section-7--contacts:hover {
 footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 35px 11% 0;
-  height: 90px;
+  padding: 2.1875rem 11% 0;
+  height: 5.625rem;
   background-color: #262626;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   footer {
-    height: 120px;
+    height: 7.5rem;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
   footer {
-    height: 180px;
+    height: 11.25rem;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   footer {
-    height: 260px;
+    height: 16.25rem;
   }
 }
 
@@ -1793,47 +1919,52 @@ footer {
   position: absolute;
   margin: 0;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #b9b9b9;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .company {
-    width: 150px;
-    line-height: 23px;
+    width: 9.375rem;
+    line-height: 1.4375;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
   .company {
     position: relative;
-    top: 50px;
+    top: 3.125rem;
     width: auto;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .company {
-    top: 85px;
-    line-height: 21px;
+    top: 5.3125rem;
+    line-height: 1.3125;
   }
 }
 
 .logo-cahee {
   margin: 0 auto;
-  width: 75px;
-  height: 35px;
+  width: 4.6875rem;
+  height: 2.1875rem;
   background: url(img/logo-cahee-small.png);
   background-repeat: no-repeat;
   background-size: auto;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .logo-cahee {
     position: relative;
-    top: 10px;
+    top: 0.625rem;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
   .logo-cahee {
     margin: 0;
-    top: -25px;
+    top: -1.5625rem;
   }
 }
 
@@ -1841,30 +1972,35 @@ footer {
   float: right;
   position: relative;
   margin: 0;
-  bottom: 35px;
+  bottom: 2.1875rem;
   font-family: "Raleway-Light", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #b9b9b9;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 62.5rem) {
   .made-with-love {
-    width: 130px;
-    line-height: 23px;
+    width: 8.125rem;
+    line-height: 1.5333;
     text-align: right;
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 40.625rem) {
   .made-with-love {
     float: none;
-    top: 20px;
+    top: 1.25rem;
     width: auto;
     text-align: left;
   }
 }
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 21.875rem) {
   .made-with-love {
-    top: 55px;
-    line-height: 21px;
+    top: 3.4375rem;
+    line-height: 1.4;
   }
 }
 

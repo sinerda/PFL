@@ -1,75 +1,79 @@
 .section-5 {
-    height: 500px;
+    height: px-rem(500px);
     padding-left: 11%;
     background: url(img/full-img-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @media screen and (max-width: 800px) {
-        height: 770px;
+    @media screen and (max-width: px-rem(800px)) {
+        height: px-rem(770px);
         background-position: right;
-        background-position-y: 250px;
+        background-position-y: px-rem(250px);
         background-size: auto;
     }
-    @media screen and (max-width: 600px) {
-        height: 900px;
-        background-position-y: 350px;
+    @media screen and (max-width: px-rem(600px)) {
+        height: px-rem(900px);
+        background-position-y: px-rem(350px);
     }
 }
 .section-5--content {
     position: relative;
-    top: 140px;
+    top: px-rem(140px);
     width: 68%;
-    height: 210px;
+    height: px-rem(210px);
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: px-rem(1000px)) {
         width: 90%;
     }
-    @media screen and (max-width: 800px) {
-        top: 100px;
+    @media screen and (max-width: px-rem(800px)) {
+        top: px-rem(100px);
         width: 95%;
     }
 }
 .section-5--title {
     margin: 0;
     position: relative;
-    font-family: Raleway-Bold, sans-serif;
-    font-size: 40px;
-    color: #262626;
     text-align: left;
+    font-family: Raleway-Bold, sans-serif;
+    font-size: px-rem(40px);
+    color: #262626;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 600px) {
-        font-size: 35px;
+    @media screen and (max-width: px-rem(600px)) {
+        font-size: px-rem(35px);
     }
 }
 .section-5--text {
-    margin: 30px 0;
-    width: 590px;
+    margin: px-rem(30px) 0;
+    width: px-rem(590px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: px-rem(17px);
+    line-height: 1.5882;
     font-weight: 600;
     color: #262626;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 950px) {
-        margin: 30px 0;
-        width: 500px;
+    @media screen and (max-width: px-rem(950px)) {
+        margin: px-rem(30px) 0;
+        width: px-rem(500px);
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: px-rem(800px)) {
         width: 80%;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: px-rem(600px)) {
         width: 100%;
     }
 }
 .section-5--form {
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: px-rem(700px)) {
         position: relative;
-        top: 10px;
+        top: px-rem(10px);
     }
-    @media screen and (max-width: 600px) {
-        height: 130px;
+    @media screen and (max-width: px-rem(600px)) {
+        height: px-rem(130px);
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -78,21 +82,21 @@
 }
 .section-5--input {
     width: 63%;
-    height: 55px;
+    height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 15px;
-    line-height: 27px;
+    font-size: px-rem(15px);
+    line-height: 1.8;
     color: #262626;
     border: 1px solid #262626;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: px-rem(800px)) {
         width: 60%;
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: px-rem(700px)) {
         width: 60%;
     }
-    @media screen and (max-width: 600px) {
-        width: 170px;
+    @media screen and (max-width: px-rem(600px)) {
+        width: px-rem(170px);
     }
 }
 .section-5--input:focus,
@@ -109,10 +113,10 @@
 .section-5--submit {
     position: relative;
     margin-left: 3.3%;
-    width: 170px;
-    height: 55px;
+    width: px-rem(170px);
+    height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 20px;
+    font-size: px-rem(20px);
     color: #fff;
     background: #96b92c;
     border: solid 1px #96b92c;
@@ -121,10 +125,10 @@
     -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: px-rem(700px)) {
         margin-left: 3.3%;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: px-rem(600px)) {
         margin-left: 0;
     }
 }

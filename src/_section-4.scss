@@ -1,21 +1,21 @@
 .section-4 {
-    height: 1536px;
+    height: px-rem(1536px);
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #ffe92f;
 
-    @media screen and (max-width: 500px) {
-        height: 1550px;
+    @media screen and (max-width: px-rem(500px)) {
+        height: px-rem(1550px);
     }
 }
 .section-4--content {
     position: relative;
-    top: 100px;
-    width: 600px;
+    top: px-rem(100px);
+    width: px-rem(600px);
     margin: 0 auto;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: px-rem(700px)) {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -25,31 +25,35 @@
 .section-4--title {
     margin: 0;
     font-family: Raleway-Bold, sans-serif;
-    font-size: 90px;
+    font-size: px-rem(90px);
     color: #262626;
     text-align: center;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 450px) {
-        font-size: 70px;
+    @media screen and (max-width: px-rem(450px)) {
+        font-size: px-rem(70px);
     }
 }
 .section-4--text {
-    width: 590px;
+    width: px-rem(590px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 17px;
-    line-height: 27px;
+    font-size: px-rem(17px);
+    line-height: 1.5882;
     text-align: center;
     color: #262626;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: px-rem(700px)) {
         width: 85%;
     }
 }
 .gallery {
     position: relative;
-    top: 145px;
+    top: px-rem(145px);
     width: 78%;
-    height: 990px;
+    height: px-rem(990px);
     background-color: #dbffff;
 }
 .gallery-img {
@@ -73,15 +77,16 @@
 }
 .section-4--button {
     position: relative;
-    top: 196px;
-    width: 200px;
-    height: 55px;
+    top: px-rem(196px);
+    width: px-rem(200px);
+    height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
-    font-size: 20px;
+    font-size: px-rem(20px);
     color: #fff;
     background-color: #5585a2;
     border: solid 1px #5585a2;
     cursor: pointer;
+    user-select: none;
     transition: 0.7s ease;
     -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);

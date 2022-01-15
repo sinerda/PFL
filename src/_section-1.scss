@@ -1,4 +1,5 @@
 .section-1 {
+    position: relative;
     height: px-rem(1000px);
     background: url(img/full-img-1.jpg);
     background-repeat: no-repeat;
@@ -6,7 +7,7 @@
     background-size: cover;
 
     @media screen and (max-width: px-rem(1000px)) {
-        height: 800px;
+        height: px-rem(800px);
     }
 }
 .header {
@@ -16,6 +17,7 @@
 }
 .header-logo {
     float: left;
+    user-select: none;
 }
 .menu {
     float: right;
@@ -26,6 +28,7 @@
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
+    user-select: none;
 
     @media screen and (max-width: px-rem(1000px)) {
         display: none;
@@ -207,6 +210,8 @@
     font-size: px-rem(60px);
     font-weight: 900;
     color: #262626;
+    cursor: default;
+    user-select: none;
 
     @media screen and (max-width: px-rem(450px)) {
         width: 270px;
@@ -219,6 +224,8 @@
     font-size: px-rem(17px);
     line-height: 1.5882; //27px
     color: #262626;
+    cursor: default;
+    user-select: none;
 
     @media screen and (max-width: px-rem(450px)) {
         width: 270px;
@@ -234,6 +241,7 @@
     background-color: #ff6033;
     border: solid 1px #ff6033;
     cursor: pointer;
+    user-select: none;
     transition: 0.7s ease;
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
@@ -252,7 +260,8 @@
 .icon-mouse {
     position: absolute;
     left: 49%;
-    top: 890px;
+    top: px-rem(890px);
+    user-select: none;
 
     @media screen and (max-width: px-rem(1000px)) {
         visibility: hidden;

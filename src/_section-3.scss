@@ -1,21 +1,21 @@
 .section-3 {
-    height: 790px;
+    height: px-rem(790px);
     background-color: #70bfff;
 
-    @media screen and (max-width: 1300px) {
-        height: 690px;
+    @media screen and (max-width: px-rem(1300px)) {
+        height: px-rem(690px);
     }
-    @media screen and (max-width: 1130px) {
-        height: 973px;
+    @media screen and (max-width: px-rem(1130px)) {
+        height: px-rem(973px);
     }
-    @media screen and (max-width: 950px) {
-        height: 1131px;
+    @media screen and (max-width: px-rem(950px)) {
+        height: px-rem(1131px);
     }
-    @media screen and (max-width: 400px) {
-        height: 940px;
+    @media screen and (max-width: px-rem(400px)) {
+        height: px-rem(940px);
     }
-    @media screen and (max-width: 350px) {
-        height: 850px;
+    @media screen and (max-width: px-rem(350px)) {
+        height: px-rem(850px);
     }
 }
 .section-3-Left-Side {
@@ -23,113 +23,118 @@
     width: 50%;
     height: 100%;
 
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: px-rem(1130px)) {
         float: none;
         width: 100%;
-        height: 460px;
+        height: px-rem(460px);
         position: relative;
-        top: 513px;
+        top: px-rem(513px);
         display: flex;
         justify-content: center;
     }
-    @media screen and (max-width: 950px) {
-        height: 671px;
-        top: 460px;
+    @media screen and (max-width: px-rem(950px)) {
+        height: px-rem(671px);
+        top: px-rem(460px);
     }
-    @media screen and (max-width: 400px) {
-        height: 440px;
+    @media screen and (max-width: px-rem(400px)) {
+        height: px-rem(440px);
     }
-    @media screen and (max-width: 350px) {
-        top: 370px;
+    @media screen and (max-width: px-rem(350px)) {
+        top: px-rem(370px);
     }
 }
 .list-of-cards {
     float: right;
     position: relative;
-    right: 85px;
-    top: 180px;
-    width: 400px;
-    height: 460px;
+    right: px-rem(85px);
+    top: px-rem(180px);
+    width: px-rem(400px);
+    height: px-rem(460px);
 
-    @media screen and (max-width: 1300px) {
-        top: 110px;
+    @media screen and (max-width: px-rem(1300px)) {
+        top: px-rem(110px);
         right: 15%;
     }
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: px-rem(1130px)) {
         float: none;
         position: relative;
-        right: 0px;
-        top: 0px;
-        width: 920px;
-        height: 460px;
+        right: 0;
+        top: 0;
+        width: px-rem(920px);
+        height: px-rem(460px);
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
     }
-    @media screen and (max-width: 950px) {
-        width: 420px;
-        height: 670px;
+    @media screen and (max-width: px-rem(950px)) {
+        width: px-rem(420px);
+        height: px-rem(670px);
     }
-    @media screen and (max-width: 500px) {
-        top: 20px;
-        width: 350px;
-        height: 620px;
+    @media screen and (max-width: px-rem(500px)) {
+        top: px-rem(20px);
+        width: px-rem(350px);
+        height: px-rem(620px);
     }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: px-rem(400px)) {
         top: 0;
-        height: 430px;
-        width: 290px;
+        height: px-rem(430px);
+        width: px-rem(290px);
     }
 }
 .item-card {
-    margin-bottom: 20px;
-    width: 400px;
-    height: 100px;
+    margin-bottom: px-rem(20px);
+    width: px-rem(400px);
+    height: px-rem(100px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.5);
 
-    @media screen and (max-width: 1130px) {
-        margin: 0 0 30px;
+    @media screen and (max-width: px-rem(1130px)) {
+        margin: 0 0 px-rem(30px);
     }
-    @media screen and (max-width: 500px) {
-        width: 350px;
+    @media screen and (max-width: px-rem(500px)) {
+        width: px-rem(350px);
     }
-    @media screen and (max-width: 400px) {
-        height: 70px;
+    @media screen and (max-width: px-rem(400px)) {
+        height: px-rem(70px);
         width: 100%;
     }
 }
 .card-text {
-    width: 300px;
+    width: px-rem(300px);
     font-family: Raleway-Bold, sans-serif;
-    font-size: 20px;
+    font-size: px-rem(20px);
     text-align: center;
     color: #262626;
+    cursor: default;
+    user-select: none;
 
-    @media screen and (max-width: 400px) {
-        font-size: 16px;
+    @media screen and (max-width: px-rem(400px)) {
+        font-size: px-rem(16px);
     }
 }
 .card-icon {
-    padding: 20px 15px;
-    width: 100px;
-    height: 100px;
+    padding: px-rem(20px) px-rem(15px);
+    width: px-rem(100px);
+    height: px-rem(100px);
     border-left: 1px solid #9d9d9d;
+    user-select: none;
 
-    @media screen and (max-width: 400px) {
-        padding: 14px 12px;
-        width: 70px;
-        height: 70px;
+    @media screen and (max-width: px-rem(400px)) {
+        padding: px-rem(14px) px-rem(12px);
+        width: px-rem(70px);
+        height: px-rem(70px);
     }
 }
 .icon {
-    @media screen and (max-width: 400px) {
-        width: 45px;
+    width: px-rem(64px);
+
+    @media screen and (max-width: px-rem(400px)) {
+        width: px-rem(45px);
     }
 }
 .section-3-Right-Side {
@@ -137,124 +142,127 @@
     width: 50%;
     height: 100%;
 
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: px-rem(1130px)) {
         width: 100%;
-        height: 460px;
+        height: px-rem(460px);
         position: relative;
-        bottom: 460px;
+        bottom: px-rem(460px);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    @media screen and (max-width: 950px) {
-        height: 460px;
-        bottom: 671px;
+    @media screen and (max-width: px-rem(950px)) {
+        height: px-rem(460px);
+        bottom: px-rem(671px);
     }
-    @media screen and (max-width: 400px) {
-        height: 410px;
-        bottom: 420px;
+    @media screen and (max-width: px-rem(400px)) {
+        height: px-rem(410px);
+        bottom: px-rem(420px);
     }
-    @media screen and (max-width: 350px) {
-        bottom: 450px;
+    @media screen and (max-width: px-rem(350px)) {
+        bottom: px-rem(450px);
     }
 }
 .section-3--image {
     z-index: 1;
     position: relative;
-    top: 100px;
-    left: 115px;
+    top: px-rem(100px);
+    left: px-rem(115px);
+    width: px-rem(462px);
+    user-select: none;
 
-    @media screen and (max-width: 1300px) {
+    @media screen and (max-width: px-rem(1300px)) {
         // top: 0px;
-        left: 80px;
-        width: 385px;
+        left: px-rem(80px);
+        width: px-rem(385px);
     }
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: px-rem(1130px)) {
         z-index: 1;
         position: relative;
-        left: 0px;
-        top: 75px;
-        width: 380px;
+        left: 0;
+        top: px-rem(75px);
+        width: px-rem(380px);
     }
-    @media screen and (max-width: 950px) {
-        left: 0px;
-        top: 39px;
-        width: 380px;
+    @media screen and (max-width: px-rem(950px)) {
+        left: 0;
+        top: px-rem(39px);
+        width: px-rem(380px);
     }
-    @media screen and (max-width: 600px) {
-        top: 50px;
-        width: 350px;
+    @media screen and (max-width: px-rem(600px)) {
+        top: px-rem(50px);
+        width: px-rem(350px);
     }
-    @media screen and (max-width: 400px) {
-        width: 290px;
+    @media screen and (max-width: px-rem(400px)) {
+        width: px-rem(290px);
     }
-    @media screen and (max-width: 350px) {
-        width: 270px;
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(270px);
     }
 }
 .section-3--wrapper-title {
     z-index: 5;
     position: relative;
     margin: 0;
-    top: -300px;
-    left: 41px;
-    width: 550px;
-    // background-color: rgb(202, 205, 50);
+    top: px-rem(-300px);
+    left: px-rem(41px);
+    width: px-rem(550px);
+    user-select: none;
 
-    @media screen and (max-width: 1300px) {
-        top: -260px;
-        left: -10px;
+    @media screen and (max-width: px-rem(1300px)) {
+        top: px-rem(-260px);
+        left: px-rem(-10px);
     }
-    @media screen and (max-width: 1130px) {
+    @media screen and (max-width: px-rem(1130px)) {
         z-index: 5;
         position: relative;
         margin: 0;
-        top: -273px;
-        width: 550px;
-        left: -15px;
+        top: px-rem(-273px);
+        left: px-rem(-15px);
+        width: px-rem(550px);
         text-align: left;
     }
-    @media screen and (max-width: 950px) {
+    @media screen and (max-width: px-rem(950px)) {
         z-index: 5;
         position: relative;
         margin: 0;
-        top: -317px;
-        width: 550px;
-        left: 0px;
-        text-align: left;
-    }
-    @media screen and (max-width: 600px) {
-        top: -245px;
-        width: 427px;
-        left: 5px;
-    }
-    @media screen and (max-width: 500px) {
-        width: 100%;
+        top: px-rem(-317px);
         left: 0;
+        width: px-rem(550px);
+        text-align: left;
     }
-    @media screen and (max-width: 400px) {
-        top: -173px;
+    @media screen and (max-width: px-rem(600px)) {
+        top: px-rem(-245px);
+        left: px-rem(5px);
+        width: px-rem(427px);
     }
-    @media screen and (max-width: 350px) {
-        top: -158px;
+    @media screen and (max-width: px-rem(500px)) {
+        left: 0;
+        width: 100%;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(-173px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        top: px-rem(-158px);
     }
 }
 .section-3--title {
     font-family: Raleway-Bold, sans-serif;
-    font-size: 90px;
+    font-size: px-rem(90px);
     color: #fff;
+    cursor: default;
 
-    @media screen and (max-width: 600px) {
-        font-size: 70px;
+    @media screen and (max-width: px-rem(600px)) {
+        font-size: px-rem(70px);
     }
-    @media screen and (max-width: 500px) {
-        font-size: 55px;
+    @media screen and (max-width: px-rem(500px)) {
+        font-size: px-rem(55px);
         text-align: center;
     }
-    @media screen and (max-width: 400px) {
-        font-size: 48px;
+    @media screen and (max-width: px-rem(400px)) {
+        font-size: px-rem(48px);
     }
-    @media screen and (max-width: 350px) {
-        font-size: 43px;
+    @media screen and (max-width: px-rem(350px)) {
+        font-size: px-rem(43px);
     }
 }
