@@ -119,6 +119,10 @@
     width: 84%;
     height: px-rem(250px);
     resize: none;
+
+    @media screen and (max-width: px-rem(750px)) {
+        width: 100%;
+    }
 }
 .text-area.required:invalid {
     border: none;
@@ -136,6 +140,7 @@
     background-color: #262626;
     border: solid 1px #262626;
     cursor: pointer;
+    overflow: hidden;
     transition: 0.7s ease;
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 
@@ -235,11 +240,11 @@ footer {
 }
 .logo-cahee {
     margin: 0 auto;
-    width: px-rem(75px);
+    width: px-rem(85px);
     height: px-rem(35px);
     background: url(img/logo-cahee-small.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     @media screen and (max-width: px-rem(1000px)) {
         position: relative;

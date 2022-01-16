@@ -28,7 +28,7 @@ body {
 }
 
 main {
-  height: 6346px;
+  height: 396.25rem;
 }
 
 .section-1 {
@@ -47,7 +47,7 @@ main {
 
 .header {
   width: auto;
-  height: 145px;
+  height: 9.0625rem;
   padding: 3.125rem 11%;
 }
 
@@ -59,11 +59,16 @@ main {
           user-select: none;
 }
 
+.logo {
+  width: 7.9375rem;
+  height: 3.25rem;
+}
+
 .menu {
   float: right;
   padding: 0;
   width: 50%;
-  height: 30px;
+  height: 1.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,7 +106,7 @@ main {
   visibility: hidden;
   z-index: 10;
   position: fixed;
-  top: -24px;
+  top: -1.5rem;
   left: 0;
   right: 0;
   height: 105vh;
@@ -193,24 +198,24 @@ main {
   line-height: 2.3077;
   text-transform: capitalize;
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 28.125rem) {
   .adaptive-menu a {
-    line-height: 55px;
+    line-height: 2.1154;
   }
 }
-@media screen and (max-height: 400px) {
+@media screen and (max-height: 25rem) {
   .adaptive-menu a {
-    line-height: 50px;
+    line-height: 1.9231;
   }
 }
-@media screen and (max-height: 350px) {
+@media screen and (max-height: 21.875rem) {
   .adaptive-menu a {
-    line-height: 40px;
+    line-height: 1.5385;
   }
 }
-@media screen and (max-width: 330px) and (max-height: 550px) {
+@media screen and (max-width: 20.625rem) and (max-height: 34.375rem) {
   .adaptive-menu a {
-    line-height: 30px;
+    line-height: 1.1538;
   }
 }
 
@@ -218,10 +223,10 @@ main {
   z-index: 10;
   display: none;
   position: fixed;
-  width: 42px;
-  height: 42px;
+  width: 2.625rem;
+  height: 2.625rem;
   right: 11%;
-  top: 50px;
+  top: 3.125rem;
   -webkit-transform: translateZ(1px);
   transform: translateZ(1px);
   overflow: hidden;
@@ -244,17 +249,17 @@ main {
     right: 5.5%;
   }
 }
-@media screen and (max-height: 570px) {
+@media screen and (max-height: 35.625rem) {
   .button-burger-menu.active {
     right: 26%;
   }
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 28.125rem) {
   .button-burger-menu.active {
     top: 6%;
   }
 }
-@media screen and (max-width: 330px) and (max-height: 550px) {
+@media screen and (max-width: 20.625rem) and (max-height: 34.375rem) {
   .button-burger-menu.active {
     right: 38%;
   }
@@ -262,8 +267,8 @@ main {
 
 .button-burger-menu span {
   position: absolute;
-  width: 30px;
-  height: 2px;
+  width: 1.875rem;
+  height: 0.125rem;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -302,13 +307,13 @@ main {
 .section-1--content {
   position: relative;
   left: 11%;
-  top: 200px;
-  width: 370px;
-  height: 257px;
+  top: 12.5rem;
+  width: 23.125rem;
+  height: 16.0625rem;
 }
 @media screen and (max-width: 28.125rem) {
   .section-1--content {
-    width: 270px;
+    width: 16.875rem;
   }
 }
 
@@ -326,9 +331,9 @@ main {
 }
 @media screen and (max-width: 28.125rem) {
   .section-1--title {
-    width: 270px;
+    width: 16.875rem;
     margin-right: 0;
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }
 
@@ -345,7 +350,7 @@ main {
 }
 @media screen and (max-width: 28.125rem) {
   .section-1--text {
-    width: 270px;
+    width: 16.875rem;
   }
 }
 
@@ -363,6 +368,7 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: hidden;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
@@ -1446,8 +1452,11 @@ main {
 }
 
 .card {
+  padding: 1.25rem;
   width: 23.125rem;
   height: 19.375rem;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
@@ -1502,24 +1511,28 @@ main {
 
 #card-1 {
   background: url(img/section-6-img1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #card-2 {
   background: url(img/section-6-img2.jpg);
+  background-repeat: no-repeat;
   background-position-x: -0.625rem;
   background-position-y: -10.625rem;
 }
 
 #card-3 {
   background: url(img/section-6-img3.jpg);
+  background-repeat: no-repeat;
   background-position-x: -3.875rem;
   background-position-y: -0.5625rem;
 }
 
 .card-wrap-date {
   position: relative;
-  top: 1.875rem;
-  left: 1.875rem;
+  top: 0.625rem;
+  left: 0.625rem;
   width: 3.75rem;
   height: 3.75rem;
   text-align: center;
@@ -1548,9 +1561,8 @@ main {
 
 .card-title {
   position: relative;
-  top: 7.9375rem;
-  left: 1.25rem;
-  width: 20.625rem;
+  top: 6.6875rem;
+  height: 3.125rem;
   font-family: "Raleway-Bold", sans-serif;
   font-size: 1.25rem;
   line-height: 1.25;
@@ -1560,17 +1572,11 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: hidden;
 }
-@media screen and (max-width: 78.125rem) {
-  .card-title {
-    width: 89%;
-  }
-}
-
 .card-author {
   position: relative;
-  top: 7.625rem;
-  left: 1.25rem;
+  top: 6.375rem;
   font-family: "Raleway-Light", sans-serif;
   font-size: 0.8125rem;
   color: #fff;
@@ -1580,12 +1586,6 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 34.375rem) {
-  .card-author {
-    width: 15.625rem;
-  }
-}
-
 .section-6--button {
   position: relative;
   top: 3.125rem;
@@ -1601,6 +1601,7 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  overflow: hidden;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0px 3px 8px -1px #535353;
@@ -1801,6 +1802,11 @@ main {
   height: 15.625rem;
   resize: none;
 }
+@media screen and (max-width: 46.875rem) {
+  .text-area {
+    width: 100%;
+  }
+}
 
 .text-area.required:invalid {
   border: none;
@@ -1820,6 +1826,7 @@ main {
   background-color: #262626;
   border: solid 1px #262626;
   cursor: pointer;
+  overflow: hidden;
   -webkit-transition: 0.7s ease;
   transition: 0.7s ease;
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
@@ -1949,11 +1956,11 @@ footer {
 
 .logo-cahee {
   margin: 0 auto;
-  width: 4.6875rem;
+  width: 5.3125rem;
   height: 2.1875rem;
   background: url(img/logo-cahee-small.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 @media screen and (max-width: 62.5rem) {
   .logo-cahee {

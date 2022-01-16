@@ -12,18 +12,22 @@
 }
 .header {
     width: auto;
-    height: 145px;
+    height: px-rem(145px);
     padding: 3.125rem 11%;
 }
 .header-logo {
     float: left;
     user-select: none;
 }
+.logo {
+    width: px-rem(127px);
+    height: px-rem(52px);
+}
 .menu {
     float: right;
     padding: 0;
     width: 50%;
-    height: 30px;
+    height: px-rem(30px);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -47,7 +51,7 @@
     visibility: hidden;
     z-index: 10;
     position: fixed;
-    top: -24px;
+    top: px-rem(-24px);
     left: 0;
     right: 0;
     height: 105vh;
@@ -107,17 +111,17 @@
     line-height: 2.3077; // 60px
     text-transform: capitalize;
 
-    @media screen and (max-height: 450px) {
-        line-height: 55px;
+    @media screen and (max-height: px-rem(450px)) {
+        line-height: 2.1154; //55px
     }
-    @media screen and (max-height: 400px) {
-        line-height: 50px;
+    @media screen and (max-height: px-rem(400px)) {
+        line-height: 1.9231; //50px
     }
-    @media screen and (max-height: 350px) {
-        line-height: 40px;
+    @media screen and (max-height: px-rem(350px)) {
+        line-height: 1.5385; //40px
     }
-    @media screen and (max-width: 330px) and (max-height: 550px) {
-        line-height: 30px;
+    @media screen and (max-width: px-rem(330px)) and (max-height: px-rem(550px)) {
+        line-height: 1.1538; //30px
     }
 }
 // Здесь были попытки включить отображение нажатия пункта меню на мобильных устройствах, т.е. аналог ховера. Попытки на данный момент успехом не увенчались, т.к. заставить данный селектор работать адекватно не получилось. Селектор работает только на ОДИН пункт меню, остальные пункты для него не существуют.
@@ -128,10 +132,10 @@
     z-index: 10;
     display: none;
     position: fixed;
-    width: 42px;
-    height: 42px;
+    width: px-rem(42px);
+    height: px-rem(42px);
     right: 11%;
-    top: 50px;
+    top: px-rem(50px);
     -webkit-transform: translateZ(1px);
     -moz-transform: translateZ(1px);
     -o-transform: translateZ(1px);
@@ -151,20 +155,20 @@
     @media screen and (max-width: px-rem(1000px)) {
         right: 5.5%;
     }
-    @media screen and (max-height: 570px) {
+    @media screen and (max-height: px-rem(570px)) {
         right: 26%;
     }
-    @media screen and (max-height: 450px) {
+    @media screen and (max-height: px-rem(450px)) {
         top: 6%;
     }
-    @media screen and (max-width: 330px) and (max-height: 550px) {
+    @media screen and (max-width: px-rem(330px)) and (max-height: px-rem(550px)) {
         right: 38%;
     }
 }
 .button-burger-menu span {
     position: absolute;
-    width: 30px;
-    height: 2px;
+    width: px-rem(30px);
+    height: px-rem(2px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -196,12 +200,13 @@
 .section-1--content {
     position: relative;
     left: 11%;
-    top: 200px;
-    width: 370px;
-    height: 257px;
+    top: px-rem(200px);
+    width: px-rem(370px);
+    height: px-rem(257px);
+    // background-color: coral;
 
     @media screen and (max-width: px-rem(450px)) {
-        width: 270px;
+        width: px-rem(270px);
     }
 }
 .section-1--title {
@@ -214,9 +219,9 @@
     user-select: none;
 
     @media screen and (max-width: px-rem(450px)) {
-        width: 270px;
+        width: px-rem(270px);
         margin-right: 0;
-        font-size: 50px;
+        font-size: px-rem(50px);
     }
 }
 .section-1--text {
@@ -228,7 +233,7 @@
     user-select: none;
 
     @media screen and (max-width: px-rem(450px)) {
-        width: 270px;
+        width: px-rem(270px);
     }
 }
 .section-1--button {
@@ -242,6 +247,7 @@
     border: solid 1px #ff6033;
     cursor: pointer;
     user-select: none;
+    overflow: hidden;
     transition: 0.7s ease;
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
