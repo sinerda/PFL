@@ -74,13 +74,14 @@
     }
     @media screen and (max-width: px-rem(500px)) {
         top: px-rem(20px);
-        width: px-rem(350px);
+        // width: px-rem(350px);
+        width: 98%;
         height: px-rem(620px);
     }
     @media screen and (max-width: px-rem(400px)) {
         top: 0;
         height: px-rem(430px);
-        width: px-rem(290px);
+        // width: px-rem(290px);
     }
 }
 .item-card {
@@ -97,7 +98,8 @@
         margin: 0 0 px-rem(30px);
     }
     @media screen and (max-width: px-rem(500px)) {
-        width: px-rem(350px);
+        // width: px-rem(350px);
+        width: 100%;
     }
     @media screen and (max-width: px-rem(400px)) {
         height: px-rem(70px);

@@ -9,11 +9,32 @@
     @media screen and (max-width: px-rem(1000px)) {
         height: px-rem(800px);
     }
+    @media screen and (max-width: px-rem(700px)) {
+        height: px-rem(672px);
+    }
+    @media screen and (max-width: px-rem(500px)) {
+        padding: 0 3%;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        background-position-x: px-rem(-368px);
+        background-position-y: px-rem(190px);
+        background-color: #f9f8fb;
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        background-position-x: px-rem(-438px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        background-position-x: px-rem(-478px);
+    }
 }
 .header {
     width: auto;
     height: px-rem(145px);
     padding: 3.125rem 11%;
+
+    @media screen and (max-width: px-rem(500px)) {
+        padding: 3.125rem 8%;
+    }
 }
 .header-logo {
     float: left;
@@ -22,6 +43,14 @@
 .logo {
     width: px-rem(127px);
     height: px-rem(52px);
+
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(95px);
+        height: auto;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(83px);
+    }
 }
 .menu {
     float: right;
@@ -203,11 +232,24 @@
     top: px-rem(200px);
     width: px-rem(370px);
     height: px-rem(257px);
-    // background-color: coral;
+    // background-color: darkgray;
 
-    @media screen and (max-width: px-rem(450px)) {
-        width: px-rem(270px);
+    @media screen and (max-width: px-rem(700px)) {
+        top: px-rem(120px);
     }
+    @media screen and (max-width: px-rem(500px)) {
+        left: 8%;
+        width: 90%;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(72px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        top: px-rem(56px);
+    }
+    // @media screen and (max-width: px-rem(450px)) {
+    //     width: px-rem(270px);
+    // }
 }
 .section-1--title {
     margin: 0 0 px-rem(20px);
@@ -217,12 +259,25 @@
     color: #262626;
     cursor: default;
     user-select: none;
+    // background-color: darkcyan;
 
-    @media screen and (max-width: px-rem(450px)) {
-        width: px-rem(270px);
-        margin-right: 0;
+    @media screen and (max-width: px-rem(600px)) {
         font-size: px-rem(50px);
     }
+    @media screen and (max-width: px-rem(350px)) {
+        font-size: px-rem(40px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        font-size: px-rem(35px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        font-size: px-rem(30px);
+    }
+    // @media screen and (max-width: px-rem(450px)) {
+    //     width: px-rem(270px);
+    //     margin-right: 0;
+    //     font-size: px-rem(50px);
+    // }
 }
 .section-1--text {
     font-family: "Raleway-Light", sans-serif;
@@ -231,10 +286,30 @@
     color: #262626;
     cursor: default;
     user-select: none;
+    // background-color: darkgoldenrod;
 
-    @media screen and (max-width: px-rem(450px)) {
-        width: px-rem(270px);
+    @media screen and (max-width: px-rem(700px)) {
+        width: 80%;
     }
+    @media screen and (max-width: px-rem(600px)) {
+        width: 65%;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        width: 80%;
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        width: 90%;
+        font-size: px-rem(16px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        // width: 75%;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: 95%;
+    }
+    // @media screen and (max-width: px-rem(450px)) {
+    //     width: px-rem(270px);
+    // }
 }
 .section-1--button {
     margin-top: px-rem(20px);
@@ -250,6 +325,17 @@
     overflow: hidden;
     transition: 0.7s ease;
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(168px);
+        height: px-rem(47px);
+        font-size: px-rem(17px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(152px);
+        height: px-rem(39px);
+        font-size: px-rem(15px);
+    }
 }
 .section-1--button:active,
 .section-1--button:focus {

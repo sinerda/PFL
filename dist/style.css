@@ -44,11 +44,43 @@ main {
     height: 50rem;
   }
 }
+@media screen and (max-width: 43.75rem) {
+  .section-1 {
+    height: 42rem;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .section-1 {
+    padding: 0 3%;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-1 {
+    background-position-x: -23rem;
+    background-position-y: 11.875rem;
+    background-color: #f9f8fb;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-1 {
+    background-position-x: -27.375rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-1 {
+    background-position-x: -29.875rem;
+  }
+}
 
 .header {
   width: auto;
   height: 9.0625rem;
   padding: 3.125rem 11%;
+}
+@media screen and (max-width: 31.25rem) {
+  .header {
+    padding: 3.125rem 8%;
+  }
 }
 
 .header-logo {
@@ -62,6 +94,17 @@ main {
 .logo {
   width: 7.9375rem;
   height: 3.25rem;
+}
+@media screen and (max-width: 21.875rem) {
+  .logo {
+    width: 5.9375rem;
+    height: auto;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .logo {
+    width: 5.1875rem;
+  }
 }
 
 .menu {
@@ -311,9 +354,25 @@ main {
   width: 23.125rem;
   height: 16.0625rem;
 }
-@media screen and (max-width: 28.125rem) {
+@media screen and (max-width: 43.75rem) {
   .section-1--content {
-    width: 16.875rem;
+    top: 7.5rem;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .section-1--content {
+    left: 8%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-1--content {
+    top: 4.5rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-1--content {
+    top: 3.5rem;
   }
 }
 
@@ -329,11 +388,24 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 28.125rem) {
+@media screen and (max-width: 37.5rem) {
   .section-1--title {
-    width: 16.875rem;
-    margin-right: 0;
     font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-1--title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-1--title {
+    font-size: 2.1875rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-1--title {
+    font-size: 1.875rem;
   }
 }
 
@@ -348,9 +420,30 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 28.125rem) {
+@media screen and (max-width: 43.75rem) {
   .section-1--text {
-    width: 16.875rem;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .section-1--text {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-1--text {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-1--text {
+    width: 90%;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-1--text {
+    width: 95%;
   }
 }
 
@@ -373,6 +466,20 @@ main {
   transition: 0.7s ease;
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 21.875rem) {
+  .section-1--button {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-1--button {
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
+  }
 }
 
 .section-1--button:active,
@@ -716,7 +823,7 @@ main {
 @media screen and (max-width: 31.25rem) {
   .list-of-cards {
     top: 1.25rem;
-    width: 21.875rem;
+    width: 98%;
     height: 38.75rem;
   }
 }
@@ -724,7 +831,6 @@ main {
   .list-of-cards {
     top: 0;
     height: 26.875rem;
-    width: 18.125rem;
   }
 }
 
@@ -752,7 +858,7 @@ main {
 }
 @media screen and (max-width: 31.25rem) {
   .item-card {
-    width: 21.875rem;
+    width: 100%;
   }
 }
 @media screen and (max-width: 25rem) {
@@ -1496,6 +1602,12 @@ main {
   transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
   transition: box-shadow 0.5s, transform 0.5s;
   transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+}
+@media screen and (max-width: 62.5rem) {
+  .card:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .card:before {
