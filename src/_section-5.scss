@@ -16,6 +16,9 @@
         height: px-rem(900px);
         background-position-y: px-rem(350px);
     }
+    @media screen and (max-width: px-rem(400px)) {
+        height: px-rem(820px);
+    }
 }
 .section-5--content {
     position: relative;
@@ -30,6 +33,12 @@
         top: px-rem(100px);
         width: 95%;
     }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(68px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: 100%;
+    }
 }
 .section-5--title {
     margin: 0;
@@ -43,6 +52,15 @@
 
     @media screen and (max-width: px-rem(600px)) {
         font-size: px-rem(35px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        font-size: px-rem(30px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        font-size: px-rem(26px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        font-size: px-rem(21px);
     }
 }
 .section-5--text {
@@ -79,6 +97,12 @@
         flex-direction: column;
         justify-content: space-between;
     }
+    @media screen and (max-width: px-rem(350px)) {
+        height: px-rem(107px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        height: px-rem(88px);
+    }
 }
 .section-5--input {
     width: 63%;
@@ -97,6 +121,16 @@
     }
     @media screen and (max-width: px-rem(600px)) {
         width: px-rem(170px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(168px);
+        height: px-rem(47px);
+        font-size: px-rem(17px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(152px);
+        height: px-rem(39px);
+        font-size: px-rem(15px);
     }
 }
 .section-5--input:focus,
@@ -130,6 +164,16 @@
     }
     @media screen and (max-width: px-rem(600px)) {
         margin-left: 0;
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(168px);
+        height: px-rem(47px);
+        font-size: px-rem(17px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(152px);
+        height: px-rem(39px);
+        font-size: px-rem(15px);
     }
 }
 .section-5--submit:active,

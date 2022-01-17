@@ -26,6 +26,12 @@
     @media screen and (max-width: px-rem(550px)) {
         font-size: px-rem(80px);
     }
+    @media screen and (max-width: px-rem(450px)) {
+        font-size: px-rem(70px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        font-size: px-rem(60px);
+    }
 }
 
 .section-6--text {

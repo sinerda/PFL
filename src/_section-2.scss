@@ -11,10 +11,16 @@
     @media screen and (max-width: px-rem(500px)) {
         height: px-rem(890px);
     }
-    @media screen and (max-width: px-rem(400px)) {
-        height: px-rem(950px);
-    }
+    // @media screen and (max-width: px-rem(400px)) {
+    //     height: px-rem(950px);
+    // }
     @media screen and (max-width: px-rem(350px)) {
+        height: px-rem(920px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        height: px-rem(952px);
+    }
+    @media screen and (max-width: px-rem(225px)) {
         height: px-rem(1000px);
     }
 }
@@ -38,10 +44,16 @@
         top: px-rem(395px);
     }
     @media screen and (max-width: px-rem(400px)) {
-        top: px-rem(465px);
+        top: px-rem(385px);
     }
     @media screen and (max-width: px-rem(350px)) {
-        top: px-rem(545px);
+        top: px-rem(433px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        top: px-rem(481px);
+    }
+    @media screen and (max-width: px-rem(225px)) {
+        top: px-rem(530px);
     }
 }
 .section-2--image {
@@ -66,6 +78,9 @@
         width: px-rem(400px);
         height: px-rem(400px);
     }
+    @media screen and (max-width: px-rem(300px)) {
+        right: px-rem(-14px);
+    }
 }
 .section-2-Right-Side {
     float: right;
@@ -80,6 +95,9 @@
         height: px-rem(310px);
         position: relative;
         bottom: px-rem(400px);
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        padding: 0 1% 0 11%;
     }
 }
 .section-2--title {
@@ -107,10 +125,14 @@
     }
     @media screen and (max-width: px-rem(400px)) {
         min-width: px-rem(265px);
+        font-size: px-rem(50px);
     }
     @media screen and (max-width: px-rem(350px)) {
         min-width: px-rem(230px);
         font-size: px-rem(40px);
+    }
+    @media screen and (max-width: px-rem(225px)) {
+        font-size: px-rem(35px);
     }
 }
 .section-2--text {
@@ -122,6 +144,7 @@
     color: #fff;
     cursor: default;
     user-select: none;
+    // background-color: darkkhaki;
 
     @media screen and (max-width: px-rem(500px)) {
         min-width: px-rem(360px);
@@ -130,10 +153,15 @@
         min-width: px-rem(300px);
     }
     @media screen and (max-width: px-rem(400px)) {
-        width: px-rem(270px);
-        min-width: min-content;
+        min-width: 0;
+        width: 100%;
+        // width: px-rem(270px);
+        // min-width: min-content;
     }
-    @media screen and (max-width: px-rem(350px)) {
-        width: px-rem(230px);
+    @media screen and (max-width: px-rem(300px)) {
+        font-size: px-rem(16px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        line-height: 1.3882;
     }
 }

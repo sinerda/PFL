@@ -443,7 +443,7 @@ main {
 }
 @media screen and (max-width: 15.625rem) {
   .section-1--text {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -530,12 +530,17 @@ main {
     height: 55.625rem;
   }
 }
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 21.875rem) {
   .section-2 {
-    height: 59.375rem;
+    height: 57.5rem;
   }
 }
-@media screen and (max-width: 21.875rem) {
+@media screen and (max-width: 15.625rem) {
+  .section-2 {
+    height: 59.5rem;
+  }
+}
+@media screen and (max-width: 14.0625rem) {
   .section-2 {
     height: 62.5rem;
   }
@@ -574,12 +579,22 @@ main {
 }
 @media screen and (max-width: 25rem) {
   .section-2-Left-Side {
-    top: 29.0625rem;
+    top: 24.0625rem;
   }
 }
 @media screen and (max-width: 21.875rem) {
   .section-2-Left-Side {
-    top: 34.0625rem;
+    top: 27.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-2-Left-Side {
+    top: 30.0625rem;
+  }
+}
+@media screen and (max-width: 14.0625rem) {
+  .section-2-Left-Side {
+    top: 33.125rem;
   }
 }
 
@@ -611,6 +626,11 @@ main {
     height: 25rem;
   }
 }
+@media screen and (max-width: 18.75rem) {
+  .section-2--image {
+    right: -0.875rem;
+  }
+}
 
 .section-2-Right-Side {
   float: right;
@@ -626,6 +646,11 @@ main {
     height: 19.375rem;
     position: relative;
     bottom: 25rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-2-Right-Side {
+    padding: 0 1% 0 11%;
   }
 }
 
@@ -663,12 +688,18 @@ main {
 @media screen and (max-width: 25rem) {
   .section-2--title {
     min-width: 16.5625rem;
+    font-size: 3.125rem;
   }
 }
 @media screen and (max-width: 21.875rem) {
   .section-2--title {
     min-width: 14.375rem;
     font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 14.0625rem) {
+  .section-2--title {
+    font-size: 2.1875rem;
   }
 }
 
@@ -697,15 +728,18 @@ main {
 }
 @media screen and (max-width: 25rem) {
   .section-2--text {
-    width: 16.875rem;
-    min-width: -webkit-min-content;
-    min-width: -moz-min-content;
-    min-width: min-content;
+    min-width: 0;
+    width: 100%;
   }
 }
-@media screen and (max-width: 21.875rem) {
+@media screen and (max-width: 18.75rem) {
   .section-2--text {
-    width: 14.375rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-2--text {
+    line-height: 1.3882;
   }
 }
 
@@ -728,14 +762,29 @@ main {
     height: 70.6875rem;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .section-3 {
+    height: 60.6875rem;
+  }
+}
 @media screen and (max-width: 25rem) {
   .section-3 {
-    height: 58.75rem;
+    height: 55.6875rem;
   }
 }
 @media screen and (max-width: 21.875rem) {
   .section-3 {
     height: 53.125rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-3 {
+    height: 43.125rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-3 {
+    height: 41.125rem;
   }
 }
 
@@ -765,14 +814,31 @@ main {
     top: 28.75rem;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .section-3-Left-Side {
+    height: 29.9375rem;
+  }
+}
 @media screen and (max-width: 25rem) {
   .section-3-Left-Side {
-    height: 27.5rem;
+    top: 24.75rem;
   }
 }
 @media screen and (max-width: 21.875rem) {
   .section-3-Left-Side {
     top: 23.125rem;
+    height: 26.9375rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-3-Left-Side {
+    top: 18.125rem;
+    height: 22.9375rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-3-Left-Side {
+    top: 16.125rem;
   }
 }
 
@@ -827,10 +893,19 @@ main {
     height: 38.75rem;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .list-of-cards {
+    height: 28.75rem;
+  }
+}
 @media screen and (max-width: 25rem) {
   .list-of-cards {
-    top: 0;
-    height: 26.875rem;
+    height: 25.75rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .list-of-cards {
+    height: 21.75rem;
   }
 }
 
@@ -856,15 +931,22 @@ main {
     margin: 0 0 1.875rem;
   }
 }
-@media screen and (max-width: 31.25rem) {
-  .item-card {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 28.125rem) {
   .item-card {
     height: 4.375rem;
-    width: 100%;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .item-card {
+    margin: 0 0 1.5rem;
+    height: 4.0625rem;
+    width: 89%;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .item-card {
+    width: 97%;
   }
 }
 
@@ -880,9 +962,19 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 28.125rem) {
+  .card-text {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
   .card-text {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .card-text {
+    font-size: 0.875rem;
   }
 }
 
@@ -896,20 +988,32 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 28.125rem) {
   .card-icon {
     padding: 0.875rem 0.75rem;
     width: 4.375rem;
     height: 4.375rem;
   }
 }
+@media screen and (max-width: 18.75rem) {
+  .card-icon {
+    padding: 0.875rem 0.5625rem;
+    width: 4.0625rem;
+    height: 4.0625rem;
+  }
+}
 
 .icon {
   width: 4rem;
 }
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 28.125rem) {
   .icon {
     width: 2.8125rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .icon {
+    width: 2.3125rem;
   }
 }
 
@@ -942,15 +1046,26 @@ main {
     bottom: 41.9375rem;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .section-3-Right-Side {
+    bottom: 29.9375rem;
+  }
+}
 @media screen and (max-width: 25rem) {
   .section-3-Right-Side {
     height: 25.625rem;
-    bottom: 26.25rem;
+    bottom: 29.25rem;
   }
 }
 @media screen and (max-width: 21.875rem) {
   .section-3-Right-Side {
     bottom: 28.125rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-3-Right-Side {
+    bottom: 21.125rem;
+    height: 15.625rem;
   }
 }
 
@@ -1001,6 +1116,17 @@ main {
 @media screen and (max-width: 21.875rem) {
   .section-3--image {
     width: 16.875rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-3--image {
+    top: 0;
+    width: 12.875rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-3--image {
+    width: 10.6875rem;
   }
 }
 
@@ -1067,6 +1193,16 @@ main {
     top: -9.875rem;
   }
 }
+@media screen and (max-width: 18.75rem) {
+  .section-3--wrapper-title {
+    top: -10.5625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-3--wrapper-title {
+    top: -8.625rem;
+  }
+}
 
 .section-3--title {
   font-family: Raleway-Bold, sans-serif;
@@ -1095,9 +1231,19 @@ main {
     font-size: 2.6875rem;
   }
 }
+@media screen and (max-width: 18.75rem) {
+  .section-3--title {
+    font-size: 2.375rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-3--title {
+    font-size: 1.875rem;
+  }
+}
 
 .section-4 {
-  height: 96rem;
+  height: 96.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1112,7 +1258,27 @@ main {
 }
 @media screen and (max-width: 31.25rem) {
   .section-4 {
-    height: 96.875rem;
+    height: 90.25rem;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .section-4 {
+    height: 93.25rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-4 {
+    height: 96.25rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-4 {
+    height: 95.25rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-4 {
+    height: 100.25rem;
   }
 }
 
@@ -1137,6 +1303,11 @@ main {
             align-items: center;
   }
 }
+@media screen and (max-width: 31.25rem) {
+  .section-4--content {
+    top: 3.25rem;
+  }
+}
 
 .section-4--title {
   margin: 0;
@@ -1150,9 +1321,19 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (max-width: 28.125rem) {
+@media screen and (max-width: 31.25rem) {
   .section-4--title {
     font-size: 4.375rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-4--title {
+    font-size: 3.75rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-4--title {
+    font-size: 3.125rem;
   }
 }
 
@@ -1171,7 +1352,23 @@ main {
 }
 @media screen and (max-width: 43.75rem) {
   .section-4--text {
+    max-height: 5.0625rem;
     width: 85%;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .section-4--text {
+    max-height: 6.75rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-4--text {
+    max-height: 10.75rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-4--text {
+    max-height: 15.75rem;
   }
 }
 
@@ -1181,6 +1378,27 @@ main {
   width: 78%;
   height: 61.875rem;
   background-color: #dbffff;
+}
+@media screen and (max-width: 31.25rem) {
+  .gallery {
+    top: 4.0625rem;
+    width: 89%;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .gallery {
+    top: 7.0625rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .gallery {
+    top: 8.0625rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .gallery {
+    width: 95%;
+  }
 }
 
 .gallery-img {
@@ -1228,6 +1446,28 @@ main {
   -webkit-box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 }
+@media screen and (max-width: 31.25rem) {
+  .section-4--button {
+    top: 7rem;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .section-4--button {
+    top: 10rem;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-4--button {
+    top: 10.8125rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-4--button {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
 
 .section-4--button:active,
 .section-4--button:focus {
@@ -1265,6 +1505,11 @@ main {
     background-position-y: 21.875rem;
   }
 }
+@media screen and (max-width: 25rem) {
+  .section-5 {
+    height: 51.25rem;
+  }
+}
 
 .section-5--content {
   position: relative;
@@ -1281,6 +1526,16 @@ main {
   .section-5--content {
     top: 6.25rem;
     width: 95%;
+  }
+}
+@media screen and (max-width: 25rem) {
+  .section-5--content {
+    top: 4.25rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-5--content {
+    width: 100%;
   }
 }
 
@@ -1300,6 +1555,21 @@ main {
 @media screen and (max-width: 37.5rem) {
   .section-5--title {
     font-size: 2.1875rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-5--title {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-5--title {
+    font-size: 1.625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-5--title {
+    font-size: 1.3125rem;
   }
 }
 
@@ -1357,6 +1627,16 @@ main {
             justify-content: space-between;
   }
 }
+@media screen and (max-width: 21.875rem) {
+  .section-5--form {
+    height: 6.6875rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-5--form {
+    height: 5.5rem;
+  }
+}
 
 .section-5--input {
   width: 63%;
@@ -1380,6 +1660,20 @@ main {
 @media screen and (max-width: 37.5rem) {
   .section-5--input {
     width: 10.625rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-5--input {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-5--input {
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
   }
 }
 
@@ -1423,6 +1717,20 @@ main {
 @media screen and (max-width: 37.5rem) {
   .section-5--submit {
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-5--submit {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-5--submit {
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
   }
 }
 
@@ -1485,6 +1793,16 @@ main {
 @media screen and (max-width: 34.375rem) {
   .section-6--title {
     font-size: 5rem;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .section-6--title {
+    font-size: 4.375rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .section-6--title {
+    font-size: 3.75rem;
   }
 }
 
