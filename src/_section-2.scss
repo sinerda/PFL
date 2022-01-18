@@ -79,7 +79,7 @@
         height: px-rem(400px);
     }
     @media screen and (max-width: px-rem(300px)) {
-        right: px-rem(-14px);
+        right: px-rem(11.5px);
     }
 }
 .section-2-Right-Side {
@@ -128,7 +128,7 @@
         font-size: px-rem(50px);
     }
     @media screen and (max-width: px-rem(350px)) {
-        min-width: px-rem(230px);
+        min-width: 0;
         font-size: px-rem(40px);
     }
     @media screen and (max-width: px-rem(225px)) {

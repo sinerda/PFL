@@ -150,6 +150,11 @@
         height: px-rem(47px);
         font-size: px-rem(17px);
     }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(152px);
+        height: px-rem(39px);
+        font-size: px-rem(15px);
+    }
     // @media screen and (max-width: px-rem(250px)) {
     //     top: px-rem(173px);
     // }

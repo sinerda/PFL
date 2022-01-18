@@ -13,6 +13,9 @@
     @media screen and (max-width: px-rem(800px)) {
         height: px-rem(1649px);
     }
+    @media screen and (max-width: px-rem(250px)) {
+        height: px-rem(1585px);
+    }
 }
 .section-6--title {
     margin-top: px-rem(-90px);
@@ -31,6 +34,14 @@
     }
     @media screen and (max-width: px-rem(350px)) {
         font-size: px-rem(60px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        font-size: px-rem(50px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        position: relative;
+        top: px-rem(20px);
+        font-size: px-rem(45px);
     }
 }
 
@@ -53,6 +64,10 @@
         width: px-rem(380px);
     }
     @media screen and (max-width: px-rem(450px)) {
+        width: 85%;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        max-height: px-rem(275px);
         width: 85%;
     }
 }
@@ -79,6 +94,10 @@
     @media screen and (max-width: px-rem(550px)) {
         width: 100%;
     }
+    @media screen and (max-width: px-rem(250px)) {
+        position: relative;
+        top: px-rem(10px);
+    }
 }
 .card {
     padding: px-rem(20px);
@@ -101,6 +120,15 @@
     }
     @media screen and (max-width: px-rem(400px)) {
         width: px-rem(320px);
+    }
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(260px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        width: px-rem(220px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: px-rem(180px);
     }
 }
 .card:hover {
@@ -156,6 +184,13 @@
     border-radius: px-rem(8px);
     cursor: default;
     user-select: none;
+
+    @media screen and (max-width: px-rem(250px)) {
+        top: 0;
+        left: 0;
+        width: px-rem(52px);
+        height: px-rem(52px);
+    }
 }
 
 .card-date {
@@ -165,11 +200,19 @@
     line-height: 0.875;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (max-width: px-rem(250px)) {
+        font-size: px-rem(27px);
+    }
 }
 
 .card-date-month {
     font-family: "Raleway-Heavy", sans-serif;
     font-size: px-rem(21px);
+
+    @media screen and (max-width: px-rem(250px)) {
+        font-size: px-rem(19.5px);
+    }
 }
 
 .card-title {
@@ -189,6 +232,11 @@
     @media screen and (max-width: px-rem(1250px)) {
         // width: 89%;
     }
+    @media screen and (max-width: px-rem(250px)) {
+        top: px-rem(115px);
+        height: px-rem(71px);
+        font-size: px-rem(15px);
+    }
 }
 .card-author {
     position: relative;
@@ -202,6 +250,10 @@
 
     @media screen and (max-width: px-rem(550px)) {
         // width: px-rem(250px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        top: px-rem(100px);
+        font-size: px-rem(11.5px);
     }
 }
 
@@ -220,6 +272,18 @@
     overflow: hidden;
     transition: 0.7s ease;
     box-shadow: 0px 3px 8px -1px rgba(83, 83, 83, 1);
+
+    @media screen and (max-width: px-rem(350px)) {
+        width: px-rem(168px);
+        height: px-rem(47px);
+        font-size: px-rem(17px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        top: px-rem(32px);
+        width: px-rem(152px);
+        height: px-rem(39px);
+        font-size: px-rem(15px);
+    }
 }
 .section-6--button:active,
 .section-6--button:focus {

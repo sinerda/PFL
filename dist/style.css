@@ -628,7 +628,7 @@ main {
 }
 @media screen and (max-width: 18.75rem) {
   .section-2--image {
-    right: -0.875rem;
+    right: 0.71875rem;
   }
 }
 
@@ -693,7 +693,7 @@ main {
 }
 @media screen and (max-width: 21.875rem) {
   .section-2--title {
-    min-width: 14.375rem;
+    min-width: 0;
     font-size: 2.5rem;
   }
 }
@@ -1468,6 +1468,13 @@ main {
     font-size: 1.0625rem;
   }
 }
+@media screen and (max-width: 15.625rem) {
+  .section-4--button {
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
+  }
+}
 
 .section-4--button:active,
 .section-4--button:focus {
@@ -1777,6 +1784,11 @@ main {
     height: 103.0625rem;
   }
 }
+@media screen and (max-width: 15.625rem) {
+  .section-6 {
+    height: 99.0625rem;
+  }
+}
 
 .section-6--title {
   margin-top: -5.625rem;
@@ -1803,6 +1815,18 @@ main {
 @media screen and (max-width: 21.875rem) {
   .section-6--title {
     font-size: 3.75rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-6--title {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-6--title {
+    position: relative;
+    top: 1.25rem;
+    font-size: 2.8125rem;
   }
 }
 
@@ -1833,6 +1857,12 @@ main {
 }
 @media screen and (max-width: 28.125rem) {
   .section-6--text {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-6--text {
+    max-height: 17.1875rem;
     width: 85%;
   }
 }
@@ -1874,6 +1904,12 @@ main {
     width: 100%;
   }
 }
+@media screen and (max-width: 15.625rem) {
+  .section-6--wrapper-for-cards {
+    position: relative;
+    top: 0.625rem;
+  }
+}
 
 .card {
   padding: 1.25rem;
@@ -1908,6 +1944,21 @@ main {
 @media screen and (max-width: 25rem) {
   .card {
     width: 20rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  .card {
+    width: 16.25rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .card {
+    width: 13.75rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .card {
+    width: 11.25rem;
   }
 }
 
@@ -1974,6 +2025,14 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 15.625rem) {
+  .card-wrap-date {
+    top: 0;
+    left: 0;
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+}
 
 .card-date {
   margin: 0;
@@ -1983,10 +2042,20 @@ main {
   text-transform: uppercase;
   color: #fff;
 }
+@media screen and (max-width: 15.625rem) {
+  .card-date {
+    font-size: 1.6875rem;
+  }
+}
 
 .card-date-month {
   font-family: "Raleway-Heavy", sans-serif;
   font-size: 1.3125rem;
+}
+@media screen and (max-width: 15.625rem) {
+  .card-date-month {
+    font-size: 1.21875rem;
+  }
 }
 
 .card-title {
@@ -2004,6 +2073,14 @@ main {
           user-select: none;
   overflow: hidden;
 }
+@media screen and (max-width: 15.625rem) {
+  .card-title {
+    top: 7.1875rem;
+    height: 4.4375rem;
+    font-size: 0.9375rem;
+  }
+}
+
 .card-author {
   position: relative;
   top: 6.375rem;
@@ -2016,6 +2093,13 @@ main {
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 15.625rem) {
+  .card-author {
+    top: 6.25rem;
+    font-size: 0.71875rem;
+  }
+}
+
 .section-6--button {
   position: relative;
   top: 3.125rem;
@@ -2036,6 +2120,21 @@ main {
   transition: 0.7s ease;
   -webkit-box-shadow: 0px 3px 8px -1px #535353;
           box-shadow: 0px 3px 8px -1px #535353;
+}
+@media screen and (max-width: 21.875rem) {
+  .section-6--button {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-6--button {
+    top: 2rem;
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
+  }
 }
 
 .section-6--button:active,
@@ -2108,6 +2207,16 @@ main {
     font-size: 3.75rem;
   }
 }
+@media screen and (max-width: 18.75rem) {
+  .section-7--title {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-7--title {
+    font-size: 2.8125rem;
+  }
+}
 
 .section-7--text {
   margin: 1.25rem 0 2.5rem;
@@ -2131,6 +2240,13 @@ main {
 @media screen and (max-width: 21.875rem) {
   .section-7--text {
     width: 13.75rem;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-7--text {
+    width: 85%;
+    font-size: 1rem;
+    line-height: 1.5882;
   }
 }
 
@@ -2164,6 +2280,21 @@ main {
     width: 80%;
   }
 }
+@media screen and (max-width: 28.125rem) {
+  .section-7--form {
+    width: 89%;
+  }
+}
+@media screen and (max-width: 18.75rem) {
+  .section-7--form {
+    width: 94%;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-7--form {
+    width: 97%;
+  }
+}
 
 .section-7--input-text {
   margin-bottom: 0.9375rem;
@@ -2186,6 +2317,12 @@ main {
 @media screen and (max-width: 46.875rem) {
   .section-7--input-text {
     width: 100%;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-7--input-text {
+    height: 2.4375rem;
+    font-size: 0.84375rem;
   }
 }
 
@@ -2267,6 +2404,20 @@ main {
     right: 0;
   }
 }
+@media screen and (max-width: 21.875rem) {
+  .section-7--submit {
+    width: 10.5rem;
+    height: 2.9375rem;
+    font-size: 1.0625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-7--submit {
+    width: 9.5rem;
+    height: 2.4375rem;
+    font-size: 0.9375rem;
+  }
+}
 
 .section-7--submit:active,
 .section-7--submit:focus {
@@ -2310,6 +2461,11 @@ main {
   color: #262626;
   cursor: default;
 }
+@media screen and (max-width: 18.75rem) {
+  .section-7--Header-for-contacts {
+    font-size: 0.96875rem;
+  }
+}
 
 .section-7--contacts {
   display: block;
@@ -2323,6 +2479,16 @@ main {
   font-size: 1.25rem;
   color: #262626;
   cursor: default;
+}
+@media screen and (max-width: 28.125rem) {
+  .section-7--contacts {
+    font-size: 1.15625rem;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .section-7--contacts {
+    font-size: 1.0625rem;
+  }
 }
 
 a.section-7--contacts:hover {
