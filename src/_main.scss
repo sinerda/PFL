@@ -9,7 +9,8 @@ body {
     padding: 0;
 }
 main {
-    height: px-rem(6340px);
+    height: px-rem(6244px);
+    // было 6340px, поменял из-за возникшей пустой полосы внизу сайта
 }
 @import "section-1";
 @import "section-2";

@@ -244,6 +244,7 @@
 }
 a.section-7--contacts:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 footer {
     flex-shrink: 0;
@@ -324,7 +325,7 @@ footer {
         text-align: left;
     }
     @media screen and (max-width: px-rem(350px)) {
-        top: px-rem(55px);
+        top: px-rem(63px);
         line-height: 1.4;
     }
 }

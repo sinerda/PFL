@@ -28,7 +28,7 @@ body {
 }
 
 main {
-  height: 396.25rem;
+  height: 390.25rem;
 }
 
 .section-1 {
@@ -198,6 +198,18 @@ main {
     width: 68%;
   }
 }
+@media screen and (max-height: 34.375rem) {
+  .adaptive-menu {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .adaptive-menu {
+    width: 82%;
+  }
+}
 
 .adaptive-menu.active {
   opacity: 96%;
@@ -224,6 +236,17 @@ main {
             transform: translateX(47%);
   }
 }
+@media screen and (max-height: 34.375rem) {
+  .adaptive-menu.active {
+    padding: 35% 5.5%;
+  }
+}
+@media screen and (max-width: 15.625rem) {
+  .adaptive-menu.active {
+    -webkit-transform: translateX(23%);
+            transform: translateX(23%);
+  }
+}
 
 .menu a,
 .adaptive-menu a {
@@ -238,7 +261,7 @@ main {
 .adaptive-menu a {
   color: #fff;
   font-size: 1.625rem;
-  line-height: 2.3077;
+  line-height: 1.9077;
   text-transform: capitalize;
 }
 @media screen and (max-height: 28.125rem) {
@@ -292,11 +315,6 @@ main {
     right: 5.5%;
   }
 }
-@media screen and (max-height: 35.625rem) {
-  .button-burger-menu.active {
-    right: 26%;
-  }
-}
 @media screen and (max-height: 28.125rem) {
   .button-burger-menu.active {
     top: 6%;
@@ -324,9 +342,19 @@ main {
 .button-burger-menu span:nth-of-type(2) {
   top: calc(50% - 5px);
 }
+@media screen and (max-width: 15.625rem) {
+  .button-burger-menu span:nth-of-type(2) {
+    top: calc(50% - 8px);
+  }
+}
 
 .button-burger-menu span:nth-of-type(3) {
   top: calc(50% + 5px);
+}
+@media screen and (max-width: 15.625rem) {
+  .button-burger-menu span:nth-of-type(3) {
+    top: calc(50% + 8px);
+  }
 }
 
 .button-burger-menu.active span:nth-of-type(1) {
@@ -504,6 +532,7 @@ main {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 62.5rem) {
   .icon-mouse {
@@ -1917,6 +1946,7 @@ main {
   height: 19.375rem;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
@@ -1974,8 +2004,10 @@ main {
 }
 @media screen and (max-width: 62.5rem) {
   .card:hover {
-    -webkit-transform: none;
-            transform: none;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
+            box-shadow: 0px 3px 10px -1px rgba(83, 83, 83, 0.6);
   }
 }
 
@@ -1999,15 +2031,13 @@ main {
 #card-2 {
   background: url(img/section-6-img2.jpg);
   background-repeat: no-repeat;
-  background-position-x: -0.625rem;
-  background-position-y: -10.625rem;
+  background-size: cover;
 }
 
 #card-3 {
   background: url(img/section-6-img3.jpg);
   background-repeat: no-repeat;
-  background-position-x: -3.875rem;
-  background-position-y: -0.5625rem;
+  background-size: cover;
 }
 
 .card-wrap-date {
@@ -2019,7 +2049,6 @@ main {
   text-align: center;
   background-color: #90908e;
   border-radius: 0.5rem;
-  cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2066,7 +2095,6 @@ main {
   font-size: 1.25rem;
   line-height: 1.25;
   color: #fff;
-  cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2087,7 +2115,6 @@ main {
   font-family: "Raleway-Light", sans-serif;
   font-size: 0.8125rem;
   color: #fff;
-  cursor: default;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2493,6 +2520,7 @@ main {
 
 a.section-7--contacts:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 footer {
@@ -2602,7 +2630,7 @@ footer {
 }
 @media screen and (max-width: 21.875rem) {
   .made-with-love {
-    top: 3.4375rem;
+    top: 3.9375rem;
     line-height: 1.4;
   }
 }

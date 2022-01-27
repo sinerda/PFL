@@ -109,6 +109,12 @@
     @media screen and (max-width: px-rem(450px)) {
         width: 68%;
     }
+    @media screen and (max-height: px-rem(550px)) {
+        justify-content: space-evenly;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        width: 82%;
+    }
 }
 .adaptive-menu.active {
     opacity: 96%;
@@ -124,6 +130,12 @@
     @media screen and (max-width: px-rem(450px)) {
         transform: translateX(47%);
     }
+    @media screen and (max-height: px-rem(550px)) {
+        padding: 35% 5.5%;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        transform: translateX(23%);
+    }
 }
 .menu a,
 .adaptive-menu a {
@@ -137,7 +149,8 @@
 .adaptive-menu a {
     color: #fff;
     font-size: px-rem(26px);
-    line-height: 2.3077; // 60px
+    // line-height: 2.3077; // 60px
+    line-height: 1.9077;
     text-transform: capitalize;
 
     @media screen and (max-height: px-rem(450px)) {
@@ -163,6 +176,8 @@
     position: fixed;
     width: px-rem(42px);
     height: px-rem(42px);
+    // width: 42px;
+    // height: 42px;
     right: 11%;
     top: px-rem(50px);
     -webkit-transform: translateZ(1px);
@@ -184,9 +199,9 @@
     @media screen and (max-width: px-rem(1000px)) {
         right: 5.5%;
     }
-    @media screen and (max-height: px-rem(570px)) {
-        right: 26%;
-    }
+    // @media screen and (max-height: px-rem(570px)) {
+    //     right: 26%;
+    // }
     @media screen and (max-height: px-rem(450px)) {
         top: 6%;
     }
@@ -206,9 +221,17 @@
 }
 .button-burger-menu span:nth-of-type(2) {
     top: calc(50% - 5px);
+
+    @media screen and (max-width: px-rem(250px)) {
+        top: calc(50% - 8px);
+    }
 }
 .button-burger-menu span:nth-of-type(3) {
     top: calc(50% + 5px);
+
+    @media screen and (max-width: px-rem(250px)) {
+        top: calc(50% + 8px);
+    }
 }
 //  menu open
 .button-burger-menu.active span:nth-of-type(1) {
@@ -354,6 +377,7 @@
     left: 49%;
     top: px-rem(890px);
     user-select: none;
+    cursor: pointer;
 
     @media screen and (max-width: px-rem(1000px)) {
         visibility: hidden;
