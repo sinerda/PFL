@@ -25,10 +25,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  font-size: 100%;
 }
 
 main {
   height: 390.25rem;
+  font-size: 100%;
 }
 
 .section-1 {
@@ -136,6 +138,7 @@ main {
 
 .menu li {
   margin-left: 2.1875rem;
+  height: 1.25rem;
 }
 
 .menu li:hover {
@@ -172,8 +175,8 @@ main {
   background-color: #ff6033;
   -webkit-box-shadow: -6px -1px 10px 0px rgba(0, 0, 0, 0.4);
           box-shadow: -6px -1px 10px 0px rgba(0, 0, 0, 0.4);
-  -webkit-transform: translateX(260%);
-          transform: translateX(260%);
+  -webkit-transform: translateX(360%);
+          transform: translateX(360%);
   opacity: 20%;
   -webkit-transition: all 0.65s linear;
   transition: all 0.65s linear;
@@ -183,31 +186,27 @@ main {
     visibility: visible;
   }
 }
-@media screen and (max-width: 43.75rem) {
-  .adaptive-menu {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 34.375rem) {
-  .adaptive-menu {
-    width: 59%;
-  }
-}
-@media screen and (max-width: 28.125rem) {
-  .adaptive-menu {
-    width: 68%;
-  }
-}
 @media screen and (max-height: 34.375rem) {
   .adaptive-menu {
+    padding: 20% 5.5%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
 }
-@media screen and (max-width: 15.625rem) {
+@media screen and (max-height: 28.125rem) {
   .adaptive-menu {
-    width: 82%;
+    padding: 15% 5.5%;
+  }
+}
+@media screen and (max-height: 25rem) {
+  .adaptive-menu {
+    padding: 15% 5.5% 5%;
+  }
+}
+@media screen and (max-height: 15.625rem) {
+  .adaptive-menu {
+    padding: 10% 5.5% 2%;
   }
 }
 
@@ -220,31 +219,37 @@ main {
 }
 @media screen and (max-width: 43.75rem) {
   .adaptive-menu.active {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    width: 35%;
+    -webkit-transform: translateX(190%);
+            transform: translateX(190%);
   }
 }
 @media screen and (max-width: 34.375rem) {
   .adaptive-menu.active {
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
+    width: 48%;
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
   }
 }
 @media screen and (max-width: 28.125rem) {
   .adaptive-menu.active {
-    -webkit-transform: translateX(47%);
-            transform: translateX(47%);
+    width: 54%;
+    -webkit-transform: translateX(86%);
+            transform: translateX(86%);
   }
 }
-@media screen and (max-height: 34.375rem) {
+@media screen and (max-width: 21.875rem) {
   .adaptive-menu.active {
-    padding: 35% 5.5%;
+    width: 50%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
-@media screen and (max-width: 15.625rem) {
+@media screen and (max-width: 18.75rem) {
   .adaptive-menu.active {
-    -webkit-transform: translateX(23%);
-            transform: translateX(23%);
+    width: 65%;
+    -webkit-transform: translateX(55%);
+            transform: translateX(55%);
   }
 }
 
@@ -264,25 +269,41 @@ main {
   line-height: 1.9077;
   text-transform: capitalize;
 }
-@media screen and (max-height: 28.125rem) {
+@media screen and (max-height: 34.375rem) {
   .adaptive-menu a {
-    line-height: 2.1154;
+    line-height: 0.0077;
   }
 }
 @media screen and (max-height: 25rem) {
   .adaptive-menu a {
-    line-height: 1.9231;
+    line-height: 1.3077;
   }
 }
-@media screen and (max-height: 21.875rem) {
+@media screen and (max-height: 25rem) {
   .adaptive-menu a {
-    line-height: 1.5385;
+    font-size: 1.46875rem;
   }
 }
 @media screen and (max-width: 20.625rem) and (max-height: 34.375rem) {
   .adaptive-menu a {
     line-height: 1.1538;
   }
+}
+@media screen and (max-height: 18.75rem) {
+  .adaptive-menu a {
+    font-size: 1.28125rem;
+  }
+}
+@media screen and (max-height: 15.625rem) {
+  .adaptive-menu a {
+    font-size: 1.09375rem;
+    line-height: 1.2077;
+  }
+}
+
+.adaptive-menu a:active {
+  background-color: cornsilk;
+  color: #000;
 }
 
 .button-burger-menu {
@@ -315,14 +336,19 @@ main {
     right: 5.5%;
   }
 }
-@media screen and (max-height: 28.125rem) {
+@media screen and (orientation: landscape) and (max-height: 15.625rem) and (max-width: 37.5rem) {
   .button-burger-menu.active {
-    top: 6%;
+    right: 20%;
   }
 }
-@media screen and (max-width: 20.625rem) and (max-height: 34.375rem) {
+@media screen and (orientation: landscape) and (max-height: 15.625rem) and (max-width: 21.875rem) {
   .button-burger-menu.active {
-    right: 38%;
+    right: 25%;
+  }
+}
+@media screen and (max-height: 31.25rem) {
+  .button-burger-menu.active {
+    top: 6%;
   }
 }
 
@@ -1924,13 +1950,8 @@ main {
 }
 @media screen and (max-width: 50rem) {
   .section-6--wrapper-for-cards {
-    width: 33.875rem;
-    height: 65.125rem;
-  }
-}
-@media screen and (max-width: 34.375rem) {
-  .section-6--wrapper-for-cards {
     width: 100%;
+    height: 65.125rem;
   }
 }
 @media screen and (max-width: 15.625rem) {

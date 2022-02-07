@@ -88,11 +88,8 @@
         flex-wrap: wrap;
     }
     @media screen and (max-width: px-rem(800px)) {
-        width: px-rem(542px);
-        height: px-rem(1042px);
-    }
-    @media screen and (max-width: px-rem(550px)) {
         width: 100%;
+        height: px-rem(1042px);
     }
     @media screen and (max-width: px-rem(250px)) {
         position: relative;
