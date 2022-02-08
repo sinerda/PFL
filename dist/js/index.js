@@ -14,6 +14,27 @@ for (let elem of link) {
   })
 }
 
+// прячем кнопку "вверх" при клике
+$(document).ready(function () {
+  $('.button-UP').click(function () {
+    $(this).removeClass('active');
+    $(this).addClass('hidden');
+  })
+})
+
+// отображаем кнопку "вверх"
+$(window).scroll(function () {
+  if ($(window).scrollTop() == 0) {
+    $('.button-UP').addClass('off');
+    $('.button-UP').removeClass('hidden');
+  }
+  if (($('.button-UP').hasClass('off')) && ($(window).scrollTop() > 500)) {
+    $('.button-UP').removeClass('off');
+    $('.button-UP').addClass('active');
+  }
+})
+
+
 // при скролле меняем цвета кнопки меню и адаптивного меню
 $(window).scroll(function () {
   if ($('.button-burger-menu').css('display') == 'block') {

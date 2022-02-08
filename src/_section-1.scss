@@ -79,7 +79,7 @@
 }
 .adaptive-menu {
     visibility: hidden;
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     top: px-rem(-24px);
     left: 0;
@@ -182,7 +182,7 @@
     color: #000;
 }
 .button-burger-menu {
-    z-index: 10;
+    z-index: 100;
     display: none;
     position: fixed;
     width: px-rem(42px);
@@ -386,6 +386,39 @@
     background-color: #fd8766;
     border: solid 1px #fd8766;
     transition: all 0.7s;
+}
+.button-UP {
+    z-index: 50;
+    position: fixed;
+    right: px-rem(30px);
+    bottom: px-rem(40px);
+    width: px-rem(45px);
+    height: px-rem(45px);
+    background-color: cornflowerblue;
+    // box-shadow: 4px 4px 0px 0px rgb(0 0 0 / 44%);
+    cursor: pointer;
+}
+.button-UP.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.button-UP.off,
+.button-UP.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.button-UP a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: px-rem(40px);
+}
+.icon-up {
+    border-radius: 40px 50%;
+    color: #fff;
+    background-color: #000;
 }
 .icon-mouse {
     position: absolute;
