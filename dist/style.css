@@ -577,12 +577,37 @@ main {
     bottom: 2.5rem;
   }
 }
+@media screen and (orientation: landscape) and (max-height: 25rem) {
+  .button-UP {
+    right: 10%;
+    bottom: 2.5rem;
+  }
+}
 
 .button-UP.active {
   visibility: visible;
   opacity: 1;
-  -webkit-transition: opacity 0.3s, visibility 0.3s;
-  transition: opacity 0.3s, visibility 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 0.3s, visibility 0.3s, -webkit-transform 0.6s;
+  transition: opacity 0.3s, visibility 0.3s, -webkit-transform 0.6s;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.6s;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.6s, -webkit-transform 0.6s;
+}
+
+.button-UP.active:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+}
+@media screen and (max-width: 62.5rem) {
+  .button-UP.active:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .button-UP.off,
@@ -1886,7 +1911,12 @@ main {
 }
 @media screen and (max-width: 50rem) {
   .section-6 {
-    height: 103.0625rem;
+    height: 77.8125rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .section-6 {
+    height: 97.8125rem;
   }
 }
 @media screen and (max-width: 15.625rem) {
@@ -2001,7 +2031,12 @@ main {
 @media screen and (max-width: 50rem) {
   .section-6--wrapper-for-cards {
     width: 100%;
-    height: 65.125rem;
+    height: 43.75rem;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .section-6--wrapper-for-cards {
+    height: 63.75rem;
   }
 }
 @media screen and (max-width: 15.625rem) {
@@ -2037,7 +2072,7 @@ main {
     width: 45%;
   }
 }
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 37.5rem) {
   .card {
     width: 23.125rem;
   }

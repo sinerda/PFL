@@ -407,11 +407,24 @@
     @media screen and (max-width: px-rem(500px)) {
         bottom: px-rem(40px);
     }
+    @media screen and (orientation: landscape) and (max-height: px-rem(400px)) {
+        right: 10%;
+        bottom: px-rem(40px);
+    }
 }
 .button-UP.active {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.3s, visibility 0.3s;
+    transform: scale(1);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.6s;
+}
+.button-UP.active:hover {
+    transform: scale(1.25);
+    transition: transform 0.6s;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        transform: scale(1);
+    }
 }
 .button-UP.off,
 .button-UP.hidden {
