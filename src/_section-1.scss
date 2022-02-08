@@ -187,8 +187,6 @@
     position: fixed;
     width: px-rem(42px);
     height: px-rem(42px);
-    // width: 42px;
-    // height: 42px;
     right: 11%;
     top: px-rem(50px);
     -webkit-transform: translateZ(1px);
@@ -201,6 +199,7 @@
 
     @media screen and (max-width: px-rem(1000px)) {
         display: block;
+        right: 9%;
     }
 }
 .button-burger-menu.active {
@@ -390,13 +389,24 @@
 .button-UP {
     z-index: 50;
     position: fixed;
-    right: px-rem(30px);
-    bottom: px-rem(40px);
-    width: px-rem(45px);
-    height: px-rem(45px);
-    background-color: cornflowerblue;
-    // box-shadow: 4px 4px 0px 0px rgb(0 0 0 / 44%);
+    right: px-rem(30px); //13%
+    bottom: 50%; //40px, 300px
+    width: px-rem(30px);
+    height: px-rem(30px);
+    padding-left: 7px;
+    font-size: px-rem(40px);
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: rgb(0 0 0 / 57%);
+    box-shadow: 0px 0px 16px 0px rgb(0 0 0 / 65%);
     cursor: pointer;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        right: 9%;
+    }
+    @media screen and (max-width: px-rem(500px)) {
+        bottom: px-rem(40px);
+    }
 }
 .button-UP.active {
     visibility: visible;
@@ -409,16 +419,11 @@
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
 }
-.button-UP a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: px-rem(40px);
-}
 .icon-up {
-    border-radius: 40px 50%;
+    position: absolute;
+    right: -3px;
+    bottom: -6px;
     color: #fff;
-    background-color: #000;
 }
 .icon-mouse {
     position: absolute;
