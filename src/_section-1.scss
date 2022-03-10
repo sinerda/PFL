@@ -420,7 +420,7 @@
 }
 .button-UP.active:hover {
     transform: scale(1.25);
-    transition: transform 0.6s;
+    transition: transform 0.4s;
 
     @media screen and (max-width: px-rem(1000px)) {
         transform: scale(1);
