@@ -1,17 +1,17 @@
 @font-face {
   font-family: "Raleway-Bold";
   font-display: swap;
-  src: url("fonts/Raleway-Bold.woff2") format("woff2"), url("fonts/Raleway-Bold.woff") format("woff"), url("fonts/Raleway-Bold.ttf") format("truetype");
+  src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway-Bold.woff") format("woff");
 }
 @font-face {
   font-family: "Raleway-Heavy";
   font-display: swap;
-  src: url("fonts/Raleway-Heavy.woff2") format("woff2"), url("fonts/Raleway-Heavy.woff") format("woff"), url("fonts/Raleway-Heavy.ttf") format("truetype");
+  src: url("../fonts/Raleway-Heavy.woff2") format("woff2"), url("../fonts/Raleway-Heavy.woff") format("woff"), url("../fonts/Raleway-Heavy.ttf") format("truetype");
 }
 @font-face {
   font-family: "Raleway-Light";
   font-display: swap;
-  src: url("fonts/Raleway-Light.woff2") format("woff2"), url("fonts/Raleway-Light.woff") format("woff"), url("fonts/Raleway-Light.ttf") format("truetype");
+  src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff"), url("../fonts/Raleway-Light.ttf") format("truetype");
 }
 html {
   scroll-behavior: smooth;
@@ -36,7 +36,7 @@ main {
 .section-1 {
   position: relative;
   height: 62.5rem;
-  background: url(img/full-img-1.jpg);
+  background: url(../img/full-img-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1669,7 +1669,7 @@ main {
 .section-5 {
   height: 31.25rem;
   padding-left: 11%;
-  background: url(img/full-img-4.jpg);
+  background: url(../img/full-img-4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2175,19 +2175,19 @@ main {
 }
 
 #card-1 {
-  background: url(img/section-6-img1.jpg);
+  background: url(../img/section-6-img1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #card-2 {
-  background: url(img/section-6-img2.jpg);
+  background: url(../img/section-6-img2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #card-3 {
-  background: url(img/section-6-img3.jpg);
+  background: url(../img/section-6-img3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2333,7 +2333,7 @@ main {
 .section-7 {
   padding-top: 5.625rem;
   height: 54.0625rem;
-  background: url(img/full-img-7.jpg);
+  background: url(../img/full-img-7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
