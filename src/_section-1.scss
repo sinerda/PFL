@@ -72,10 +72,11 @@
     height: px-rem(20px);
 }
 .menu li:hover {
-    border-top: #ff6033 solid px-rem(3px);
     position: relative;
-    bottom: px-rem(12px);
     padding-top: px-rem(9px);
+    bottom: px-rem(12px);
+    height: px-rem(32px);
+    border-top: #ff6033 solid px-rem(3px);
 }
 .adaptive-menu {
     visibility: hidden;
@@ -390,7 +391,7 @@
     z-index: 50;
     position: fixed;
     right: px-rem(30px); //13%
-    bottom: 50%; //40px, 300px
+    bottom: 48.5%; //40px, 300px
     width: px-rem(30px);
     height: px-rem(30px);
     padding-left: 7px;

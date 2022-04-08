@@ -142,10 +142,11 @@ main {
 }
 
 .menu li:hover {
-  border-top: #ff6033 solid 0.1875rem;
   position: relative;
-  bottom: 0.75rem;
   padding-top: 0.5625rem;
+  bottom: 0.75rem;
+  height: 2rem;
+  border-top: #ff6033 solid 0.1875rem;
 }
 
 .adaptive-menu {
@@ -555,7 +556,7 @@ main {
   z-index: 50;
   position: fixed;
   right: 1.875rem;
-  bottom: 50%;
+  bottom: 48.5%;
   width: 1.875rem;
   height: 1.875rem;
   padding-left: 7px;
@@ -2734,7 +2735,7 @@ footer {
   margin: 0 auto;
   width: 5.3125rem;
   height: 2.1875rem;
-  background: url(img/logo-cahee-small.png);
+  background: url(../img/logo-cahee-small.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
