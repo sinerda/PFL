@@ -1230,7 +1230,6 @@ main {
   .section-3--image {
     left: 0;
     top: 2.4375rem;
-    width: 23.75rem;
   }
 }
 @media screen and (max-width: 37.5rem) {
