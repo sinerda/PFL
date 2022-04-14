@@ -1,7 +1,12 @@
+.no-webp .section-5 {
+    background-image: url(../img/full-img-4.jpg);
+}
+.webp .section-5 {
+    background-image: url(../img/full-img-4.webp);
+}
 .section-5 {
     height: px-rem(500px);
     padding-left: 11%;
-    background: url(../img/full-img-4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

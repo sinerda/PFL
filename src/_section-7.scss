@@ -1,7 +1,12 @@
+.no-webp .section-7 {
+    background-image: url(../img/full-img-7.jpg);
+}
+.webp .section-7 {
+    background-image: url(../img/full-img-7.webp);
+}
 .section-7 {
     padding-top: px-rem(90px);
     height: px-rem(865px);
-    background: url(../img/full-img-7.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -285,11 +290,16 @@ footer {
         line-height: 1.3125;
     }
 }
+.no-webp .logo-cahee {
+    background-image: url(../img/logo-cahee-small.png);
+}
+.webp .logo-cahee {
+    background-image: url(../img/logo-cahee-small.webp);
+}
 .logo-cahee {
     margin: 0 auto;
     width: px-rem(85px);
     height: px-rem(35px);
-    background: url(../img/logo-cahee-small.png);
     background-repeat: no-repeat;
     background-size: cover;
 

@@ -60,10 +60,9 @@
     width: px-rem(600px);
     height: px-rem(600px);
     user-select: none;
+    // background-color: bisque;
 
     @media screen and (max-width: px-rem(1150px)) {
-        // width: px-rem(600px);
-        // height: px-rem(600px);
         z-index: 5;
         position: relative;
         // left: 112px;

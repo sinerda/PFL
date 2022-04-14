@@ -15,6 +15,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <link rel="manifest" href="favicon/site.webmanifest">
   <link rel="shortcut icon" href="favicon/favicon.ico">
+  <script src="js/modernizr.js"></script>
   <script src="js/jquery-2.1.1.min.js"></script>
 </head>
 <body>
@@ -23,7 +24,10 @@
     <section class="section-1">
       <header class="header">
         <div class="header-logo">
-          <img class="logo" src="img/logo-cahee.png" alt="logo-cahee">
+          <picture class="logo">
+            <source type="image/webp" srcset="img/logo-cahee.webp">
+            <img src="img/logo-cahee.png" alt="logo-cahee">
+          </picture>
         </div>
         <ul class="menu">
           <li><a href="#">home</a></li>
@@ -58,13 +62,39 @@
           <i class="fa fa-arrow-circle-up icon-up" aria-hidden="true"></i>
         </div>
       </a>
-      <img class="icon-mouse" src="img/scroll.png" alt="icon-mouse">
+      <picture class="icon-mouse">
+        <source type="image/webp" srcset="img/scroll.webp">
+        <img src="img/scroll.png" alt="icon-mouse">
+      </picture>
     </section>
     <!--///////////////      section 2 - About Us     ////////////////// -->
     <a name="about"></a>
     <section class="section-2">
       <div class="section-2-Left-Side">
-        <img class="section-2--image" src="img/full-img-2.png" alt="section-2-image">
+        <picture>
+          <source 
+            type="image/webp"
+            media="(orientation: landscape) and (max-width: 600px)" 
+            srcset="img\full-img-2-400.webp 400w"
+          >
+          <source 
+            type="image/webp"
+            media="(max-width: 600px)" 
+            srcset="
+              img\full-img-2-400.webp 400w,
+              img\full-img-2-500.webp 500w"
+          >
+          <source 
+            type="image/webp"
+            media="(max-width: 720px) and (orientation: landscape)" 
+            srcset="
+              img\full-img-2-500.webp 500w,
+              img\full-img-2-600.webp 600w"
+          >
+          <source type="image/webp" srcset="img/full-img-2-600.webp">
+          <img class="section-2--image" src="img/full-img-2.png" alt="section-2-image">
+          <!-- width="669" height="662" -->
+        </picture>
       </div>
       <div class="section-2-Right-Side">
         <h2 class="section-2--title">About Us</h2>
@@ -80,31 +110,131 @@
           <div class="item-card">
             <p class="card-text">Online Shopping</p>
             <div class="card-icon">
-              <img class="icon" src="img/001-shopping-carts.png" alt="shopping-carts">
+              <picture>
+                <source type="image/webp"
+                  media="(max-width: 300px)" 
+                  srcset="img/001-shopping-carts-37.webp 37w"
+                >
+                <source type="image/webp"
+                  media="(max-width: 450px)" 
+                  srcset="img/001-shopping-carts-45.webp 45w"
+                >
+                <source type="image/webp" 
+                  srcset="img/001-shopping-carts-64.webp 64w"
+                >
+                <img class="icon" 
+                  src="img/001-shopping-carts.png" 
+                  alt="shopping-carts"
+                >
+              </picture>
             </div>
           </div>
           <div class="item-card">
             <p class="card-text">Quality Product</p>
             <div class="card-icon">
-              <img class="icon" src="img/002-agriculture.png" alt="agriculture">
+              <picture>
+                <source type="image/webp"
+                  media="(max-width: 300px)" 
+                  srcset="img/002-agriculture-37.webp 37w"
+                >
+                <source type="image/webp"
+                  media="(max-width: 450px)" 
+                  srcset="img/002-agriculture-45.webp 45w"
+                >
+                <source type="image/webp" 
+                  srcset="img/002-agriculture-64.webp 64w"
+                >
+                <img class="icon" 
+                  src="img/002-agriculture.png" 
+                  alt="agriculture"
+                >
+              </picture>
             </div>
           </div>
           <div class="item-card">
             <p class="card-text">Domestic & International Delivery</p>
             <div class="card-icon">
-              <img class="icon" src="img/003-airplane.png" alt="airplane">
+              <picture>
+                <source type="image/webp"
+                  media="(max-width: 300px)" 
+                  srcset="img/003-airplane-37.webp 37w"
+                >
+                <source type="image/webp"
+                  media="(max-width: 450px)" 
+                  srcset="img/003-airplane-45.webp 45w"
+                >
+                <source type="image/webp" 
+                  srcset="img/003-airplane-64.webp 64w"
+                >
+                <img class="icon" 
+                  src="img/003-airplane.png" 
+                  alt="airplane"
+                >
+              </picture>
             </div>
           </div>
           <div class="item-card">
             <p class="card-text">Well Organized</p>
             <div class="card-icon">
-              <img class="icon" src="img/004-carrot.png" alt="carrot">
+              <picture>
+                <source type="image/webp"
+                  media="(max-width: 300px)" 
+                  srcset="img/004-carrot-37.webp 37w"
+                >
+                <source type="image/webp"
+                  media="(max-width: 450px)" 
+                  srcset="img/004-carrot-45.webp 45w"
+                >
+                <source type="image/webp" 
+                  srcset="img/004-carrot-64.webp 64w"
+                >
+                <img class="icon" 
+                  src="img/004-carrot.png" 
+                  alt="carrot"
+                >
+              </picture>
             </div>
           </div>
         </div>
       </div>
       <div class="section-3-Right-Side">
-        <img class="section-3--image" src="img/full-img-3.png" alt="full-img-3">
+        <picture>
+          <source type="image/webp"
+            media="(max-width: 250px)" 
+            srcset="img\full-img-3-171.webp 171w"
+          >
+          <source type="image/webp"
+            media="(max-width: 300px)" 
+            srcset="img\full-img-3-206.webp 206w"
+          >
+          <source type="image/webp"
+            media="(max-width: 350px)" 
+            srcset="img\full-img-3-270.webp 270w"
+          >
+          <source type="image/webp"
+            media="(max-width: 400px)" 
+            srcset="img\full-img-3-290.webp 290w"
+          >
+          <source type="image/webp"
+            media="(max-width: 600px)" 
+            srcset="img\full-img-3-350.webp 350w"
+          >
+          <source type="image/webp"
+            media="(max-width: 1130px)" 
+            srcset="img\full-img-3-380.webp 380w"
+          >
+          <source type="image/webp"
+            media="(max-width: 1300px)" 
+            srcset="img\full-img-3-385.webp 385w"
+          >
+          <source type="image/webp" 
+            srcset="img/full-img-3-462.webp"
+          >
+          <img class="section-3--image" 
+            src="img/full-img-3.png" 
+            alt="full-img-3"
+          >
+        </picture>
         <div class="section-3--wrapper-title">
           <h2 class="section-3--title">Our Services</h2>
         </div>
@@ -117,19 +247,34 @@
           <h2 class="section-4--title">Gallery</h2>
           <p class="section-4--text">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div class="gallery">
+      <!-- <div class="gallery">
         <div class="row1">
-          <img src="img/gal-img-1.jpg">
+          <picture>
+            <source type="image/webp" srcset="img/gal-img-1.webp">
+            <img src="img/gal-img-1.jpg">
+          </picture>
           <div class="row1-a">
-            <img src="img/gal-img-2.jpg">
-            <img src="img/gal-img-3.jpg">
+            <picture>
+              <source type="image/webp" srcset="img/gal-img-2.webp">
+              <img src="img/gal-img-2.jpg">
+            </picture>
+            <picture>
+              <source type="image/webp" srcset="img/gal-img-3.webp">
+              <img src="img/gal-img-3.jpg">
+            </picture>
           </div>
         </div>
         <div class="row2">
-          <img src="img/gal-img-4.jpg">
-          <img src="img/gal-img-5.jpg">
+          <picture>
+            <source type="image/webp" srcset="img/gal-img-4.webp">
+            <img src="img/gal-img-4.jpg">
+          </picture>
+          <picture>
+            <source type="image/webp" srcset="img/gal-img-5.webp">
+            <img src="img/gal-img-5.jpg">
+          </picture>
         </div>
-      </div>
+      </div> -->
       <button class="section-4--button">VIEW MORE</button>
     </section>
     <!--///////////////      section 5 - Subscribe      ////////////////// -->
