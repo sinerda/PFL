@@ -113,10 +113,9 @@
     font-family: "Raleway-Light", sans-serif;
     font-size: px-rem(15px);
     color: #fff;
-    background-color: #00c4c4;
+    background-color: rgba(0, 196, 196, 0.5);
     border: 0;
     transition: opacity 1s ease;
-    opacity: 50%;
     user-select: none;
 
     @media screen and (max-width: px-rem(750px)) {
@@ -132,10 +131,9 @@
 .section-7--input-text:active {
     outline: 0;
     padding-left: px-rem(15px);
-    border-left: 5px solid #355b82;
+    border-left: 5px solid rgb(53, 91, 130);
     font-weight: bolder;
     transition: opacity 0.7s ease;
-    opacity: 100%;
 }
 .section-7--input-text.required:invalid {
     border: none;

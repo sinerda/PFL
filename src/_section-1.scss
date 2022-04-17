@@ -107,24 +107,32 @@
     opacity: 20%;
     transition: all 0.65s linear;
 
-    @media screen and (orientation: landscape) and (max-width: px-rem(1190px)) {
-        visibility: visible;
+    @media screen and 
+        (orientation: landscape) and 
+        (max-width: px-rem(1190px)) {
+            visibility: visible;
+            padding: 5.5% 5.5% 7%;
     }
-    @media screen and (max-width: px-rem(1000px)) {
-        visibility: visible;
+    @media screen and 
+        (max-width: px-rem(1000px)) {
+            visibility: visible;
     }
-    @media screen and (max-height: px-rem(550px)) {
-        padding: 20% 5.5%;
-        justify-content: space-evenly;
+    @media screen and 
+        (max-height: px-rem(550px)) {
+            padding: 20% 5.5%;
+            justify-content: space-evenly;
     }
-    @media screen and (max-height: px-rem(450px)) {
-        padding: 15% 5.5%;
+    @media screen and 
+        (max-height: px-rem(450px)) {
+            padding: 15% 5.5%;
     }
-    @media screen and (max-height: px-rem(400px)) {
-        padding: 15% 5.5% 5%;
+    @media screen and 
+        (max-height: px-rem(400px)) {
+            padding: 15% 5.5% 5%;
     }
-    @media screen and (max-height: px-rem(250px)) {
-        padding: 10% 5.5% 2%;
+    @media screen and 
+        (max-height: px-rem(250px)) {
+            padding: 10% 5.5% 2%;
     }
 }
 .adaptive-menu.active {
@@ -165,30 +173,37 @@
 .adaptive-menu a {
     color: #fff;
     font-size: px-rem(26px);
-    // line-height: 2.3077; // 60px
     line-height: 1.9077;
     text-transform: capitalize;
 
-    @media screen and (max-height: px-rem(550px)) {
-        line-height: 0.0077; // 0.2px
+    @media screen and 
+        (max-width: px-rem(330px)) and 
+        (max-height: px-rem(550px)) {
+            line-height: 1.1538; //30px
     }
-    @media screen and (orientation: portrait) and (max-height: px-rem(500px)) {
-        font-size: px-rem(22px);
-        line-height: 20px;
+    @media screen and 
+        (max-height: px-rem(550px)) {
+            line-height: 0.0077; // 0.2px
     }
-    @media screen and (max-height: px-rem(400px)) {
-        font-size: px-rem(23.5px);
-        line-height: 1.3077; //34px
+    @media screen and 
+        (orientation: portrait) and 
+        (max-height: px-rem(500px)) {
+            font-size: px-rem(22px);
+            line-height: 20px;
     }
-    @media screen and (max-width: px-rem(330px)) and (max-height: px-rem(550px)) {
-        line-height: 1.1538; //30px
+    @media screen and 
+        (max-height: px-rem(400px)) {
+            font-size: px-rem(23.5px);
+            line-height: 1.3077; //34px
     }
-    @media screen and (max-height: px-rem(300px)) {
-        font-size: px-rem(20.5px);
+    @media screen and 
+        (max-height: px-rem(300px)) {
+            font-size: px-rem(20.5px);
     }
-    @media screen and (max-height: px-rem(250px)) {
-        font-size: px-rem(17.5px);
-        line-height: 1.2077;
+    @media screen and 
+        (max-height: px-rem(250px)) {
+            font-size: px-rem(17.5px);
+            line-height: 1.2077;
     }
 }
 .adaptive-menu a:active {
