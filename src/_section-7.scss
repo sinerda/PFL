@@ -252,17 +252,17 @@ a.section-7--contacts:hover {
 footer {
     flex-shrink: 0;
     padding: px-rem(35px) 11% 0;
-    height: px-rem(90px);
+    height: px-rem(100px);
     background-color: #262626;
 
     @media screen and (max-width: px-rem(1000px)) {
-        height: px-rem(120px);
+        height: px-rem(130px);
     }
     @media screen and (max-width: px-rem(650px)) {
-        height: px-rem(180px);
+        height: px-rem(190px);
     }
     @media screen and (max-width: px-rem(350px)) {
-        height: px-rem(260px);
+        height: px-rem(270px);
     }
 }
 .company {
