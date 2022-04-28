@@ -121,12 +121,12 @@
     @media screen and (min-resolution: 150dpi) and (orientation: landscape) and 
         (min-width: px-rem(1130px)) {
             visibility: visible;
-            padding: 5.5% 5.6% 7%;
+            padding: 5.5% 3.7% 8.5%;
     }
     @media screen and (min-resolution: 150dpi) and (orientation: portrait) and 
         (min-height: px-rem(1130px)) {
             visibility: visible;
-            padding: 5.5% 5.6% 7%;
+            padding: 5.5% 3.5% 12%;
     }
     @media screen and 
         (max-width: px-rem(1024px)) {
@@ -143,9 +143,10 @@
     //         padding: 5.5% 9% 14%;
     // }
     // 
-    // Portrait - max-height
+    // Portrait
+    // max-height
     @media screen and (orientation: portrait) and 
-        (max-height: px-rem(1070px)) {
+        (max-height: px-rem(1070px)) { 
             padding: 15% 3.5% 7%;
     }
     @media screen and (orientation: portrait) and 
@@ -170,10 +171,11 @@
             padding: 4% 12% 3%;
     }  
     // 
-    // Portrait - max-width
+    // Portrait
+    // max-width
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(900px)) {
-            padding: 15% 3.5% 9%;
+            padding: 15% 3.5% 11%;
     }
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(600px)) {
@@ -189,36 +191,84 @@
     }
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(400px)) {
+            padding: 15% 8.5% 8%;
+    }
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(400px)) and 
+        (min-height: px-rem(700px)){
             padding: 15% 8.5% 19%;
     }
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(300px)) {
-            padding: 15% 9% 23%;
+            padding: 15% 9% 15%;
     }
     // 
-    // Landscape - max-height
+    // Landscape
+    // max-height
     @media screen and (orientation: landscape) and 
-        (max-height: px-rem(1070px)) {
-            padding: 15% 3.5% 7%;
+        (max-height: px-rem(1023px)) {
+            padding: 2% 3.5% 5%;
             justify-content: flex-end;
     }
     @media screen and (orientation: landscape) and 
+        (max-height: px-rem(800px)) {
+            padding: 2% 3.5% 4%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-height: px-rem(700px)) {
+            padding: 2% 3.5% 3.5%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-height: px-rem(600px)) {
+            padding: 2% 3.5% 2.5%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-height: px-rem(500px)) {
+            padding: 2% 3.5% 2%;
+    }
+    @media screen and (orientation: landscape) and 
         (max-height: px-rem(450px)) {
-            padding: 15% 4.5% 4%;
+            padding: 2% 3.5% 2%;
     }
+    // @media screen and (orientation: landscape) and 
+    //     (max-height: px-rem(400px)) {
+    //         padding: 15% 4% 3%;
+    // }
     @media screen and (orientation: landscape) and 
-        (max-height: px-rem(400px)) {
-            padding: 15% 4% 3%;
-    }
-    @media screen and (orientation: landscape) and 
-        (max-height: px-rem(350px)) {
+        (max-height: px-rem(370px)) {
             padding: 1% 3.5% 1%;
             justify-content: space-around;
     }
     // 
-    // Landscape - max-width
+    // Portrait
+    // min-width + max-height
+    @media screen and (orientation: portrait) and 
+        (min-width: px-rem(300px)) and
+        (max-height: px-rem(330px)) {
+            padding: 4% 9% 4%;
+            justify-content: space-around;
+    }
+    // 
+    // Portrait
+    // max-width + max-height
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(300px)) and 
+        (max-height: px-rem(400px)) {
+            padding: 15% 9% 7%;
+    } 
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(300px)) and 
+        (max-height: px-rem(330px)) {
+            padding: 4% 9% 4%;
+            justify-content: space-around;
+    } 
+    
+    // 
+    // Landscape
+    // max-width + min-height
     @media screen and (orientation: landscape) and 
-        (max-width: px-rem(3070px)) {
+        (max-width: px-rem(3070px)) and 
+        (min-height: px-rem(1071px)) {
             padding: 2% 3.5% 2%;
             justify-content: flex-end;
     } 
@@ -239,7 +289,8 @@
     //     transform: translateX(190%);
     // }
     // 
-    // Width
+    // Portrait
+    // max-width
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(550px)) {
             width: 48%;
@@ -256,18 +307,18 @@
             width: 65%;
     }
     @media screen and (orientation: portrait) and 
-        (max-width: px-rem(300px)) {
-            width: 95%;
-            transform: translateX(7%);
+        (max-width: px-rem(251px)) {
+            width: 85%;
+            transform: translateX(19%);
     }
-    @media screen and (orientation: portrait) and 
-        (max-width: px-rem(280px)) {
-            width: 95%;
-            transform: translateX(7%);
-    }
+    // @media screen and (orientation: portrait) and 
+    //     (max-width: px-rem(280px)) {
+    //         width: 95%;
+    //         transform: translateX(7%);
+    // }
     // 
     // Landscape
-    // 
+    // max-height
     @media screen and (orientation: landscape) and 
         (max-height: px-rem(450px)) {
             transform: translateX(260%);
@@ -283,13 +334,26 @@
     //         transform: translateX(146%);
     //         width: 41%;
     // }
+    // 
+    // Landscape
+    // max-width
     @media screen and (orientation: landscape) and 
-        (max-width: px-rem(750px)) {
-            transform: translateX(247%);
-            width: 29%;
+        (max-width: px-rem(1000px)) {
+            transform: translateX(236%);
+            width: 30%;
     }
     @media screen and (orientation: landscape) and 
-        (max-width: px-rem(650px)) {
+        (max-width: px-rem(800px)) {
+            transform: translateX(225%);
+            width: 31%;
+    }
+    // @media screen and (orientation: landscape) and 
+    //     (max-width: px-rem(750px)) {
+    //         transform: translateX(247%);
+    //         width: 29%;
+    // }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(700px)) {
             transform: translateX(197%);
             width: 34%;
     }
@@ -303,12 +367,21 @@
             transform: translateX(128%);
             width: 44%;
     }
-    
-    // @media screen and (orientation: landscape) and
-    //     (max-height: px-rem(250px)) {
-    //         width: 55%;
-    //         transform: translateX(83%);
-    // }
+    @media screen and (orientation: landscape) and
+        (max-width: px-rem(350px)) {
+            transform: translateX(108%);
+            width: 48.5%;
+    }
+    @media screen and (orientation: landscape) and
+        (max-width: px-rem(300px)) {
+            transform: translateX(61%);
+            width: 62.5%;
+    }
+    @media screen and (orientation: landscape) and
+        (max-width: px-rem(250px)) {
+            transform: translateX(33%);
+            width: 75.5%;
+    }
 }
 .menu a,
 .adaptive-menu a {
@@ -442,13 +515,16 @@
     //  hi-res tablet
     @media screen and (min-resolution: 150dpi) and (orientation: landscape) and 
         (min-width: px-rem(1130px)) {
-            right: 2.45%;
+            right: 2.5%;
     }
     @media screen and 
         (max-width: px-rem(1024px)) {
             top: 4.5%;
             right: 3.5%;
     }
+    // 
+    // Portrait
+    // max-height
     @media screen and (orientation: portrait) and 
         (max-height: px-rem(950px)) {
             top: 4.5%;
@@ -466,6 +542,9 @@
         (max-height: px-rem(300px)) {
             right: 65%;
     }
+    // 
+    // Portrait
+    // max-width
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(600px)) {
             right: 4.5%;
@@ -479,9 +558,17 @@
             right: 7.5%;
     }
     // @media screen and (orientation: portrait) and 
-    //     (max-width: px-rem(250px)) {
-    //         right: 66%;
+    //     (max-width: px-rem(280px)) {
+    //         right: 76%;
     // }
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(251px)) {
+            right: 65%;
+    }
+
+    // 
+    // Landscape
+    // max-height
     @media screen and (orientation: landscape) and 
         (max-height: px-rem(450px)) {
             top: 3.7%;
@@ -492,7 +579,7 @@
             top: 4%;
     }
     @media screen and (orientation: landscape) and 
-        (max-height: px-rem(350px)) {
+        (max-height: px-rem(370px)) {
             right: 21%;
             top: 5%;
     }
@@ -500,10 +587,25 @@
         (max-height: px-rem(250px)) {
             top: 3%;
     }
+    // 
+    // Landscape
+    // max-width
     @media screen and (orientation: landscape) and 
         (max-width: px-rem(550px)) {
             right: 29%;
             top: 4.5%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(350px)) {
+            right: 34%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(300px)) {
+            right: 47%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(250px)) {
+            right: 57%;
     }
     
     // @media screen and (orientation: landscape) and 
@@ -523,6 +625,11 @@
     // @media screen and (max-width: px-rem(330px)) and (max-height: px-rem(550px)) {
     //     right: 38%;
     // }
+    @media screen and (orientation: portrait) and 
+        (max-height: px-rem(330px)) and
+        (min-width: px-rem(251px)) {
+            right: 48%;
+    }
 }
 .button-burger-menu span {
     position: absolute;
