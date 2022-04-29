@@ -130,6 +130,7 @@
     }
     @media screen and (max-width: px-rem(300px)) {
         width: px-rem(220px);
+        background-position: center;
     }
     @media screen and (max-width: px-rem(250px)) {
         width: px-rem(180px);
@@ -243,7 +244,8 @@
     }
     @media screen and (max-width: px-rem(250px)) {
         top: px-rem(115px);
-        height: px-rem(71px);
+        width: px-rem(160px);
+        height: px-rem(58px);
         font-size: px-rem(15px);
     }
 }
@@ -260,7 +262,7 @@
         // width: px-rem(250px);
     }
     @media screen and (max-width: px-rem(250px)) {
-        top: px-rem(100px);
+        top: px-rem(105px);
         font-size: px-rem(11.5px);
     }
 }

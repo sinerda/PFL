@@ -170,7 +170,8 @@
     float: right;
     position: relative;
     right: 16%;
-    width: px-rem(200px);
+    width: max-content;
+    min-width: px-rem(200px);
     height: px-rem(50px);
     font-family: "Raleway-Light", sans-serif;
     font-size: px-rem(20px);
@@ -186,12 +187,14 @@
         right: 0;
     }
     @media screen and (max-width: px-rem(350px)) {
-        width: px-rem(168px);
+        width: max-content;
+        min-width: px-rem(168px);
         height: px-rem(47px);
         font-size: px-rem(17px);
     }
     @media screen and (max-width: px-rem(250px)) {
-        width: px-rem(152px);
+        width: max-content;
+        min-width: px-rem(152px);
         height: px-rem(39px);
         font-size: px-rem(15px);
     }
@@ -273,7 +276,7 @@ footer {
     @media screen and (max-width: px-rem(650px)) {
         height: px-rem(190px);
     }
-    @media screen and (max-width: px-rem(350px)) {
+    @media screen and (max-width: px-rem(400px)) {
         height: px-rem(270px);
     }
 }
@@ -298,8 +301,13 @@ footer {
         top: px-rem(50px);
         width: auto;
     }
-    @media screen and (max-width: px-rem(350px)) {
-        top: px-rem(85pxpx-rem);
+    @media screen and (max-width: px-rem(400px)) {
+        width: max-content;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        width: auto;
+        max-width: px-rem(200px);
+        top: px-rem(85px);
         line-height: 1.3125;
     }
 }
@@ -347,8 +355,9 @@ footer {
         width: auto;
         text-align: left;
     }
-    @media screen and (max-width: px-rem(350px)) {
+    @media screen and (max-width: px-rem(400px)) {
         top: px-rem(63px);
+        max-width: px-rem(200px);
         line-height: 1.4;
     }
 }

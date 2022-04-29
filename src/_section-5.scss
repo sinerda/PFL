@@ -162,7 +162,8 @@
 .section-5--submit {
     position: relative;
     margin-left: 3.3%;
-    width: px-rem(170px);
+    width: max-content;
+    min-width: px-rem(170px);
     height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
     font-size: px-rem(20px);

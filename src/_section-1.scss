@@ -713,6 +713,7 @@
     // }
 }
 .section-1--title {
+    width: max-content;
     margin: 0 0 px-rem(20px);
     font-family: "Raleway-Heavy", sans-serif;
     font-size: px-rem(60px);
@@ -725,13 +726,21 @@
     @media screen and (max-width: px-rem(600px)) {
         font-size: px-rem(50px);
     }
+    @media screen and (max-width: px-rem(500px)) {
+        max-width: px-rem(250px);
+        max-height: px-rem(60px);
+        word-break: break-word;
+        overflow: hidden;
+    }
     @media screen and (max-width: px-rem(350px)) {
         font-size: px-rem(40px);
     }
     @media screen and (max-width: px-rem(300px)) {
+        max-width: px-rem(170px);
         font-size: px-rem(35px);
     }
     @media screen and (max-width: px-rem(250px)) {
+        max-height: px-rem(50px);
         font-size: px-rem(30px);
     }
     // @media screen and (max-width: px-rem(450px)) {
@@ -774,7 +783,8 @@
 }
 .section-1--button {
     margin-top: px-rem(20px);
-    width: px-rem(200px);
+    width: max-content;
+    min-width: px-rem(200px);
     height: px-rem(55px);
     font-family: "Raleway-Light", sans-serif;
     font-size: px-rem(20px);
@@ -787,12 +797,16 @@
     transition: 0.7s ease;
     box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.4);
 
+    @media screen and (max-width: px-rem(400px)) {
+        width: fit-content;
+    }
     @media screen and (max-width: px-rem(350px)) {
         width: px-rem(168px);
         height: px-rem(47px);
         font-size: px-rem(17px);
     }
     @media screen and (max-width: px-rem(250px)) {
+        min-width: px-rem(170px);
         width: px-rem(152px);
         height: px-rem(39px);
         font-size: px-rem(15px);
