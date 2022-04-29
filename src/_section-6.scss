@@ -218,6 +218,13 @@
 }
 
 .card-date-month {
+    display: block;
+    position: relative;
+    top: px-rem(8px);
+    left: px-rem(1px);
+    max-width: px-rem(58px);
+    max-height: px-rem(18px);
+    overflow: hidden;
     font-family: "Raleway-Heavy", sans-serif;
     font-size: px-rem(21px);
 

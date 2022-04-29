@@ -38,6 +38,8 @@
 }
 .section-7--title {
     margin: 0;
+    max-height: px-rem(100px);
+    overflow: hidden;
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(90px);
     color: #262626;
