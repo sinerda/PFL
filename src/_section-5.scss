@@ -10,7 +10,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 
+    // 4k
+    @media screen and (min-width: px-rem(2000px)) {
+        background-size: auto;
+    }
     @media screen and (max-width: px-rem(800px)) {
         height: px-rem(770px);
         background-position: right;
@@ -24,6 +30,10 @@
     @media screen and (max-width: px-rem(400px)) {
         height: px-rem(820px);
     }
+}
+.section-5-WRAP {
+    width: 100%;
+    max-width: px-rem(1500px);
 }
 .section-5--content {
     position: relative;

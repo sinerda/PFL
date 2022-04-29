@@ -1,6 +1,8 @@
 .section-2 {
     height: px-rem(700px); // 700px / 6346px
     background-color: #00bdbd;
+    display: flex;
+    justify-content: center;
 
     @media screen and (max-width: px-rem(1150px)) {
         height: px-rem(1020px);
@@ -23,6 +25,10 @@
     @media screen and (max-width: px-rem(225px)) {
         height: px-rem(1000px);
     }
+}
+.section-2-WRAP {
+    width: 100%;
+    max-width: px-rem(1500px);
 }
 .section-2-Left-Side {
     float: left;

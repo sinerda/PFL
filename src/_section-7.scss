@@ -9,10 +9,20 @@
     height: px-rem(865px);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 
+    // 4k
+    @media screen and (min-width: px-rem(2000px)) {
+        background-position: initial;
+    }
     @media screen and (max-width: px-rem(750px)) {
         height: px-rem(1135px);
     }
+}
+.section-7-WRAP {
+    width: 100%;
+    max-width: px-rem(1500px);
 }
 .section-7--wrapper-title {
     position: relative;
@@ -254,6 +264,8 @@ footer {
     padding: px-rem(35px) 11% 0;
     height: px-rem(100px);
     background-color: #262626;
+    display: flex;
+    justify-content: center;
 
     @media screen and (max-width: px-rem(1000px)) {
         height: px-rem(130px);
@@ -265,6 +277,9 @@ footer {
         height: px-rem(270px);
     }
 }
+.footer-WRAP {
+    width: 100%;
+    max-width: px-rem(1500px);}
 .company {
     position: absolute;
     margin: 0;

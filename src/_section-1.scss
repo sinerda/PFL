@@ -10,11 +10,18 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 
     //  hi-res tablet
     @media screen and (min-resolution: 150dpi) and (orientation: landscape) and 
         (min-width: px-rem(1130px)) {
             height: px-rem(800px);
+    }
+    // 4k
+    @media screen and (min-width: px-rem(2000px)) {
+        background-size: auto;
+        background-color: #f9f8fb;
     }
     @media screen and (max-width: px-rem(1024px)) {
         height: px-rem(800px);
@@ -36,6 +43,10 @@
     @media screen and (max-width: px-rem(250px)) {
         background-position-x: px-rem(-478px);
     }
+}
+.section-1-WRAP {
+    width: 100%;
+    max-width: px-rem(2000px);
 }
 .header {
     width: auto;
@@ -150,6 +161,11 @@
             padding: 15% 3.5% 7%;
     }
     @media screen and (orientation: portrait) and 
+        (max-height: px-rem(700px)) {
+            padding: 15% 8.5% 19%;
+    }
+    
+    @media screen and (orientation: portrait) and 
         (max-height: px-rem(500px)) {
             padding: 20% 7% 11%;
     }
@@ -191,7 +207,7 @@
     }
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(400px)) {
-            padding: 15% 8.5% 8%;
+            padding: 15% 8.5% 15%;
     }
     @media screen and (orientation: portrait) and 
         (max-width: px-rem(400px)) and 
