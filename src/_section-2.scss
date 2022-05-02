@@ -26,6 +26,11 @@
         height: px-rem(1000px);
     }
 }
+.translated-ltr .section-2 {
+    @media screen and (max-width: px-rem(900px)) {
+        height: px-rem(1100px);
+    }
+}
 .section-2-WRAP {
     width: 100%;
     max-width: px-rem(1500px);
@@ -60,6 +65,11 @@
     }
     @media screen and (max-width: px-rem(225px)) {
         top: px-rem(530px);
+    }
+}
+.translated-ltr .section-2-Left-Side {
+    @media screen and (max-width: px-rem(900px)) {
+        top: px-rem(550px);
     }
 }
 .section-2--image {
@@ -105,10 +115,34 @@
         padding: 0 1% 0 11%;
     }
 }
+.section-2--WRAP-title {
+    width: 130%;
+
+    @media screen and (max-width: px-rem(1150px)) {
+        width: 119%;
+    }
+    @media screen and (max-width: px-rem(600px)) {
+        width: 140%;
+    }
+    @media screen and (max-width: px-rem(550px)) {
+        width: 150%;
+    }
+    @media screen and (max-width: px-rem(450px)) {
+        width: 165%;
+    }
+}
+.translated-ltr .section-2--WRAP-title {
+    max-height: px-rem(215px);
+
+    @media screen and (max-width: px-rem(400px)) {
+        width: 100%;
+    }
+}
 .section-2--title {
     margin: px-rem(180px) 0 px-rem(20px);
-    min-width: px-rem(395px);
-    // max-width: 20.7rem;
+    min-width: px-rem(395px);  
+    // overflow: hidden;
+    word-break: break-all;
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(90px);
     font-weight: 900;
@@ -129,7 +163,8 @@
         font-size: px-rem(60px);
     }
     @media screen and (max-width: px-rem(400px)) {
-        min-width: px-rem(265px);
+        min-width: px-rem(265px); 
+        max-height: px-rem(40px);
         font-size: px-rem(50px);
     }
     @media screen and (max-width: px-rem(350px)) {
@@ -138,6 +173,17 @@
     }
     @media screen and (max-width: px-rem(225px)) {
         font-size: px-rem(35px);
+    }
+}
+.translated-ltr .section-2--title {
+    margin-top: px-rem(120px);
+    line-height: 1.177;
+
+    @media screen and (max-width: px-rem(950px)) {
+        margin-top: px-rem(50px);
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        max-height: none;
     }
 }
 .section-2--text {

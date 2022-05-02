@@ -762,11 +762,15 @@
         max-height: px-rem(50px);
         font-size: px-rem(30px);
     }
-    // @media screen and (max-width: px-rem(450px)) {
-    //     width: px-rem(270px);
-    //     margin-right: 0;
-    //     font-size: px-rem(50px);
-    // }
+}
+.translated-ltr .section-1--title {
+    @media screen and (max-width: px-rem(500px)) {
+        position: relative;
+        top: -50px;
+        width: 100%;
+        /* max-height: 120px; */
+        overflow: visible;
+    }
 }
 .section-1--text {
     font-family: "Raleway-Light", sans-serif;
@@ -829,6 +833,14 @@
         width: px-rem(152px);
         height: px-rem(39px);
         font-size: px-rem(15px);
+    }
+}
+.translated-ltr .section-1--button {
+    @media screen and (max-width: px-rem(500px)) {
+        width: fit-content;
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        height: max-content;
     }
 }
 .section-1--button:active,

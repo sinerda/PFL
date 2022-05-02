@@ -268,6 +268,8 @@
     top: px-rem(-300px);
     left: px-rem(41px);
     width: px-rem(550px);
+    max-height: px-rem(300px);
+    word-break: break-word;
     user-select: none;
 
     @media screen and (max-width: px-rem(1300px)) {
@@ -275,31 +277,24 @@
         left: px-rem(-10px);
     }
     @media screen and (max-width: px-rem(1130px)) {
-        z-index: 5;
-        position: relative;
-        margin: 0;
         top: px-rem(-273px);
         left: px-rem(-15px);
         width: px-rem(550px);
         text-align: left;
     }
     @media screen and (max-width: px-rem(950px)) {
-        z-index: 5;
-        position: relative;
-        margin: 0;
         top: px-rem(-317px);
         left: 0;
         width: px-rem(550px);
-        text-align: left;
     }
     @media screen and (max-width: px-rem(600px)) {
-        top: px-rem(-245px);
+        top: px-rem(-215px);
         left: px-rem(5px);
         width: px-rem(427px);
     }
     @media screen and (max-width: px-rem(500px)) {
         left: 0;
-        width: 100%;
+        width: 95%;
     }
     @media screen and (max-width: px-rem(400px)) {
         top: px-rem(-173px);
@@ -309,12 +304,14 @@
     }
     @media screen and (max-width: px-rem(300px)) {
         top: px-rem(-169px);
+        width: 90%;
     }
     @media screen and (max-width: px-rem(250px)) {
         top: px-rem(-138px);
     }
 }
 .section-3--title {
+    text-align: center;
     font-family: Raleway-Bold, sans-serif;
     font-size: px-rem(90px);
     color: #fff;
