@@ -128,7 +128,7 @@
         width: 150%;
     }
     @media screen and (max-width: px-rem(450px)) {
-        width: 165%;
+        width: 100%;
     }
 }
 .translated-ltr .section-2--WRAP-title {
@@ -141,12 +141,11 @@
 .section-2--title {
     margin: px-rem(180px) 0 px-rem(20px);
     min-width: px-rem(395px);  
-    // overflow: hidden;
-    word-break: break-all;
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(90px);
     font-weight: 900;
     line-height: 0.7778;
+    word-break: break-word;
     color: #fff;
     cursor: default;
     user-select: none;

@@ -310,6 +310,20 @@
         top: px-rem(-138px);
     }
 }
+.translated-ltr .section-3--wrapper-title {
+    @media screen and (max-width: px-rem(1130px)) {
+        width: 90%;
+    }
+    @media screen and (max-width: px-rem(600px)) {
+        top: px-rem(-290px);
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(-230px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        top: px-rem(-170px);
+    }
+}
 .section-3--title {
     text-align: center;
     font-family: Raleway-Bold, sans-serif;

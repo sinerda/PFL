@@ -125,7 +125,7 @@
     background-color: #ff6033;
     box-shadow: -6px -1px 10px 0px rgb(0 0 0 / 40%);
     transform: translateX(360%);
-    opacity: 20%;
+    opacity: 0%;
     transition: all 0.65s linear;
 
     //  hi-res tablet
@@ -738,18 +738,13 @@
     font-family: "Raleway-Heavy", sans-serif;
     font-size: px-rem(60px);
     font-weight: 900;
+    word-break: break-word;
     color: #262626;
     cursor: default;
     user-select: none;
 
     @media screen and (max-width: px-rem(600px)) {
         font-size: px-rem(50px);
-    }
-    @media screen and (max-width: px-rem(500px)) {
-        max-width: px-rem(250px);
-        max-height: px-rem(60px);
-        word-break: break-word;
-        overflow: hidden;
     }
     @media screen and (max-width: px-rem(350px)) {
         font-size: px-rem(40px);
@@ -766,10 +761,14 @@
 .translated-ltr .section-1--title {
     @media screen and (max-width: px-rem(500px)) {
         position: relative;
-        top: -50px;
+        top: px-rem(-50px);
         width: 100%;
-        /* max-height: 120px; */
-        overflow: visible;
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        max-width: none;
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        max-height: none;
     }
 }
 .section-1--text {
@@ -779,7 +778,6 @@
     color: #262626;
     cursor: default;
     user-select: none;
-    // background-color: darkgoldenrod;
 
     @media screen and (max-width: px-rem(700px)) {
         width: 80%;
@@ -803,6 +801,22 @@
     // @media screen and (max-width: px-rem(450px)) {
     //     width: px-rem(270px);
     // }
+}
+.translated-ltr .section-1--text {
+    @media screen and (max-width: px-rem(700px)) {
+        width: 85%;
+    }
+    @media screen and (max-width: px-rem(700px)) {
+        width: 75%;
+    }
+    @media screen and (max-width: px-rem(500px)) {
+        position: relative;
+        top: px-rem(-50px);
+        width: 65%;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        width: 85%;
+    }
 }
 .section-1--button {
     margin-top: px-rem(20px);
@@ -837,11 +851,13 @@
 }
 .translated-ltr .section-1--button {
     @media screen and (max-width: px-rem(500px)) {
+        position: relative;
+        top: px-rem(-50px);
         width: fit-content;
     }
-    @media screen and (max-width: px-rem(300px)) {
-        height: max-content;
-    }
+    // @media screen and (max-width: px-rem(300px)) {
+    //     height: max-content;
+    // }
 }
 .section-1--button:active,
 .section-1--button:focus {

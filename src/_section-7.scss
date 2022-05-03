@@ -20,6 +20,15 @@
         height: px-rem(1135px);
     }
 }
+.translated-ltr .section-7,
+.translated-rtl .section-7 {
+    @media screen and (max-width: px-rem(800px)) {
+        height: px-rem(900px);
+    }
+    @media screen and (max-width: px-rem(750px)) {
+        height: px-rem(1170px);
+    }
+} 
 .section-7-WRAP {
     width: 100%;
     max-width: px-rem(1500px);
@@ -34,6 +43,22 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+    }
+}
+.translated-ltr .section-7--wrapper-title,
+.translated-rtl .section-7--wrapper-title {
+    position: relative;
+    bottom: px-rem(90px);
+    padding-top: px-rem(70px);
+    width: auto;
+    max-height: px-rem(285px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: yellowgreen;
+
+    @media screen and (max-width: px-rem(800px)) {
+        max-height: px-rem(360px);
     }
 }
 .section-7--title {
@@ -60,6 +85,26 @@
         font-size: px-rem(45px);
     }
 }
+.translated-ltr .section-7--title,
+.translated-rtl .section-7--title {
+    position: relative;
+    bottom: 50px;
+    max-height: 200px;
+    word-break: break-word;
+    text-align: center;
+    overflow: visible;
+    // background-color: deeppink;
+
+    @media screen and (max-width: px-rem(400px)) {
+        font-size: px-rem(60px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        font-size: px-rem(50px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        font-size: px-rem(40px);
+    }
+}
 .section-7--text {
     margin: px-rem(20px) 0 px-rem(40px);
     text-align: center;
@@ -83,6 +128,14 @@
         line-height: 1.5882;
     }
 }
+.translated-ltr .section-7--text,
+.translated-rtl .section-7--text {
+    position: relative;
+    bottom: px-rem(50px);
+    margin-top: px-rem(40px);
+    max-width: px-rem(500px);
+    // background-color: pink;
+}
 .section-7--Form-Side {
     float: left;
     padding-left: 11%;
@@ -94,6 +147,16 @@
         width: 100%;
         position: relative;
         top: px-rem(250px);
+    }
+}
+.translated-ltr .section-7--Form-Side,
+.translated-rtl .section-7--Form-Side {
+    position: relative;
+    bottom: 90px;
+    // background-color: darkslategray;
+
+    @media screen and (max-width: px-rem(750px)) {
+        top: px-rem(160px);
     }
 }
 .section-7--form {
@@ -231,6 +294,16 @@
         height: px-rem(200px);
     }
 }
+.translated-ltr .section-7--Contact-Side,
+.translated-rtl .section-7--Contact-Side {
+    position: relative;
+    bottom: 90px;
+    // background-color: rgb(107, 146, 34);
+    
+    @media screen and (max-width: px-rem(750px)) {
+        bottom: px-rem(610px);
+    }
+}
 .section-7--Header-for-contacts {
     margin: 0 0 4px;
     font-family: "Raleway-Bold", sans-serif;
@@ -282,6 +355,12 @@ footer {
         height: px-rem(270px);
     }
 }
+.translated-ltr footer,
+.translated-rtl footer {
+    @media screen and (max-width: px-rem(250px)) {
+        height: px-rem(310px);
+    }
+} 
 .footer-WRAP {
     width: 100%;
     max-width: px-rem(1500px);}
