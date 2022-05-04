@@ -55,7 +55,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // background-color: yellowgreen;
 
     @media screen and (max-width: px-rem(800px)) {
         max-height: px-rem(360px);
@@ -88,12 +87,11 @@
 .translated-ltr .section-7--title,
 .translated-rtl .section-7--title {
     position: relative;
-    bottom: 50px;
-    max-height: 200px;
+    bottom: px-rem(50px);
+    max-height: px-rem(200px);
     word-break: break-word;
     text-align: center;
     overflow: visible;
-    // background-color: deeppink;
 
     @media screen and (max-width: px-rem(400px)) {
         font-size: px-rem(60px);
@@ -134,7 +132,6 @@
     bottom: px-rem(50px);
     margin-top: px-rem(40px);
     max-width: px-rem(500px);
-    // background-color: pink;
 }
 .section-7--Form-Side {
     float: left;
@@ -152,8 +149,7 @@
 .translated-ltr .section-7--Form-Side,
 .translated-rtl .section-7--Form-Side {
     position: relative;
-    bottom: 90px;
-    // background-color: darkslategray;
+    bottom: px-rem(90px);
 
     @media screen and (max-width: px-rem(750px)) {
         top: px-rem(160px);
@@ -269,8 +265,6 @@
     outline: none;
 }
 .section-7--submit:hover {
-    // font-size: 21px;
-    // font-weight: 900;
     color: rgb(180, 180, 180);
     background-color: #505050;
     border: solid 1px #505050;
@@ -298,14 +292,13 @@
 .translated-rtl .section-7--Contact-Side {
     position: relative;
     bottom: 90px;
-    // background-color: rgb(107, 146, 34);
     
     @media screen and (max-width: px-rem(750px)) {
         bottom: px-rem(610px);
     }
 }
 .section-7--Header-for-contacts {
-    margin: 0 0 4px;
+    margin: 0 0 px-rem(4px);
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(17px);
     color: #262626;
@@ -357,13 +350,28 @@ footer {
 }
 .translated-ltr footer,
 .translated-rtl footer {
+    @media screen and (max-width: px-rem(600px)) {
+        padding-right: 3%;
+    }
+    @media screen and (max-width: px-rem(550px)) {
+        padding-right: 15%;
+        height: px-rem(240px);
+    }
+    @media screen and (max-width: px-rem(450px)) {
+        padding-right: 7%;
+        height: px-rem(240px);
+    }
+    @media screen and (max-width: px-rem(300px)) {
+        padding-right: 5%;
+        height: px-rem(270px);
+    }
     @media screen and (max-width: px-rem(250px)) {
-        height: px-rem(310px);
+        height: px-rem(330px);
     }
 } 
 .footer-WRAP {
     width: 100%;
-    max-width: px-rem(1500px);}
+    max-width: px-rem(1500px);}  
 .company {
     position: absolute;
     margin: 0;
@@ -392,6 +400,27 @@ footer {
         line-height: 1.3125;
     }
 }
+.translated-ltr .company,
+.translated-rtl .company {
+    max-width: px-rem(300px);
+    max-height: px-rem(45px);
+    overflow: hidden;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        max-width: 25%;
+        width: auto;
+        max-height: px-rem(70px);
+    }
+    @media screen and (max-width: px-rem(650px)) {
+        max-width: max-content;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(60px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        max-height: px-rem(80px);
+    }
+} 
 .no-webp .logo-cahee {
     background-image: url(../img/logo-cahee-small.png);
 }
@@ -412,6 +441,12 @@ footer {
     @media screen and (max-width: px-rem(650px)) {
         margin: 0;
         top: px-rem(-25px);
+    }
+}
+.translated-ltr .logo-cahee,
+.translated-rtl .logo-cahee {
+    @media screen and (max-width: px-rem(300px)) {
+        top: px-rem(-60px);
     }
 }
 .made-with-love {
@@ -442,9 +477,29 @@ footer {
         line-height: 1.4;
     }
 }
-// a.made-with-love {
-//     bottom: 20px;
-// }
+.translated-ltr .made-with-love,
+.translated-rtl .made-with-love {
+    max-width: px-rem(300px);
+    max-height: px-rem(45px);
+    overflow: hidden;
+    text-align: right;
+
+    @media screen and (max-width: px-rem(1000px)) {
+        max-width: 25%;
+        width: auto;
+        max-height: px-rem(70px);
+    }
+    @media screen and (max-width: px-rem(650px)) {
+        max-width: max-content;
+        text-align: left;
+    }
+    @media screen and (max-width: px-rem(400px)) {
+        top: px-rem(40px);
+    }
+    @media screen and (max-width: px-rem(250px)) {
+        max-height: px-rem(80px);
+    }
+}
 .love {
     font-family: "Raleway-Bold", sans-serif;
     color: #ff2b58;
