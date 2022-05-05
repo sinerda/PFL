@@ -303,7 +303,8 @@
         top: px-rem(-138px);
     }
 }
-.translated-ltr .section-3--wrapper-title {
+.translated-ltr .section-3--wrapper-title,
+.translated-rtl .section-3--wrapper-title {
     @media screen and (max-width: px-rem(1130px)) {
         width: 90%;
     }

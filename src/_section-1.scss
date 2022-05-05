@@ -662,7 +662,8 @@
         font-size: px-rem(30px);
     }
 }
-.translated-ltr .section-1--title {
+.translated-ltr .section-1--title,
+.translated-rtl .section-1--title {
     @media screen and (max-width: px-rem(500px)) {
         position: relative;
         top: px-rem(-50px);
@@ -700,7 +701,8 @@
         width: 100%;
     }
 }
-.translated-ltr .section-1--text {
+.translated-ltr .section-1--text,
+.translated-rtl .section-1--text {
     @media screen and (max-width: px-rem(700px)) {
         width: 85%;
     }
@@ -747,7 +749,8 @@
         font-size: px-rem(15px);
     }
 }
-.translated-ltr .section-1--button {
+.translated-ltr .section-1--button,
+.translated-rtl .section-1--button {
     @media screen and (max-width: px-rem(500px)) {
         position: relative;
         top: px-rem(-50px);

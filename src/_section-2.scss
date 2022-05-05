@@ -23,7 +23,8 @@
         height: px-rem(1000px);
     }
 }
-.translated-ltr .section-2 {
+.translated-ltr .section-2,
+.translated-rtl .section-2 {
     @media screen and (max-width: px-rem(900px)) {
         height: px-rem(1100px);
     }
@@ -64,7 +65,8 @@
         top: px-rem(530px);
     }
 }
-.translated-ltr .section-2-Left-Side {
+.translated-ltr .section-2-Left-Side,
+.translated-rtl .section-2-Left-Side {
     @media screen and (max-width: px-rem(900px)) {
         top: px-rem(550px);
     }
@@ -126,7 +128,8 @@
         width: 100%;
     }
 }
-.translated-ltr .section-2--WRAP-title {
+.translated-ltr .section-2--WRAP-title,
+.translated-rtl .section-2--WRAP-title {
     max-height: px-rem(215px);
 
     @media screen and (max-width: px-rem(400px)) {
@@ -169,7 +172,8 @@
         font-size: px-rem(35px);
     }
 }
-.translated-ltr .section-2--title {
+.translated-ltr .section-2--title,
+.translated-rtl .section-2--title {
     margin-top: px-rem(120px);
     line-height: 1.177;
 
