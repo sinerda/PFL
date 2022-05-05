@@ -192,9 +192,9 @@
     left: px-rem(10px);
     width: px-rem(60px);
     height: px-rem(60px);
-    text-align: center;
     background-color: #26262680;
     border-radius: px-rem(8px);
+    text-align: center;
     user-select: none;
 
     @media screen and (max-width: px-rem(250px)) {
@@ -239,8 +239,6 @@
 .card-title {
     position: relative;
     top: px-rem(107px);
-    // left: px-rem(20px);
-    // width: px-rem(330px);
     height: px-rem(50px);
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(20px);
@@ -249,9 +247,6 @@
     user-select: none;
     overflow: hidden;
 
-    @media screen and (max-width: px-rem(1250px)) {
-        // width: 89%;
-    }
     @media screen and (max-width: px-rem(250px)) {
         top: px-rem(115px);
         width: px-rem(160px);
@@ -265,7 +260,7 @@
     top: auto;
     bottom: px-rem(35px);
     height: auto;
-    min-height: 25px;
+    min-height: px-rem(25px);
     max-height: px-rem(75px);
     max-width: 89%;
     word-break: break-word;
@@ -285,9 +280,6 @@
     color: #fff;
     user-select: none;
 
-    @media screen and (max-width: px-rem(550px)) {
-        // width: px-rem(250px);
-    }
     @media screen and (max-width: px-rem(250px)) {
         top: px-rem(105px);
         font-size: px-rem(11.5px);
@@ -332,7 +324,6 @@
     outline: none;
 }
 .section-6--button:hover {
-    // font-size: 21px;
     font-weight: 900;
     color: #000;
     background-color: #fc818c;

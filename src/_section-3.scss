@@ -34,16 +34,16 @@
 
     @media screen and (max-width: px-rem(1130px)) {
         float: none;
-        width: 100%;
-        height: px-rem(460px);
         position: relative;
         top: px-rem(513px);
+        width: 100%;
+        height: px-rem(460px);
         display: flex;
         justify-content: center;
     }
     @media screen and (max-width: px-rem(950px)) {
-        height: px-rem(671px);
         top: px-rem(460px);
+        height: px-rem(671px);
     }
     @media screen and (max-width: px-rem(450px)) {
         height: px-rem(479px);
@@ -94,7 +94,6 @@
     }
     @media screen and (max-width: px-rem(500px)) {
         top: px-rem(20px);
-        // width: px-rem(350px);
         width: 98%;
         height: px-rem(620px);
     }
@@ -109,9 +108,9 @@
     }
 }
 .item-card {
-    margin-bottom: px-rem(20px);
     width: px-rem(400px);
     height: px-rem(100px);
+    margin-bottom: px-rem(20px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -120,10 +119,6 @@
 
     @media screen and (max-width: px-rem(1130px)) {
         margin: 0 0 px-rem(30px);
-    }
-    @media screen and (max-width: px-rem(500px)) {
-        // width: px-rem(350px);
-        // width: 100%;
     }
     @media screen and (max-width: px-rem(450px)) {
         height: px-rem(70px);
@@ -158,9 +153,9 @@
     }
 }
 .card-icon {
-    padding: px-rem(20px) px-rem(15px);
     width: px-rem(100px);
     height: px-rem(100px);
+    padding: px-rem(20px) px-rem(15px);
     border-left: 1px solid #9d9d9d;
     user-select: none;
 
@@ -191,24 +186,24 @@
     height: 100%;
 
     @media screen and (max-width: px-rem(1130px)) {
-        width: 100%;
-        height: px-rem(460px);
         position: relative;
         bottom: px-rem(460px);
+        width: 100%;
+        height: px-rem(460px);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     @media screen and (max-width: px-rem(950px)) {
-        height: px-rem(460px);
         bottom: px-rem(671px);
+        height: px-rem(460px);
     }
     @media screen and (max-width: px-rem(450px)) {
         bottom: px-rem(479px);
     }
     @media screen and (max-width: px-rem(400px)) {
-        height: px-rem(410px);
         bottom: px-rem(468px);
+        height: px-rem(410px);
     }
     @media screen and (max-width: px-rem(350px)) {
         bottom: px-rem(450px);
@@ -227,7 +222,6 @@
     user-select: none;
 
     @media screen and (max-width: px-rem(1300px)) {
-        // top: 0px;
         left: px-rem(80px);
         width: px-rem(385px);
     }
@@ -241,7 +235,6 @@
     @media screen and (max-width: px-rem(950px)) {
         left: 0;
         top: px-rem(39px);
-        // width: px-rem(380px);
     }
     @media screen and (max-width: px-rem(600px)) {
         top: px-rem(50px);

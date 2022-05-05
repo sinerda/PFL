@@ -13,9 +13,6 @@
     @media screen and (max-width: px-rem(500px)) {
         height: px-rem(890px);
     }
-    // @media screen and (max-width: px-rem(400px)) {
-    //     height: px-rem(950px);
-    // }
     @media screen and (max-width: px-rem(350px)) {
         height: px-rem(920px);
     }
@@ -76,12 +73,10 @@
     width: px-rem(600px);
     height: px-rem(600px);
     user-select: none;
-    // background-color: bisque;
 
     @media screen and (max-width: px-rem(1150px)) {
         z-index: 5;
         position: relative;
-        // left: 112px;
         right: px-rem(50px);
         top: px-rem(50px);
     }
@@ -139,8 +134,8 @@
     }
 }
 .section-2--title {
+    min-width: px-rem(395px);
     margin: px-rem(180px) 0 px-rem(20px);
-    min-width: px-rem(395px);  
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(90px);
     font-weight: 900;
@@ -194,7 +189,6 @@
     color: #fff;
     cursor: default;
     user-select: none;
-    // background-color: darkkhaki;
 
     @media screen and (max-width: px-rem(500px)) {
         min-width: px-rem(360px);
@@ -205,8 +199,6 @@
     @media screen and (max-width: px-rem(400px)) {
         min-width: 0;
         width: 100%;
-        // width: px-rem(270px);
-        // min-width: min-content;
     }
     @media screen and (max-width: px-rem(300px)) {
         font-size: px-rem(16px);
