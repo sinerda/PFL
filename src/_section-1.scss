@@ -358,6 +358,50 @@
             width: 75.5%;
     }
 }
+.translated-ltr .adaptive-menu.active,
+.translated-rtl .adaptive-menu.active {
+    // 
+    // Portrait
+    // max-width
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(700px)) {
+            transform: translateX(100%);
+            width: 50%;
+    }
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(600px)) {
+            transform: translateX(67%);
+            width: 60%;
+    }
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(500px)) {
+            transform: translateX(43%);
+            width: 70%;
+    }
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(450px)) {
+            transform: translateX(0%);
+            width: 100%;
+    }
+    // 
+    // Landscape
+    // max-width
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(1000px)) {
+            transform: translateX(150%);
+            width: 40%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(800px)) {
+            transform: translateX(100%);
+            width: 50%;
+    }
+    @media screen and (orientation: landscape) and 
+        (max-width: px-rem(600px)) {
+            transform: translateX(67%);
+            width: 60%;
+    }
+}
 .menu a,
 .adaptive-menu a {
     font-family: Raleway-Bold, sans-serif;
@@ -406,6 +450,13 @@
     @media screen and 
         (max-height: px-rem(300px)) {
             font-size: px-rem(20.5px);
+    }
+}
+.translated-ltr .adaptive-menu a,
+.translated-rtl .adaptive-menu a {
+    @media screen and (orientation: portrait) and 
+        (max-width: px-rem(300px)){
+            font-size: px-rem(20px);
     }
 }
 .adaptive-menu a:active {
