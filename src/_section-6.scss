@@ -206,12 +206,16 @@
 }
 
 .card-date {
-    margin: 0;
+    max-width: px-rem(45px);
+    max-height: px-rem(30px);
+    margin: 0 auto;
     font-family: "Raleway-Bold", sans-serif;
     font-size: px-rem(32px);
     line-height: 0.875;
     text-transform: uppercase;
     color: #fff;
+    overflow: hidden;
+    word-break: break-word;
 
     @media screen and (max-width: px-rem(250px)) {
         font-size: px-rem(27px);
@@ -219,15 +223,14 @@
 }
 
 .card-date-month {
-    display: block;
-    position: relative;
-    top: px-rem(8px);
-    left: px-rem(1px);
     max-width: px-rem(58px);
     max-height: px-rem(24px);
+    margin: px-rem(7px) auto;
     font-family: "Raleway-Heavy", sans-serif;
     font-size: px-rem(21px);
     line-height: 1.0952;
+    text-transform: uppercase;
+    color: #fff;
     overflow: hidden;
     word-break: break-word;
 
