@@ -332,7 +332,7 @@ a.section-7--contacts:hover {
 }
 footer {
     flex-shrink: 0;
-    padding: px-rem(35px) 11% 0;
+    padding: px-rem(41px) 11% 0;
     height: px-rem(100px);
     background-color: #262626;
     display: flex;
@@ -428,15 +428,17 @@ footer {
     background-image: url(../img/logo-cahee-small.webp);
 }
 .logo-cahee {
-    margin: 0 auto;
+    position: relative;
+    bottom: px-rem(11px);
     width: px-rem(85px);
     height: px-rem(36px);
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
 
     @media screen and (max-width: px-rem(1000px)) {
-        position: relative;
-        top: px-rem(10px);
+        bottom: auto;
+        top: px-rem(5px);
     }
     @media screen and (max-width: px-rem(650px)) {
         margin: 0;
