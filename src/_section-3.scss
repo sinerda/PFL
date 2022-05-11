@@ -324,11 +324,10 @@
 }
 .translated-ltr .section-3--wrapper-title,
 .translated-rtl .section-3--wrapper-title {
-    background-color: #9acd32cf; 
-    max-height: none;
-    height: 100%;
     position: absolute;
     top: 0;
+    height: 100%;
+    max-height: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,15 +335,6 @@
     @media screen and (max-width: px-rem(1130px)) {
         width: 100%;
         left: auto;
-    }
-    @media screen and (max-width: px-rem(600px)) {
-        // top: px-rem(-290px);
-    }
-    @media screen and (max-width: px-rem(400px)) {
-        // top: px-rem(-230px);
-    }
-    @media screen and (max-width: px-rem(250px)) {
-        // top: px-rem(-170px);
     }
 }
 .section-3--title {
